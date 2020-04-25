@@ -1,0 +1,33 @@
+Item,Need,MedNeed,Demand
+face mask,30,100,100
+gloves,10,100,70
+medicine,100,50,70
+soap,100,30,70
+rubbing alcohol,50,70,100
+hand sanitizer,80,100,100
+thermometer,50,50,50
+vitamins,40,0,30
+gatorade,20,0,20
+flashlight,20,0,10
+batteries,60,0,70
+can opener,80,0,10
+garbage bags,100,0,60
+tissues,100,0,100
+toilet paper,100,0,100
+diapers,100,0,80
+disinfectant wipes,80,30,100
+disinfectant spray,80,30,100
+canned food,90,0,100
+cereal,90,0,90
+flour,100,0,100
+rice,100,0,100
+nuts,90,0,90
+dried fruit,90,0,90
+crackers,100,0,100
+bottled water,100,0,100
+baby formula,100,0,100
+pet food,80,0,100
+gowns,0,100,100
+respirator,30,100,100
+goggles,30,100,100
+face shield,0,100,100

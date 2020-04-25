@@ -1,0 +1,32 @@
+PODS:
+  - ModernSearchBar (1.5)
+  - SwiftCSV (0.5.6)
+  - TensorFlowLiteC (2.1.0)
+  - TensorFlowLiteSwift (2.1.0):
+    - TensorFlowLiteC (= 2.1.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - ModernSearchBar
+  - SwiftCSV
+  - TensorFlowLiteSwift
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - ModernSearchBar
+    - SwiftCSV
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
+  SwiftCSV: efb4a15dd7f2f1212b3d6986f97a3369ff6c5100
+  TensorFlowLiteC: 215603d4426d93810eace5947e317389554a4b66
+  TensorFlowLiteSwift: 9d8137f18d5ac30ca89bba4fbe118e0949ac5743
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: b4bb05a505d6b12781082d0ac81fa1453f293311
+
+COCOAPODS: 1.8.4
