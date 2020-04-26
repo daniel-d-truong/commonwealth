@@ -16,7 +16,16 @@ struct CSVData {
     var price = Float()
 }
 
+struct SeverityData {
+    var waterUsage = Int()
+    var locationSeverity = String()
+    var heathNeed = String()
+    var demand = String()
+}
+
 public class Calculate {
+    
+    let SEVERITY_LEVELS = ["High", "Medium", "Low", "None"]
     
     var csv:CSV? = nil
     var csvData:[String:CSVData]? = [:]
@@ -40,7 +49,7 @@ public class Calculate {
                 let currRow = namedRows[i]
 //                print(currRow)
                 let waterFactor = Int(currRow["WF"]!)!
-                print(waterFactor)
+//                print(waterFactor)
                 let need = Int(currRow["RD"]!)!
                 let medNeed = Int(currRow["MD"]!)!
                 let price = Float(currRow["P"]!)!
@@ -127,6 +136,11 @@ public class Calculate {
         let wf = self.calcWaterCost(item: item)
         let price = csvData?[item]?.price ?? 0.0
         return (Float(quantity) * (price + wf)) * socRate * envRate
+    }
+    
+    func getSeverity(item: String) -> SeverityData {
+        let
+        return SeverityData()
     }
     
     func getSocialCostAmountString(item: String, quantity: Int) -> String {
