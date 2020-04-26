@@ -10,7 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    var cartData: [ItemData] = []
+    var cartData: [(ItemData, Double)] = []
+    @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,6 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TitleCell")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,33 +35,32 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cartData.count + 1
+        return cartData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("ran here")
         print(indexPath.row)
-        if indexPath.row == 0 {
-            print("good spot")
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell")!
-            cell.isHidden = false
-            print(cell)
-            return cell
-        }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath) as! CartTableViewCell
-        print(cartData[indexPath.row])
-        cell.setCell(item: cartData[indexPath.row - 1])
+        cell.setCell(itemTuple: (cartData[indexPath.row]))
         // Configure the cell...
         return cell
     }
+    
+
+
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //
 //    }
     
     func refreshData() {
-        self.cartData = cart.items
+        var newArr: [(ItemData, Double)] = []
+        for item in cart.items {
+            newArr.append(item.value)
+        }
+        self.cartData = newArr
         self.tableView.reloadData()
     }
 

@@ -13,6 +13,9 @@ class CartTableViewCell: UITableViewCell {
     static let identifier = "CartCell"
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,11 +28,17 @@ class CartTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(item: ItemData?) {
+    func setCell(itemTuple: (ItemData, Double)) {
 //        print(self.titleLabel)
 //        print(item)
 //        print("Name: " + item!.name)
-        self.titleLabel.text = item?.name
+        let item = itemTuple.0
+        let quantity = String(itemTuple.1)
+        
+        titleLabel.text = item.name
+        quantityLabel.text = quantity
+        
+        
     }
 
 }

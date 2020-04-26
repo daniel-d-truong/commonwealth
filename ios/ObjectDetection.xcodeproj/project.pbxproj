@@ -47,6 +47,11 @@
 		CB9D123B245560690092D8CF /* TTGTagCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123D245560790092D8CF /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123C245560790092D8CF /* Toast_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D124924558A1E0092D8CF /* CheckboxButton.swift */; };
+		CB9D124D2455ADE50092D8CF /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1244245583870092D8CF /* Karla-Bold.ttf */; };
+		CB9D124E2455ADE50092D8CF /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1245245583870092D8CF /* Karla-BoldItalic.ttf */; };
+		CB9D124F2455ADE50092D8CF /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1246245583870092D8CF /* Karla-Italic.ttf */; };
+		CB9D12502455ADE50092D8CF /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1247245583870092D8CF /* Karla-Regular.ttf */; };
+		CB9D12522455B6ED0092D8CF /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +104,8 @@
 		CB9D1246245583870092D8CF /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../Karla/Karla-Italic.ttf"; sourceTree = "<group>"; };
 		CB9D1247245583870092D8CF /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../Karla/Karla-Regular.ttf"; sourceTree = "<group>"; };
 		CB9D124924558A1E0092D8CF /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		CB9D124B245596010092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
+		CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CB9D124B245596010092D8CF /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -303,6 +310,7 @@
 			children = (
 				CB02D1A424540DDB00CF9350 /* TableViewController.swift */,
 				CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */,
+				CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */,
 			);
 			path = CartView;
 			sourceTree = "<group>";
@@ -396,6 +404,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9D124D2455ADE50092D8CF /* Karla-Bold.ttf in Resources */,
+				CB9D124E2455ADE50092D8CF /* Karla-BoldItalic.ttf in Resources */,
+				CB9D124F2455ADE50092D8CF /* Karla-Italic.ttf in Resources */,
+				CB9D12502455ADE50092D8CF /* Karla-Regular.ttf in Resources */,
 				5120E88824557CEB00EF2C25 /* covid_county.csv in Resources */,
 				5120E8862455750B00EF2C25 /* detect.tflite in Resources */,
 				5120E88C24558BCD00EF2C25 /* foodprint.csv in Resources */,
@@ -495,6 +507,7 @@
 				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
 				5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */,
 				CB02D1A524540DDB00CF9350 /* TableViewController.swift in Sources */,
+				CB9D12522455B6ED0092D8CF /* HeaderTableViewCell.swift in Sources */,
 				CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */,
 				AA9AC5D7212D43E0000B4E9D /* PreviewView.swift in Sources */,
 				AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */,
