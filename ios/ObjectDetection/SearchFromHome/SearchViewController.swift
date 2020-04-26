@@ -28,6 +28,8 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
     var itemList: [String] = []
     var ogItemList: [String] = []
     
+    var placeInventoryMap: [String: [String]] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +41,8 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
         itemList = calculator.getItemNames()
         ogItemList = calculator.getItemNames()
 
+        placeInventoryMap["general"] = itemList
+        
         self.collectionView.reloadData()
 
 //        self.searchBar.setDatas(datas: itemList)
@@ -58,6 +62,8 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "storeItemCell", for: indexPath) as! StoreItemCollectionViewCell
         let itemStr = self.itemList[indexPath.row]
         cell.storeItemName.text = itemStr
+        cell.imageView.image = UIImage(named: "chicken")
+        
         cell.navigateToItemController = self.navigateToItemController
         cell.addGestureRecognizer(UITapGestureRecognizer(target: cell, action: #selector(cell.handleTap(gestureRecognizer:))))
 
@@ -156,7 +162,8 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
 extension SearchViewController: TTGTextTagCollectionViewDelegate {
     func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, didTapTag tagText: String!, at index: UInt, selected: Bool, tagConfig config: TTGTextTagConfig!) {
         print(tagText)
-        self.itemList = self.itemList.shuffled()
+        self.itemList = self.placeInventoryMap[tagText] ?? self.itemList.shuffled()
+        self.placeInventoryMap[tagText] = self.itemList
         self.collectionView.reloadData()
     }
 }

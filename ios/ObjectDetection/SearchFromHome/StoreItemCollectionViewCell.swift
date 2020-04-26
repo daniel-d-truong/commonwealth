@@ -11,6 +11,8 @@ import UIKit
 class StoreItemCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var storeItemName: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     var navigateToItemController: ((String) -> Void )!
     
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer) {
