@@ -28,7 +28,11 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var stepperControl: UIStepper!
     @IBOutlet weak var quantityLabel: UILabel!
     
-    let POPUP_TITLES = ["WATER FOOTPRINT", "HEALTHCARE USAGE", "DEMAND", "LOCATION"]
+    @IBOutlet weak var originalPrice: UILabel!
+    @IBOutlet weak var impactPrice: UILabel!
+    @IBOutlet weak var totalPrice: UILabel!
+
+  let POPUP_TITLES = ["WATER FOOTPRINT", "HEALTHCARE USAGE", "DEMAND", "LOCATION"]
     let POPUP_VALUES = ["liters", "high, medium, low, none", "high, medium, low, none", "high, medium, low, none"]
     let POPUP_DESCRIPTIONS = ["how much water goes into producing this item", "how essential this item is for healthcare professionals", "how in demand this product is", "the risk associated with confirmed cases in the region"]
     
@@ -54,6 +58,7 @@ class ItemViewController: UIViewController {
         sustainableFactorLabel.text = susString
         socialFactorLabel.text = socString
         
+        setPrices()
         let wftap = UITapGestureRecognizer(target: self, action: #selector(self.wftapFunction))
         waterFootprintLabel.isUserInteractionEnabled = true
         waterFootprintLabel.addGestureRecognizer(wftap)
@@ -119,7 +124,16 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func stepperChange(_ sender: Any) {
-        self.quantityLabel.text = String(self.stepperControl.value)
+        self.quantityLabel.text = String(Int(self.stepperControl.value))
+        setPrices()
+    }
+    
+    func setPrices() {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "$\(calculator.getPriceString(item: item, quantity: Int(self.stepperControl.value)))")
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+        self.originalPrice.attributedText = attributeString
+        self.impactPrice.text = String(format: "+%.2f", calculator.getSocialCostAmountString(item: item, quantity: Int(self.stepperControl.value)))
+        self.totalPrice.text = String(format: "$%.2f", calculator.calcActualTotalCost(item: item, quantity: Int(self.stepperControl.value)))
     }
     
     /*

@@ -11,7 +11,6 @@
 		5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E86F2454114E00EF2C25 /* emergency-supplies.csv */; };
 		5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E8742454D01B00EF2C25 /* Calculate.swift */; };
 		5120E8812455333300EF2C25 /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5120E8802455333200EF2C25 /* pricetag.png */; };
-		5120E8852455748700EF2C25 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D123624555F250092D8CF /* config.swift */; };
 		5120E8862455750B00EF2C25 /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5120E87B2454E04100EF2C25 /* detect.tflite */; };
 		5120E88824557CEB00EF2C25 /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
 		5120E88A24558BC700EF2C25 /* droughts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E88924558BC700EF2C25 /* droughts.csv */; };
@@ -52,6 +51,7 @@
 		CB9D124F2455ADE50092D8CF /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1246245583870092D8CF /* Karla-Italic.ttf */; };
 		CB9D12502455ADE50092D8CF /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1247245583870092D8CF /* Karla-Regular.ttf */; };
 		CB9D12522455B6ED0092D8CF /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */; };
+		CB9D12542455C24E0092D8CF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D12532455C24E0092D8CF /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,9 +104,9 @@
 		CB9D1246245583870092D8CF /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../Karla/Karla-Italic.ttf"; sourceTree = "<group>"; };
 		CB9D1247245583870092D8CF /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../Karla/Karla-Regular.ttf"; sourceTree = "<group>"; };
 		CB9D124924558A1E0092D8CF /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
-		CB9D124B245596010092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
-		CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CB9D124B245596010092D8CF /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
+		CB9D12512455B6ED0092D8CF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CB9D12532455C24E0092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +226,7 @@
 		AA9AC59D212D39FC000B4E9D /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
+				CB9D12532455C24E0092D8CF /* config.swift */,
 				CB9D124B245596010092D8CF /* .. */,
 				CB9D124824558A050092D8CF /* Components */,
 				CB9D123F245582870092D8CF /* Fo */,
@@ -492,7 +493,6 @@
 				CB02D1A3245407E100CF9350 /* SearchViewController.swift in Sources */,
 				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
 				CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */,
-				5120E8852455748700EF2C25 /* config.swift in Sources */,
 				AA756E6A2150CE89004BB0BC /* OverlayView.swift in Sources */,
 				CB02D1B724542A4F00CF9350 /* Item.swift in Sources */,
 				AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */,
@@ -502,6 +502,7 @@
 				CB02D1B22454299900CF9350 /* Cart.swift in Sources */,
 				CB02D19C2454003F00CF9350 /* NavigationController.swift in Sources */,
 				AA756E652150C996004BB0BC /* CameraFeedManager.swift in Sources */,
+				CB9D12542455C24E0092D8CF /* config.swift in Sources */,
 				AAAB09702189838A0015A1F2 /* CVPixelBufferExtension.swift in Sources */,
 				AAEF3D8D21A2BE2B0073AE1C /* UIColorExtension.swift in Sources */,
 				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
