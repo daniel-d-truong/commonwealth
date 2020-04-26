@@ -56,13 +56,13 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     calculator = Calculate()
-    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 1))
-    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 2))
-    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 3))
-    
-    print(calculator?.calcSocTaxRate(item: "milk", quantity: 1))
-    print(calculator?.calcSocTaxRate(item: "milk", quantity: 2))
-    print(calculator?.calcSocTaxRate(item: "milk", quantity: 3))
+//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 1))
+//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 2))
+//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 3))
+//    
+//    print(calculator?.calcSocTaxRate(item: "milk", quantity: 1))
+//    print(calculator?.calcSocTaxRate(item: "milk", quantity: 2))
+//    print(calculator?.calcSocTaxRate(item: "milk", quantity: 3))
 
     guard modelDataHandler != nil else {
       fatalError("Failed to load model")
@@ -95,7 +95,11 @@ class ViewController: UIViewController {
     cameraFeedManager.stopSession()
   }
 
-  override var preferredStatusBarStyle: UIStatusBarStyle {
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
 
@@ -302,12 +306,25 @@ extension ViewController: CameraFeedManagerDelegate {
       }
 
       let confidenceValue = Int(inference.confidence * 100.0)
-      let string = "\(inference.className)  (\(confidenceValue)%)\ncost\nsocial cost"
+      let string = inference.className
 
       let size = string.size(usingFont: self.displayFont)
 
-      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont)
+      let price = calculator!.calcSocCost(item: inference.className, quantity: 1)
+        
+        if (price == 0.0) {
+            continue
+        }
+        
+      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
+        let iVC = inferenceViewController
+        let tprice = calculator?.getPrice(item: inference.className)
+        let tcost = calculator?.getSocCostValue(item: inference.className, quantity: 1)
+        let ttotal = String(format: "%.2f", price)
+                
+        let tdata = TableData(name: inference.className, price: tprice!, cost: tcost!, total: ttotal)
+        iVC?.addCell(msg: tdata)
         
       objectOverlays.append(objectOverlay)
     }
