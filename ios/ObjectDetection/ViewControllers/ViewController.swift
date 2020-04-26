@@ -95,7 +95,11 @@ class ViewController: UIViewController {
     cameraFeedManager.stopSession()
   }
 
-  override var preferredStatusBarStyle: UIStatusBarStyle {
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
 
@@ -302,7 +306,7 @@ extension ViewController: CameraFeedManagerDelegate {
       }
 
       let confidenceValue = Int(inference.confidence * 100.0)
-      let string = "\(inference.className)  (\(confidenceValue)%)\ncost\nsocial cost"
+      let string = inference.className
 
       let size = string.size(usingFont: self.displayFont)
 

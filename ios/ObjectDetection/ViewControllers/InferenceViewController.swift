@@ -97,11 +97,7 @@ class InferenceViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Set up stepper
-    threadStepper.isUserInteractionEnabled = true
-    threadStepper.maximumValue = Double(threadCountLimit)
-    threadStepper.minimumValue = Double(minThreadCount)
-    threadStepper.value = Double(currentThreadCount)
+    // Set up steppe
 
   }
 
@@ -109,12 +105,7 @@ class InferenceViewController: UIViewController {
   /**
    Delegate the change of number of threads to View Controller and change the stepper display.
    */
-  @IBAction func onClickThreadStepper(_ sender: Any) {
 
-    delegate?.didChangeThreadCount(to: Int(threadStepper.value))
-    currentThreadCount = Int(threadStepper.value)
-    stepperValueLabel.text = "\(currentThreadCount)"
-  }
 }
 
 // MARK: UITableView Data Source
