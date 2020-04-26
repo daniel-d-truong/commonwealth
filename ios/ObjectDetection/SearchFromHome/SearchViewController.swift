@@ -82,6 +82,7 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
             headerView.configure(places: self.storeList, delegate: self)
             headerView.searchBar.delegateModernSearchBar = self
             headerView.searchBar.setDatas(datas: self.itemList)
+            headerView.buttonFunc = goToCamera
             return headerView
         default:
             assert(false, "Invalid element type")
@@ -93,6 +94,11 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
             self.itemList = self.ogItemList
             self.collectionView.reloadData()
         }
+    }
+    
+    func goToCamera() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "cameraController") as! ViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func onClickItemSuggestionsView(item: String) {
@@ -149,7 +155,6 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
         
         task.resume()
     }
-
     
 
 }

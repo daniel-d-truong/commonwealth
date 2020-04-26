@@ -20,6 +20,7 @@ class StoreCollectionReusableView: UICollectionReusableView {
     
     var placesMap: [String: Store] = [:]
     var tagView: TTGTextTagCollectionView!
+    var buttonFunc: (() -> Void)!
     
     func configure(places: [Store], delegate: TTGTextTagCollectionViewDelegate) {
 //        let insets = UIEdgeInsets(top: 0, left: 0.0, bottom: 0.0, right: 0.0)
@@ -42,7 +43,18 @@ class StoreCollectionReusableView: UICollectionReusableView {
             tagView.scrollDirection = TTGTagCollectionScrollDirection.horizontal
             tagView.showsVerticalScrollIndicator = false
             tagView.delegate = delegate
-            view.insertSubview(tagView, belowSubview: searchBar)
+            view.insertSubview(tagView, belowSubview: view)
+            
+            let camView = UIView(frame: CGRect(x: 0, y: 40, width: UIScreen.main.bounds.width - 30, height: 40))
+//            camView.backgroundColor = UIColor.black
+            let button = UIButton(frame: CGRect(x: 0, y: 0, width: camView.bounds.width, height: 20))
+            button.setTitle("Find the cost of your items in real time.", for: .normal)
+            button.backgroundColor = UIColor.blue
+            button.tintColor = UIColor.black
+            button.addTarget(self, action: #selector(self.buttonAction(_:)), for: .touchUpInside)
+
+            camView.insertSubview(button, at: 0)
+            view.insertSubview(camView, belowSubview: tagView)
         }
         
         
@@ -52,8 +64,20 @@ class StoreCollectionReusableView: UICollectionReusableView {
             placesMap[place.name] = place
         }
         
+        print("tags")
+        
+        
         tagView.addTags(tags, with: textConfig)
+        
+        if places.count == 0 {
+            tagView = nil
+        }
     
     }
-        
+    
+    
+    @objc func buttonAction(_ sender:UIButton!)
+    {
+        self.buttonFunc()
+    }
 }

@@ -46,7 +46,7 @@ class ItemViewController: UIViewController {
         
         // Components
         itemName.text = item
-        imageView.image = UIImage(named: item) ?? UIImage(named: "chicken")
+        imageView.image = UIImage(named: item.lowercased()) ?? UIImage(named: "chicken")
         
         let sevData = calculator.getSeverity(item: item)
         healthcareLabel.text = sevData?.heathNeed
@@ -132,7 +132,7 @@ class ItemViewController: UIViewController {
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "$\(calculator.getPriceString(item: item, quantity: Int(self.stepperControl.value)))")
         attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
         self.originalPrice.attributedText = attributeString
-        self.impactPrice.text = String(format: "+%.2f", calculator.getSocialCostAmountString(item: item, quantity: Int(self.stepperControl.value)))
+        self.impactPrice.text = "+\(calculator.getSocialCostAmountString(item: item, quantity: Int(self.quantityLabel.text!)!))"
         self.totalPrice.text = String(format: "$%.2f", calculator.calcActualTotalCost(item: item, quantity: Int(self.stepperControl.value)))
     }
     
