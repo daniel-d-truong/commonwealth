@@ -17,6 +17,8 @@ public class Calculate {
     var covidCsv:CSV? = nil
     var covidData:[String: Int]? = [:]
     
+    var currentCounty: String? = nil
+    
     init() {
         do {
             let urlPath = Bundle.main.url(forResource: "emergency-supplies", withExtension: "csv")
@@ -56,6 +58,8 @@ public class Calculate {
         let demandMult:Float = (currData!["Demand"]!) >= 40 ? demPerc : 1.0
         let med:Float = (Float(medNeed)*1.5 - Float(need))/400.0
         let medDemand = med >= 0.0 ? med : 0.0
+        
+        // TODO: Include location as part of calculation somehow
         return Float(quantity*2)/Float(demand) * pow(demPerc, Float(quantity - 1) * (medDemand + 1) * demandMult) + medDemand// + demand
     }
     
@@ -76,8 +80,12 @@ public class Calculate {
         return value
     }
     
-    func getCountyCovid(_ county: String) -> Int {
-        return covidData![county]!
+    func getCountyCovid() -> Int {
+        return covidData![self.currentCounty!] ?? -1
+    }
+    
+    func setCounty(_ county: String) {
+        self.currentCounty = county
     }
 }
 
