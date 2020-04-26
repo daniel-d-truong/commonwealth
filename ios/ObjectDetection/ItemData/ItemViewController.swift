@@ -27,6 +27,9 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var stepperControl: UIStepper!
     @IBOutlet weak var quantityLabel: UILabel!
     
+    @IBOutlet weak var originalPrice: UILabel!
+    @IBOutlet weak var impactPrice: UILabel!
+    @IBOutlet weak var totalPrice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,8 @@ class ItemViewController: UIViewController {
         let socString = String(format: "%.2f", (calculator.calcSocialCostRate(item: item) - 1) * 100) + "%"
         sustainableFactorLabel.text = susString
         socialFactorLabel.text = socString
+        
+        setPrices()
     }
     
     @objc func tapPlus() {
@@ -70,7 +75,16 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func stepperChange(_ sender: Any) {
-        self.quantityLabel.text = String(self.stepperControl.value)
+        self.quantityLabel.text = String(Int(self.stepperControl.value))
+        setPrices()
+    }
+    
+    func setPrices() {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "$\(calculator.getPriceString(item: item, quantity: Int(self.stepperControl.value)))")
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+        self.originalPrice.attributedText = attributeString
+        self.impactPrice.text = String(format: "+%.2f", calculator.getSocialCostAmountString(item: item, quantity: Int(self.stepperControl.value)))
+        self.totalPrice.text = String(format: "$%.2f", calculator.calcActualTotalCost(item: item, quantity: Int(self.stepperControl.value)))
     }
     
     /*

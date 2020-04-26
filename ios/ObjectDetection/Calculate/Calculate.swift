@@ -162,12 +162,21 @@ public class Calculate {
         return String(format: "%.2f", (Float(quantity) * (amount - price!)))
     }
     
+    /// Original price of the item
     func getPriceString(item: String) -> String {
         let price = csvData?[item]?.price
         if (price == nil) {
             return "0.00"
         }
         return String(format: "%.2f", price!)
+    }
+    
+    func getPriceString(item:String, quantity:Int) -> String {
+        let price = csvData?[item]?.price
+        if (price == nil) {
+            return "0.00"
+        }
+        return String(format: "%.2f", price!*Float(quantity))
     }
       
     func getItemNames() -> Array<String> {

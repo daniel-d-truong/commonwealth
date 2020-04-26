@@ -33,12 +33,12 @@ class CartTableViewCell: UITableViewCell {
 //        print(item)
 //        print("Name: " + item!.name)
         let item = itemTuple.0
-        let quantity = String(itemTuple.1)
+        let quantity = Int(itemTuple.1)
         
         titleLabel.text = item.name
-        quantityLabel.text = quantity
-        
-        
+        quantityLabel.text = String(quantity)
+        priceLabel.text = "$\(calculator.getPriceString(item: item.name))"
+        totalLabel.text = String(format: "$%.2f", calculator.calcActualTotalCost(item: item.name, quantity: quantity))
     }
 
 }
