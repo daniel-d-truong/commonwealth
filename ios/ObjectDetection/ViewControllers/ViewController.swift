@@ -306,7 +306,13 @@ extension ViewController: CameraFeedManagerDelegate {
 
       let size = string.size(usingFont: self.displayFont)
 
-      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont)
+      let price = calculator!.calcSocCost(item: inference.className, quantity: 1)
+        
+        if (price == 0.0) {
+            continue
+        }
+        
+      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
         
       objectOverlays.append(objectOverlay)
