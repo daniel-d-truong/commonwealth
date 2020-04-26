@@ -39,6 +39,7 @@
 		CB02D1B22454299900CF9350 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B12454299900CF9350 /* Cart.swift */; };
 		CB02D1B724542A4F00CF9350 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B624542A4F00CF9350 /* Item.swift */; };
 		CB02D1BA24542C6C00CF9350 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */; };
+		CB4EF2872455DBCB0077EEDC /* FooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4EF2862455DBCB0077EEDC /* FooterCollectionViewCell.swift */; };
 		CB9D12112454FB750092D8CF /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmap.txt */; };
 		CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */; };
 		CB9D122D2455416B0092D8CF /* StoreCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */; };
@@ -90,6 +91,7 @@
 		CB02D1B12454299900CF9350 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CB02D1B624542A4F00CF9350 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		CB4EF2862455DBCB0077EEDC /* FooterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB9D12102454FB750092D8CF /* labelmap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
 		CB9D1218245507660092D8CF /* covid_county.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = covid_county.csv; path = ../../../covid_county.csv; sourceTree = "<group>"; };
 		CB9D121A245518270092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				CB02D1A2245407E100CF9350 /* SearchViewController.swift */,
 				CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */,
 				CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */,
+				CB4EF2862455DBCB0077EEDC /* FooterCollectionViewCell.swift */,
 			);
 			path = SearchFromHome;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				CB9D12542455C24E0092D8CF /* config.swift in Sources */,
 				AAAB09702189838A0015A1F2 /* CVPixelBufferExtension.swift in Sources */,
 				AAEF3D8D21A2BE2B0073AE1C /* UIColorExtension.swift in Sources */,
+				CB4EF2872455DBCB0077EEDC /* FooterCollectionViewCell.swift in Sources */,
 				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
 				5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */,
 				CB02D1A524540DDB00CF9350 /* TableViewController.swift in Sources */,
