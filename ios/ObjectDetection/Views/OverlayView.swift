@@ -54,8 +54,8 @@ class OverlayView: UIView {
     for objectOverlay in objectOverlays {
 
       drawBorders(of: objectOverlay)
-//      drawBackground(of: objectOverlay)
-//      drawName(of: objectOverlay)
+      drawBackground(of: objectOverlay)
+      drawName(of: objectOverlay)
       drawPriceTag(of: objectOverlay)
     }
   }
