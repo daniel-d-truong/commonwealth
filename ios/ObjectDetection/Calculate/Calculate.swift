@@ -154,12 +154,12 @@ public class Calculate {
     }
     
     func getSocialCostAmountString(item: String, quantity: Int) -> String {
-        let rate = self.calcSocialCostRate(item: item)
+        let amount = self.calcActualTotalCost(item: item, quantity: 1)
         let price = csvData?[item]?.price
         if (price == nil) {
             return "0.00"
         }
-        return String(format: "%.2f", (Float(quantity) * price!) * rate)
+        return String(format: "%.2f", (Float(quantity) * (amount - price!)))
     }
     
     func getPriceString(item: String) -> String {

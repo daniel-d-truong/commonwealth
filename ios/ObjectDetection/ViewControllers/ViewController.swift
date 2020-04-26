@@ -323,6 +323,8 @@ extension ViewController: CameraFeedManagerDelegate {
         let tprice = calculator?.getPriceString(item: inference.className)
         let tcost = calculator?.getSocialCostAmountString(item: inference.className, quantity: 1)
         let ttotal = String(format: "%.2f", price)
+        
+        print(tprice, tcost, ttotal)
                 
         let tdata = TableData(name: inference.className, price: tprice!, cost: tcost!, total: ttotal)
         iVC?.addCell(msg: tdata)
