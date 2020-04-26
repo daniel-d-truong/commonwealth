@@ -1,5 +1,8 @@
 PODS:
+  - DynamicBlurView (4.1.0)
   - ModernSearchBar (1.5)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
   - SwiftCSV (0.5.6)
   - TensorFlowLiteC (2.1.0)
   - TensorFlowLiteSwift (2.1.0):
@@ -9,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - ModernSearchBar
+  - PopupDialog (~> 1.1)
   - SwiftCSV
   - TensorFlowLiteSwift
   - Toast-Swift (~> 5.0.0)
@@ -16,7 +20,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - DynamicBlurView
     - ModernSearchBar
+    - PopupDialog
     - SwiftCSV
     - TensorFlowLiteC
     - TensorFlowLiteSwift
@@ -24,13 +30,15 @@ SPEC REPOS:
     - TTGTagCollectionView
 
 SPEC CHECKSUMS:
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   SwiftCSV: efb4a15dd7f2f1212b3d6986f97a3369ff6c5100
   TensorFlowLiteC: 215603d4426d93810eace5947e317389554a4b66
   TensorFlowLiteSwift: 9d8137f18d5ac30ca89bba4fbe118e0949ac5743
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   TTGTagCollectionView: 86fcbfa6a7493c9e860b01c2e693cffc8acf6de1
 
-PODFILE CHECKSUM: 57f7bbbe02a6a16e874c90bd0ab5d4c705bb730c
+PODFILE CHECKSUM: c066a621c2d58062b0f44bdca302ea2c62c17a59
 
 COCOAPODS: 1.8.4

@@ -8,6 +8,7 @@
 
 import UIKit
 import Toast_Swift
+import PopupDialog
 
 class ItemViewController: UIViewController {
 
@@ -27,6 +28,9 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var stepperControl: UIStepper!
     @IBOutlet weak var quantityLabel: UILabel!
     
+    let POPUP_TITLES = ["WATER FOOTPRINT", "HEALTHCARE USAGE", "DEMAND", "LOCATION"]
+    let POPUP_VALUES = ["liters", "high, medium, low, none", "high, medium, low, none", "high, medium, low, none"]
+    let POPUP_DESCRIPTIONS = ["how much water goes into producing this item", "how essential this item is for healthcare professionals", "how in demand this product is", "the risk associated with confirmed cases in the region"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +53,51 @@ class ItemViewController: UIViewController {
         let socString = String(format: "%.2f", (calculator.calcSocialCostRate(item: item) - 1) * 100) + "%"
         sustainableFactorLabel.text = susString
         socialFactorLabel.text = socString
+        
+        let wftap = UITapGestureRecognizer(target: self, action: #selector(self.wftapFunction))
+        waterFootprintLabel.isUserInteractionEnabled = true
+        waterFootprintLabel.addGestureRecognizer(wftap)
+        
+        let medtap = UITapGestureRecognizer(target: self, action: #selector(self.medtapFunction))
+        healthcareLabel.isUserInteractionEnabled = true
+        healthcareLabel.addGestureRecognizer(medtap)
+        
+        let demandtap = UITapGestureRecognizer(target: self, action: #selector(self.demandtapFunction))
+        demandLevelLabel.isUserInteractionEnabled = true
+        demandLevelLabel.addGestureRecognizer(demandtap)
+        
+        let covtap = UITapGestureRecognizer(target: self, action: #selector(self.covtapFunction))
+        covidProximityLabel.isUserInteractionEnabled = true
+        covidProximityLabel.addGestureRecognizer(covtap)
+    }
+    
+    @objc func wftapFunction(sender:UITapGestureRecognizer) {
+        createPopup(index: 0)
+        print("tap working")
+    }
+    
+    @objc func medtapFunction(sender:UITapGestureRecognizer) {
+        createPopup(index: 1)
+        print("tap working")
+    }
+    
+    @objc func demandtapFunction(sender:UITapGestureRecognizer) {
+        createPopup(index: 2)
+        print("tap working")
+    }
+    
+    @objc func covtapFunction(sender:UITapGestureRecognizer) {
+        createPopup(index: 3)
+        print("tap working")
+    }
+    
+    func createPopup(index: Int) {
+        let title = POPUP_TITLES[index]
+        let message = POPUP_DESCRIPTIONS[index] + "\n\n" + POPUP_VALUES[index]
+        
+        let popup = PopupDialog(title: title, message: message)
+        
+        self.present(popup, animated: true, completion: nil)
     }
     
     @objc func tapPlus() {
