@@ -12,6 +12,9 @@ class TableViewController: UITableViewController {
 
     var cartData: [(ItemData, Double)] = []
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var originalPrice: UILabel!
+    @IBOutlet weak var impactPrice: UILabel!
+    @IBOutlet weak var totalPrice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,8 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.refreshData()
+        self.navigationItem.title = "My List"
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +66,16 @@ class TableViewController: UITableViewController {
             newArr.append(item.value)
         }
         self.cartData = newArr
+        setPrices()
         self.tableView.reloadData()
+    }
+    
+    func setPrices() {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: String(format: "$%.2f", cart.totalOriginal))
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+        self.originalPrice.attributedText = attributeString
+        self.impactPrice.text = String(format: "+%.2f", cart.totalImpact)
+        self.totalPrice.text = String(format: "$%.2f", cart.totalCost)
     }
 
     /*

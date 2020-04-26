@@ -308,8 +308,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-Li-axW">
-                                            <rect key="frame" x="39" y="16" width="86" height="49"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-Li-axW">
+                                            <rect key="frame" x="31" y="16" width="86" height="49"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="86" id="N9e-Kj-igo"/>
                                             </constraints>
@@ -318,22 +318,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-Ay-Ve8">
-                                            <rect key="frame" x="217" y="16" width="56" height="49"/>
-                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-M2-dek">
-                                            <rect key="frame" x="311" y="16" width="48" height="49"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="y0m-sU-xgS"/>
-                                            </constraints>
+                                            <rect key="frame" x="188" y="16" width="78" height="49"/>
                                             <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esE-3p-cfI">
-                                            <rect key="frame" x="138" y="16" width="38" height="49"/>
+                                            <rect key="frame" x="130" y="16" width="38" height="49"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="38" id="xzX-EA-Og8"/>
                                             </constraints>
@@ -341,26 +332,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xd-uA-Wva" customClass="CheckboxButton" customModule="ObjectDetection" customModuleProvider="target">
-                                            <rect key="frame" x="9" y="22" width="17" height="37"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5.99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-M2-dek">
+                                            <rect key="frame" x="282" y="16" width="77" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="77" id="y0m-sU-xgS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="7xd-uA-Wva" firstAttribute="top" secondItem="WM1-6u-Phv" secondAttribute="top" constant="22" id="1Y2-hu-t2y"/>
-                                        <constraint firstItem="Qcb-M2-dek" firstAttribute="leading" secondItem="YyO-Ay-Ve8" secondAttribute="trailing" constant="38" id="39d-w0-et8"/>
+                                        <constraint firstItem="cdc-Li-axW" firstAttribute="leading" secondItem="WM1-6u-Phv" secondAttribute="leadingMargin" constant="15" id="0ss-4u-YbN"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Qcb-M2-dek" secondAttribute="bottom" constant="4" id="Axt-dJ-9qE"/>
                                         <constraint firstItem="YyO-Ay-Ve8" firstAttribute="top" secondItem="WM1-6u-Phv" secondAttribute="topMargin" constant="5" id="G3P-RE-9Hf"/>
-                                        <constraint firstAttribute="trailing" secondItem="7xd-uA-Wva" secondAttribute="trailing" constant="349" id="Jqm-MX-jXD"/>
-                                        <constraint firstItem="cdc-Li-axW" firstAttribute="leading" secondItem="7xd-uA-Wva" secondAttribute="trailing" constant="13" id="NVf-yf-TIL"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="YyO-Ay-Ve8" secondAttribute="bottom" constant="4" id="RHL-7X-kce"/>
                                         <constraint firstItem="esE-3p-cfI" firstAttribute="leading" secondItem="cdc-Li-axW" secondAttribute="trailing" constant="13" id="T59-7e-bq7"/>
                                         <constraint firstItem="Qcb-M2-dek" firstAttribute="trailing" secondItem="WM1-6u-Phv" secondAttribute="trailingMargin" id="Vct-Z7-4hZ"/>
-                                        <constraint firstAttribute="bottom" secondItem="7xd-uA-Wva" secondAttribute="bottom" constant="21" id="dAE-qT-LUV"/>
-                                        <constraint firstItem="YyO-Ay-Ve8" firstAttribute="leading" secondItem="esE-3p-cfI" secondAttribute="trailing" constant="41" id="dEL-Ew-igk"/>
+                                        <constraint firstItem="YyO-Ay-Ve8" firstAttribute="leading" secondItem="esE-3p-cfI" secondAttribute="trailing" constant="20" id="dEL-Ew-igk"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="esE-3p-cfI" secondAttribute="bottom" constant="4" id="da3-Ys-1jS"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="cdc-Li-axW" secondAttribute="bottom" constant="4" id="euu-J4-GIX"/>
-                                        <constraint firstItem="7xd-uA-Wva" firstAttribute="leading" secondItem="WM1-6u-Phv" secondAttribute="leading" constant="9" id="iNJ-tK-K4G"/>
+                                        <constraint firstItem="Qcb-M2-dek" firstAttribute="leading" secondItem="YyO-Ay-Ve8" secondAttribute="trailing" constant="16" id="jTQ-SN-5CE"/>
                                         <constraint firstItem="esE-3p-cfI" firstAttribute="top" secondItem="WM1-6u-Phv" secondAttribute="topMargin" constant="5" id="l7G-p1-pas"/>
                                         <constraint firstItem="cdc-Li-axW" firstAttribute="top" secondItem="WM1-6u-Phv" secondAttribute="topMargin" constant="5" id="qOI-e3-IeT"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="YyO-Ay-Ve8" secondAttribute="bottom" constant="4" id="rQm-SN-KKN"/>
@@ -382,6 +374,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="kZO-Zc-nZF"/>
+                    <connections>
+                        <outlet property="impactPrice" destination="p4G-U7-IFu" id="0R5-W9-59I"/>
+                        <outlet property="originalPrice" destination="jwQ-Dw-6U7" id="KZH-Qj-0SX"/>
+                        <outlet property="totalPrice" destination="q2U-1Y-v4E" id="El6-OH-bMy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Md-dA-dRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,7 +388,7 @@
         <scene sceneID="gxb-hF-lGG">
             <objects>
                 <viewController id="hef-k1-39B" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="K7W-Eu-bpn">
+                    <view key="view" contentMode="scaleToFill" id="K7W-Eu-bpn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -416,11 +413,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Sn-qO-Vrg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sn-qO-Vrg">
                                 <rect key="frame" x="0.0" y="97" width="375" height="455"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-ew-I6i">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="455"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-ew-I6i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="570" id="oWh-un-mLm"/>
                                         </constraints>
@@ -871,10 +868,10 @@
                                             <action selector="stepperChange:" destination="zFz-SA-9RV" eventType="valueChanged" id="4eZ-3Q-vvM"/>
                                         </connections>
                                     </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yn-nM-vMP">
-                                        <rect key="frame" x="249" y="0.0" width="86" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yn-nM-vMP">
+                                        <rect key="frame" x="249" y="0.0" width="94" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="86" id="1Hx-cR-gJ1"/>
+                                            <constraint firstAttribute="width" constant="94" id="1Hx-cR-gJ1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -890,7 +887,7 @@
                                     <constraint firstAttribute="width" constant="343" id="dJQ-vg-w7k"/>
                                     <constraint firstAttribute="bottom" secondItem="9Vx-oR-rud" secondAttribute="bottom" id="eE8-m5-z9g"/>
                                     <constraint firstAttribute="trailing" secondItem="vB1-bo-qpf" secondAttribute="trailing" id="lT9-uC-bsW"/>
-                                    <constraint firstAttribute="trailing" secondItem="3Yn-nM-vMP" secondAttribute="trailing" constant="8" id="pxB-oF-kRa"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Yn-nM-vMP" secondAttribute="trailing" id="pxB-oF-kRa"/>
                                     <constraint firstItem="vB1-bo-qpf" firstAttribute="leading" secondItem="9Vx-oR-rud" secondAttribute="trailing" constant="58" id="sEv-n7-UP7"/>
                                     <constraint firstItem="3Yn-nM-vMP" firstAttribute="top" secondItem="cTk-4h-sKq" secondAttribute="top" id="wUp-1u-rMs"/>
                                 </constraints>
@@ -959,11 +956,14 @@
                         <outlet property="distanceLabel" destination="61C-Yv-P6E" id="wyb-AJ-1fi"/>
                         <outlet property="healthcareLabel" destination="GBK-SW-VsP" id="ea9-AO-MzR"/>
                         <outlet property="imageView" destination="XZ1-vf-iaJ" id="90U-3Y-JNk"/>
+                        <outlet property="impactPrice" destination="Mvh-ME-FYY" id="TvM-bL-FCX"/>
                         <outlet property="itemName" destination="Crk-zf-zYr" id="687-JL-shU"/>
+                        <outlet property="originalPrice" destination="JpG-sI-LVM" id="I2u-4M-Psm"/>
                         <outlet property="quantityLabel" destination="3Yn-nM-vMP" id="77k-Kr-iQb"/>
                         <outlet property="socialFactorLabel" destination="Vaa-of-Lwa" id="QCC-DU-QCV"/>
                         <outlet property="stepperControl" destination="vB1-bo-qpf" id="PkB-HN-pbn"/>
                         <outlet property="sustainableFactorLabel" destination="Viy-vb-M8s" id="EDX-oy-xfj"/>
+                        <outlet property="totalPrice" destination="fKa-8i-uMB" id="bnL-Ur-SHr"/>
                         <outlet property="waterFootprintLabel" destination="3vV-Ld-ltP" id="fXv-PT-afX"/>
                     </connections>
                 </viewController>
