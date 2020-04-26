@@ -129,18 +129,19 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
                     if let dictionary = resultJson as? [String: Any] {
                         if let nestedList = dictionary["results"] as? [[String: Any]] {
                             // access nested dictionary values by key
-                            for i in 0...nestedList.count-1 {
-                                if let obj = nestedList[i] as? [String: Any] {
-                                    let storeName = obj["name"] as! String
-                                    
-                                    if let locObj = obj["geometry"] as? [String: [String: Any]] {
-                                        let storeLat = locObj["location"]!["lat"] as! Double
-                                        let storeLng = locObj["location"]!["lng"] as! Double
-                                        self.storeList.append(Store(name: storeName, lat: storeLat, lng: storeLng))
+                            if nestedList.count > 0 {
+                                for i in 0...nestedList.count-1 {
+                                    if let obj = nestedList[i] as? [String: Any] {
+                                        let storeName = obj["name"] as! String
+                                        
+                                        if let locObj = obj["geometry"] as? [String: [String: Any]] {
+                                            let storeLat = locObj["location"]!["lat"] as! Double
+                                            let storeLng = locObj["location"]!["lng"] as! Double
+                                            self.storeList.append(Store(name: storeName, lat: storeLat, lng: storeLng))
+                                        }
                                     }
                                 }
                             }
-                            
                         }
                     }
 //                    print(self.storeList)

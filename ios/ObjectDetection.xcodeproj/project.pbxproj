@@ -10,8 +10,9 @@
 		28B1D044AD9366811C4395A2 /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E86F2454114E00EF2C25 /* emergency-supplies.csv */; };
 		5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E8742454D01B00EF2C25 /* Calculate.swift */; };
-		5120E87F2455246E00EF2C25 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		5120E8812455333300EF2C25 /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5120E8802455333200EF2C25 /* pricetag.png */; };
+		5120E8852455748700EF2C25 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D123624555F250092D8CF /* config.swift */; };
+		5120E8862455750B00EF2C25 /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5120E87B2454E04100EF2C25 /* detect.tflite */; };
 		AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ModelDataHandler.swift */; };
 		AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59921807A7000D9E153 /* InfoCell.swift */; };
 		AA16E59D218081AA00D9E153 /* InferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59C218081AA00D9E153 /* InferenceViewController.swift */; };
@@ -36,8 +37,7 @@
 		CB02D1B22454299900CF9350 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B12454299900CF9350 /* Cart.swift */; };
 		CB02D1B724542A4F00CF9350 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B624542A4F00CF9350 /* Item.swift */; };
 		CB02D1BA24542C6C00CF9350 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */; };
-		CB9D12112454FB750092D8CF /* labelmapog.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmapog.txt */; };
-		CB9D12132454FBCE0092D8CF /* detectog.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12122454FBCE0092D8CF /* detectog.tflite */; };
+		CB9D12112454FB750092D8CF /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmap.txt */; };
 		CB9D1219245507660092D8CF /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
 		CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */; };
 		CB9D122D2455416B0092D8CF /* StoreCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */; };
@@ -53,7 +53,7 @@
 		2ECD0590E59B7B53D135BD42 /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
 		5120E86F2454114E00EF2C25 /* emergency-supplies.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = "emergency-supplies.csv"; path = "ObjectDetection/Calculate/emergency-supplies.csv"; sourceTree = SOURCE_ROOT; };
 		5120E8742454D01B00EF2C25 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
-		5120E87B2454E04100EF2C25 /* detectog.tflite */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectog.tflite; sourceTree = "<group>"; };
+		5120E87B2454E04100EF2C25 /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
 		5120E8802455333200EF2C25 /* pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pricetag.png; sourceTree = "<group>"; };
 		7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA119EA1217F337300DE46CF /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
@@ -82,12 +82,12 @@
 		CB02D1B12454299900CF9350 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CB02D1B624542A4F00CF9350 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
-		CB9D12102454FB750092D8CF /* labelmapog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labelmapog.txt; sourceTree = "<group>"; };
-		CB9D12122454FBCE0092D8CF /* detectog.tflite */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectog.tflite; sourceTree = "<group>"; };
+		CB9D12102454FB750092D8CF /* labelmap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
 		CB9D1218245507660092D8CF /* covid_county.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = covid_county.csv; path = ../../../covid_county.csv; sourceTree = "<group>"; };
 		CB9D121A245518270092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 		CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionReusableView.swift; sourceTree = "<group>"; };
+		CB9D123624555F250092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../config.swift; sourceTree = "<group>"; };
 		CB9D1238245560550092D8CF /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123C245560790092D8CF /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,9 +157,8 @@
 		AA09263B212D730700D5890F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5120E87B2454E04100EF2C25 /* detectog.tflite */,
-				CB9D12102454FB750092D8CF /* labelmapog.txt */,
-				CB9D12122454FBCE0092D8CF /* detectog.tflite */,
+				5120E87B2454E04100EF2C25 /* detect.tflite */,
+				CB9D12102454FB750092D8CF /* labelmap.txt */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,12 +390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5120E8862455750B00EF2C25 /* detect.tflite in Resources */,
 				5120E8812455333300EF2C25 /* pricetag.png in Resources */,
-				CB9D12132454FBCE0092D8CF /* detectog.tflite in Resources */,
 				5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */,
 				AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */,
 				AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */,
-				CB9D12112454FB750092D8CF /* labelmapog.txt in Resources */,
+				CB9D12112454FB750092D8CF /* labelmap.txt in Resources */,
 				AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */,
 				CB9D1219245507660092D8CF /* covid_county.csv in Resources */,
 			);
@@ -473,7 +472,7 @@
 				CB02D1A3245407E100CF9350 /* SearchViewController.swift in Sources */,
 				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
 				CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */,
-				5120E87F2455246E00EF2C25 /* (null) in Sources */,
+				5120E8852455748700EF2C25 /* config.swift in Sources */,
 				AA756E6A2150CE89004BB0BC /* OverlayView.swift in Sources */,
 				CB02D1B724542A4F00CF9350 /* Item.swift in Sources */,
 				AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */,
@@ -643,7 +642,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT46Q8ZZ92;
+				DEVELOPMENT_TEAM = H598HBDDJ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -654,7 +653,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -672,7 +671,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UT46Q8ZZ92;
+				DEVELOPMENT_TEAM = H598HBDDJ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -683,7 +682,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseliang.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
