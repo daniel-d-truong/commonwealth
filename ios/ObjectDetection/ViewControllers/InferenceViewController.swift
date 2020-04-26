@@ -178,7 +178,7 @@ extension InferenceViewController: UITableViewDelegate, UITableViewDataSource {
 //
 //    }
     let currData = data[indexPath.row]
-    let info = "\(currData.price) + \(currData.cost) = \(currData.total)"
+    let info = "\(currData.price) + \(currData.cost) = $\(currData.total)"
     
     let range = (info as NSString).range(of: "\(currData.cost)")
     
@@ -190,7 +190,7 @@ extension InferenceViewController: UITableViewDelegate, UITableViewDataSource {
     cell.fieldNameLabel.textColor = infoTextColor
     cell.fieldNameLabel.text = currData.name.uppercased()
     cell.infoLabel.attributedText = attrTxt
-    cell.accessoryType = .disclosureIndicator
+//    cell.accessoryType = .disclosureIndicator
     return cell
   }
     
@@ -202,7 +202,7 @@ extension InferenceViewController: UITableViewDelegate, UITableViewDataSource {
         var i = 0
         for d in data {
             
-            if (i == 5) {
+            if (i == 4) {
                 return false
             }
             
