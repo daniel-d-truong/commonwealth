@@ -13,7 +13,18 @@ class ItemViewController: UIViewController {
 
     var item: String!
     @IBOutlet weak var itemName: UILabel!
-    @IBOutlet weak var addToCartButton: UIButton!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var socialFactorLabel: UILabel!
+    @IBOutlet weak var healthcareLabel: UILabel!
+    @IBOutlet weak var demandLevelLabel: UILabel!
+    @IBOutlet weak var covidProximityLabel: UILabel!
+    
+    @IBOutlet weak var sustainableFactorLabel: UILabel!
+    @IBOutlet weak var waterFootprintLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +45,13 @@ class ItemViewController: UIViewController {
 //        self.navigationController?.performSegue(withIdentifier: "goToCart", sender: self)
     }
     
-    @IBAction func tapAddCart(_ sender: Any) {
+    func addToCart() {
         self.view.makeToast("Added to cart")
         let itemData = ItemData(name: item)
         cart.addItem(item: itemData)
         print(cart.items)
     }
     
-    @IBAction func goToCart(_ sender: Any) {
-        tapPlus()
-    }
     /*
     // MARK: - Navigation
 
