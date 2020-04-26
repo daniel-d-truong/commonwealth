@@ -13,6 +13,9 @@
 		5120E8812455333300EF2C25 /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5120E8802455333200EF2C25 /* pricetag.png */; };
 		5120E8852455748700EF2C25 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D123624555F250092D8CF /* config.swift */; };
 		5120E8862455750B00EF2C25 /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5120E87B2454E04100EF2C25 /* detect.tflite */; };
+		5120E88824557CEB00EF2C25 /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
+		5120E88A24558BC700EF2C25 /* droughts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E88924558BC700EF2C25 /* droughts.csv */; };
+		5120E88C24558BCD00EF2C25 /* foodprint.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E88B24558BCD00EF2C25 /* foodprint.csv */; };
 		AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ModelDataHandler.swift */; };
 		AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59921807A7000D9E153 /* InfoCell.swift */; };
 		AA16E59D218081AA00D9E153 /* InferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59C218081AA00D9E153 /* InferenceViewController.swift */; };
@@ -38,7 +41,6 @@
 		CB02D1B724542A4F00CF9350 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B624542A4F00CF9350 /* Item.swift */; };
 		CB02D1BA24542C6C00CF9350 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */; };
 		CB9D12112454FB750092D8CF /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmap.txt */; };
-		CB9D1219245507660092D8CF /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
 		CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */; };
 		CB9D122D2455416B0092D8CF /* StoreCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */; };
 		CB9D1239245560550092D8CF /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D1238245560550092D8CF /* SwiftCSV.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -53,6 +55,8 @@
 		5120E8742454D01B00EF2C25 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		5120E87B2454E04100EF2C25 /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
 		5120E8802455333200EF2C25 /* pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pricetag.png; sourceTree = "<group>"; };
+		5120E88924558BC700EF2C25 /* droughts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = droughts.csv; path = ../../../droughts.csv; sourceTree = "<group>"; };
+		5120E88B24558BCD00EF2C25 /* foodprint.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = foodprint.csv; path = ../../../foodprint.csv; sourceTree = "<group>"; };
 		7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA119EA1217F337300DE46CF /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
 		AA16E59921807A7000D9E153 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		5120E8732454D00100EF2C25 /* Calculate */ = {
 			isa = PBXGroup;
 			children = (
+				5120E88B24558BCD00EF2C25 /* foodprint.csv */,
+				5120E88924558BC700EF2C25 /* droughts.csv */,
 				CB9D1218245507660092D8CF /* covid_county.csv */,
 				5120E86F2454114E00EF2C25 /* emergency-supplies.csv */,
 				5120E8742454D01B00EF2C25 /* Calculate.swift */,
@@ -361,14 +367,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5120E88824557CEB00EF2C25 /* covid_county.csv in Resources */,
 				5120E8862455750B00EF2C25 /* detect.tflite in Resources */,
+				5120E88C24558BCD00EF2C25 /* foodprint.csv in Resources */,
 				5120E8812455333300EF2C25 /* pricetag.png in Resources */,
 				5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */,
 				AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */,
+				5120E88A24558BC700EF2C25 /* droughts.csv in Resources */,
 				AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */,
 				CB9D12112454FB750092D8CF /* labelmap.txt in Resources */,
 				AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */,
-				CB9D1219245507660092D8CF /* covid_county.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

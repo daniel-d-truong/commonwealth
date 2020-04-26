@@ -9,32 +9,42 @@
 import Foundation
 import SwiftCSV
 
+struct CSVData {
+    var water = Int()
+    var need = Int()
+    var medNeed = Int()
+    var price = Float()
+}
+
 public class Calculate {
     
     var csv:CSV? = nil
-    var csvData:[String:[String:Int]]? = [:]
-    var priceData:[String:Float]? = [:]
+    var csvData:[String:CSVData]? = [:]
     
     var covidCsv:CSV? = nil
     var covidData:[String: Int]? = [:]
     
+    var droughtCsv:CSV? = nil
+    var droughtData:[String: Float]? = [:]
+    
     var currentCounty: String? = nil
+    var currentCoeff: Int = -1
     
     init() {
         do {
-            let urlPath = Bundle.main.url(forResource: "emergency-supplies", withExtension: "csv")
+            let urlPath = Bundle.main.url(forResource: "foodprint", withExtension: "csv")
             csv = try CSV(url: urlPath!)
     //        csv = try CSV(url: URL(fileURLWithPath: "./ViewControllers/emergency-supplies.csv"))
             let namedRows = csv!.namedRows
             for i in 0...namedRows.count - 1 {
                 let currRow = namedRows[i]
 //                print(currRow)
-                let need = Int(currRow["Need"]!)!
-                let medNeed = Int(currRow["MedNeed"]!)!
-                let demand = Int(currRow["Demand"]!)!
-                let price = Float(currRow["Price"]!)!
-                csvData![currRow["Item"]!] = ["Need": need, "MedNeed": medNeed, "Demand": demand] as [String:Int]
-                priceData![currRow["Item"]!] = price
+                let waterFactor = Int(currRow["WF"]!)!
+                print(waterFactor)
+                let need = Int(currRow["RD"]!)!
+                let medNeed = Int(currRow["MD"]!)!
+                let price = Float(currRow["P"]!)!
+                csvData![currRow["Product"]!] = CSVData(water: waterFactor, need: need, medNeed: medNeed, price: price)
             }
             
             // loads covid data
@@ -43,8 +53,20 @@ public class Calculate {
             let countyRows = covidCsv!.namedRows
             for i in 0...countyRows.count - 1 {
                 let currRow = countyRows[i]
-                let cases = Int(currRow["4/24/20"]!)
-                covidData![currRow["County Name"]!] = cases
+//                let cases = Int(currRow["4/24/20"]!)
+                let coeff = Int(currRow["Coefficient"]!)
+                covidData![currRow["County Name"]!] = coeff
+            }
+            
+            // loads drought data
+            let droughtPath = Bundle.main.url(forResource: "drought", withExtension: "csv")
+            droughtCsv = try CSV(url: droughtPath!)
+            let droughtRows = droughtCsv!.namedRows
+            for i in 0...droughtRows.count - 1 {
+                let currRow = droughtRows[i]
+//                let cases = Int(currRow["4/24/20"]!)
+                let coeff = Float(currRow["Water"]!)
+                droughtData![currRow["County"]!] = coeff
             }
             
         } catch {
@@ -52,50 +74,72 @@ public class Calculate {
         }
     }
     
-    func calcSocTaxRate(item: String, quantity: Int) -> Float {
+    func calcWaterCost(item: String) -> Float {
         let currData = csvData![item]
         
         if (currData == nil) {
             return 0
         }
         
-        let need = currData!["Need"]!
-        let medNeed = currData!["MedNeed"]!
-        let demand = currData!["Demand"]!
-        let demPerc:Float = (Float(demand) + 100.0)/100.0
-        let demandMult:Float = (currData!["Demand"]!) >= 40 ? demPerc : 1.0
-        let med:Float = (Float(medNeed)*1.5 - Float(need))/400.0
-        let medDemand = med >= 0.0 ? med : 0.0
-        let rate = Float(quantity*2)/Float(demand) * pow(demPerc, Float(quantity - 1) * (medDemand + 1) * demandMult) + medDemand
-        let needFactor:Float = Float((need + 40 >= 100) ? 100 : need + 40) / 150.0
-        // TODO: Include location as part of calculation somehow
-        return rate * needFactor
+        let wf = currData?.water
+        return Float(wf!) / 2880.0
     }
     
-    func calcSocCost(item: String, quantity: Int) -> Float {
-        let rate = self.calcSocTaxRate(item: item, quantity: quantity)
-        let price = priceData?[item]
-        if (price == nil) {
-            return 0.0
+    func calcSocialCostRate(item: String) -> Float {
+        let currData = csvData![item]
+        
+        if (currData == nil) {
+            return 0
         }
-        return (Float(quantity) * price!) * (1 + rate)
+        
+        let casesCoeff = currentCoeff
+        
+        let need = currData?.need
+        let medNeed = currData?.medNeed
+        
+        let rd = 1.0 + (1.0/Float(need!))
+        let md = 1.0 + (1.0/Float(medNeed!))
+        let locationFactor = 1.0 + (1.0/Float(casesCoeff))
+        
+        return rd * md * locationFactor
+        
+//        let need = currData!["Need"]!
+//        let medNeed = currData!["MedNeed"]!
+//        let demand = currData!["Demand"]!
+//        let demPerc:Float = (Float(demand) + 100.0)/100.0
+//        let demandMult:Float = (currData!["Demand"]!) >= 40 ? demPerc : 1.0
+//        let med:Float = (Float(medNeed)*1.5 - Float(need))/400.0
+//        let medDemand = med >= 0.0 ? med : 0.0
+//        let rate = Float(quantity*2)/Float(demand) * pow(demPerc, Float(quantity - 1) * (medDemand + 1) * demandMult) + medDemand
+//        let needFactor:Float = Float((need + 40 >= 100) ? 100 : need + 40) / 150.0
+        // TODO: Include location as part of calculation somehow
+//        Product,WF,MD,RD,Price
+        //return rate * needFactor
     }
     
-    func calcEnvCost(item: String, quantity: Int, price: Float) -> Float {
-        return 10.0
+    func calcEnvCostRate(item: String) -> Float {
+        return (droughtData?[item] ?? 1.0)
     }
     
-    func getSocCostValue(item: String, quantity: Int) -> String {
-        let rate = self.calcSocTaxRate(item: item, quantity: quantity)
-        let price = priceData?[item]
+    func calcActualTotalCost(item: String, quantity: Int) -> Float {
+        let socRate = self.calcSocialCostRate(item: item)
+        let envRate = self.calcEnvCostRate(item: item)
+        let wf = self.calcWaterCost(item: item)
+        let price = csvData?[item]?.price ?? 0.0
+        return (Float(quantity) * (price + wf)) * socRate * envRate
+    }
+    
+    func getSocialCostAmountString(item: String, quantity: Int) -> String {
+        let rate = self.calcSocialCostRate(item: item)
+        let price = csvData?[item]?.price
         if (price == nil) {
             return "0.00"
         }
         return String(format: "%.2f", (Float(quantity) * price!) * rate)
     }
     
-    func getPrice(item: String) -> String {
-        let price = priceData?[item]
+    func getPriceString(item: String) -> String {
+        let price = csvData?[item]?.price
         if (price == nil) {
             return "0.00"
         }
@@ -116,6 +160,7 @@ public class Calculate {
     
     func setCounty(_ county: String) {
         self.currentCounty = county
+        self.currentCoeff = covidData?[county] ?? -1
     }
 }
 
