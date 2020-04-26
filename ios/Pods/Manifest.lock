@@ -5,12 +5,14 @@ PODS:
   - TensorFlowLiteSwift (2.1.0):
     - TensorFlowLiteC (= 2.1.0)
   - Toast-Swift (5.0.1)
+  - TTGTagCollectionView (1.11.1)
 
 DEPENDENCIES:
   - ModernSearchBar
   - SwiftCSV
   - TensorFlowLiteSwift
   - Toast-Swift (~> 5.0.0)
+  - TTGTagCollectionView
 
 SPEC REPOS:
   trunk:
@@ -19,6 +21,7 @@ SPEC REPOS:
     - TensorFlowLiteC
     - TensorFlowLiteSwift
     - Toast-Swift
+    - TTGTagCollectionView
 
 SPEC CHECKSUMS:
   ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
@@ -26,7 +29,8 @@ SPEC CHECKSUMS:
   TensorFlowLiteC: 215603d4426d93810eace5947e317389554a4b66
   TensorFlowLiteSwift: 9d8137f18d5ac30ca89bba4fbe118e0949ac5743
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  TTGTagCollectionView: 86fcbfa6a7493c9e860b01c2e693cffc8acf6de1
 
-PODFILE CHECKSUM: b4bb05a505d6b12781082d0ac81fa1453f293311
+PODFILE CHECKSUM: 57f7bbbe02a6a16e874c90bd0ab5d4c705bb730c
 
 COCOAPODS: 1.8.4

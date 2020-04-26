@@ -9,6 +9,7 @@
 import UIKit
 import ModernSearchBar
 import CoreLocation
+import TTGTagCollectionView
 
 //Suppose this is your datamodel
 struct Store {
@@ -70,7 +71,7 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
                 let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableCell", for: indexPath) as? StoreCollectionReusableView else {
                     fatalError("Invalid view type")
             }
-            headerView.configure(places: self.storeList)
+            headerView.configure(places: self.storeList, delegate: self)
             headerView.searchBar.delegateModernSearchBar = self
             headerView.searchBar.setDatas(datas: self.itemList)
             return headerView
@@ -151,10 +152,11 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
     */
 
 }
-//
-//extension SearchViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let scale = UIScreen.main.bounds.width/3
-//        return CGSize(width: scale, height: scale )
-//    }
-//}
+
+extension SearchViewController: TTGTextTagCollectionViewDelegate {
+    func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, didTapTag tagText: String!, at index: UInt, selected: Bool, tagConfig config: TTGTextTagConfig!) {
+        print(tagText)
+        self.itemList = self.itemList.shuffled()
+        self.collectionView.reloadData()
+    }
+}
