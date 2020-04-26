@@ -38,14 +38,14 @@ public class Calculate {
             }
             
             // loads covid data
-            let covidUrlPath = Bundle.main.url(forResource: "covid_county", withExtension: "csv")
-            covidCsv = try CSV(url: covidUrlPath!)
-            let countyRows = covidCsv!.namedRows
-            for i in 0...countyRows.count - 1 {
-                let currRow = countyRows[i]
-                let cases = Int(currRow["4/24/20"]!)
-                covidData![currRow["County Name"]!] = cases
-            }
+//            let covidUrlPath = Bundle.main.url(forResource: "covid_county", withExtension: "csv")
+//            covidCsv = try CSV(url: covidUrlPath!)
+//            let countyRows = covidCsv!.namedRows
+//            for i in 0...countyRows.count - 1 {
+//                let currRow = countyRows[i]
+//                let cases = Int(currRow["4/24/20"]!)
+//                covidData![currRow["County Name"]!] = cases
+//            }
             
         } catch {
             print(error)

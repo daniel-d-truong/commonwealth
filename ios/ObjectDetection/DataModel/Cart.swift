@@ -9,17 +9,22 @@
 import Foundation
 
 class Cart {
-    var items: [ItemData]
+    var items: [String: (ItemData, Double)]
     var totalCost: Double
     
     init() {
-        items = []
+        items = [:]
         totalCost = 0
     }
     
-    func addItem(item: ItemData) {
-        items.append(item)
+    func addItem(item: ItemData, quantity: Double) {
         totalCost += item.getSocialCost().totalCost + item.getEnvironmentalCost().totalCost
+        if items[item.name] == nil {
+            items[item.name] = (item, quantity)
+        } else {
+            items[item.name]!.1 += quantity
+        }
+        
     }
     
     // TODO: Implement remove items

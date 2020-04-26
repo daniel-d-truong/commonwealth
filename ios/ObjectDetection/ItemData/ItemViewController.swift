@@ -24,6 +24,8 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var sustainableFactorLabel: UILabel!
     @IBOutlet weak var waterFootprintLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var stepperControl: UIStepper!
+    @IBOutlet weak var quantityLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -33,23 +35,33 @@ class ItemViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(self.tapPlus)), animated: true)
+        
+        // Components
         itemName.text = item
+        imageView.image = UIImage(named: item) ?? UIImage(named: "chicken")
+        
     }
     
     @objc func tapPlus() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CartTableView") as! TableViewController
-        print(vc)
-        print(self.navigationController)
         self.navigationController?.pushViewController(vc, animated: true)
-        print("hello")
 //        self.navigationController?.performSegue(withIdentifier: "goToCart", sender: self)
     }
     
     func addToCart() {
-        self.view.makeToast("Added to cart")
+//        self.view.makeToast("Added to cart")
         let itemData = ItemData(name: item)
-        cart.addItem(item: itemData)
-        print(cart.items)
+        cart.addItem(item: itemData, quantity: self.stepperControl.value)
+//        print(cart.items)
+    }
+    
+    @IBAction func addCart(_ sender: Any) {
+        addToCart()
+        tapPlus()
+    }
+    
+    @IBAction func stepperChange(_ sender: Any) {
+        self.quantityLabel.text = String(self.stepperControl.value)
     }
     
     /*
