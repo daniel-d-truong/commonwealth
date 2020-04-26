@@ -1,33 +1,35 @@
-Item,Need,MedNeed,Demand
+Item,Need,MedNeed,Demand,Price
 face mask,30,100,100,39.99
-gloves,10,100,70,
-medicine,100,50,70
-soap,100,30,70
-rubbing alcohol,50,70,100
-hand sanitizer,80,100,100
-thermometer,50,50,50
-vitamins,40,0,30
-gatorade,20,0,20
-flashlight,20,0,10
-batteries,60,0,70
-can opener,80,0,10
-garbage bags,100,0,60
-tissues,100,0,100
-toilet paper,100,0,100
-diapers,100,0,80
-disinfectant wipes,80,30,100
-disinfectant spray,80,30,100
-canned food,90,0,100
-cereal,90,0,90
-flour,100,0,100
-rice,100,0,100
-nuts,90,0,90
-dried fruit,90,0,90
-crackers,100,0,100
-bottled water,100,0,100
-baby formula,100,0,100
-pet food,80,0,100
-gowns,0,100,100
-respirator,30,100,100
-goggles,30,100,100
-face shield,0,100,100
+gloves,10,100,70,19.99
+medicine,100,50,70,10.47
+soap,100,30,70,4.49
+rubbing alcohol,50,70,100,13.99
+hand sanitizer,80,100,100,9.74
+thermometer,50,50,50,7.26
+vitamins,40,0,30,9.97
+gatorade,20,0,20,12.59
+flashlight,20,0,10,4.97
+batteries,60,0,70,13.99
+can opener,80,0,10,12.99
+garbage bags,100,0,60,12.14
+tissues,100,0,100,11.98
+toilet paper,100,0,100,7.49
+diapers,100,0,80,47.52
+disinfectant wipes,80,30,100,9.94
+disinfectant spray,80,30,100,3.28
+canned food,90,0,100,2.49
+cereal,90,0,90,3.99
+flour,100,0,100,4.32
+rice,100,0,100,8.48
+nuts,90,0,90,8.98
+dried fruit,90,0,90,5.94
+crackers,100,0,100,2.54
+bottled water,100,0,100,19.76
+baby formula,100,0,100,19.98
+pet food,80,0,100,7.78
+gowns,0,100,100,12.64
+respirator,30,100,100,37.99
+goggles,30,100,100,14.99
+face shield,0,100,100,16.99
+eggs,70,0,70,3.99
+milk,0,0,70,3.99
