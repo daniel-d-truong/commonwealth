@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fAr-0M-hdt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fAr-0M-hdt">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,47 +78,6 @@
             </objects>
             <point key="canvasLocation" x="-1159" y="361"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3nS-Gt-mo9">
-            <objects>
-                <viewController id="nYj-bM-cOm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7fk-a4-h4w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bOu-iT-5d1" customClass="ModernSearchBar" customModule="ModernSearchBar">
-                                <rect key="frame" x="10" y="255.5" width="355" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="qq3-7T-N0W"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Your Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCd-ZE-bLW">
-                                <rect key="frame" x="29" y="174" width="316" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="U13-cR-4xa" firstAttribute="trailing" secondItem="kCd-ZE-bLW" secondAttribute="trailing" constant="30" id="67v-rY-bh5"/>
-                            <constraint firstItem="U13-cR-4xa" firstAttribute="trailing" secondItem="bOu-iT-5d1" secondAttribute="trailing" constant="10" id="KSX-kf-ffU"/>
-                            <constraint firstItem="kCd-ZE-bLW" firstAttribute="top" secondItem="U13-cR-4xa" secondAttribute="top" constant="174" id="VLb-wf-AVB"/>
-                            <constraint firstItem="bOu-iT-5d1" firstAttribute="leading" secondItem="U13-cR-4xa" secondAttribute="leading" constant="10" id="VMl-2Q-svf"/>
-                            <constraint firstItem="bOu-iT-5d1" firstAttribute="top" secondItem="kCd-ZE-bLW" secondAttribute="bottom" constant="50" id="Vp8-8h-zRg"/>
-                            <constraint firstItem="kCd-ZE-bLW" firstAttribute="leading" secondItem="U13-cR-4xa" secondAttribute="leading" constant="29" id="klr-3G-GiM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="U13-cR-4xa"/>
-                    </view>
-                    <connections>
-                        <outlet property="searchBar" destination="bOu-iT-5d1" id="Uz0-lw-FLd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UrM-bu-kmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-814" y="1297"/>
-        </scene>
         <!--Search View Controller-->
         <scene sceneID="60X-Ma-XAh">
             <objects>
@@ -147,18 +106,20 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-Yn-jhR">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-Yn-jhR">
                                             <rect key="frame" x="0.0" y="49" width="115" height="102"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="IGw-lP-cCn" firstAttribute="leading" secondItem="O9D-uy-Ak7" secondAttribute="leading" constant="12" id="2lH-36-T3r"/>
+                                        <constraint firstItem="Zld-Yn-jhR" firstAttribute="leading" secondItem="O9D-uy-Ak7" secondAttribute="leading" id="5pL-qe-mez"/>
                                         <constraint firstAttribute="bottom" secondItem="IGw-lP-cCn" secondAttribute="bottom" constant="8" id="6fz-mB-BGB"/>
+                                        <constraint firstItem="Zld-Yn-jhR" firstAttribute="top" secondItem="O9D-uy-Ak7" secondAttribute="top" constant="49" id="J3y-mk-O54"/>
                                         <constraint firstAttribute="trailing" secondItem="IGw-lP-cCn" secondAttribute="trailing" constant="13" id="PNV-UR-Ab0"/>
+                                        <constraint firstAttribute="trailing" secondItem="Zld-Yn-jhR" secondAttribute="trailing" id="R1y-fg-8qL"/>
+                                        <constraint firstItem="Zld-Yn-jhR" firstAttribute="centerY" secondItem="O9D-uy-Ak7" secondAttribute="centerY" id="kQb-p8-4JB"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="customSize" width="115" height="200"/>
                                 <connections>
                                     <outlet property="imageView" destination="Zld-Yn-jhR" id="saa-bL-9SB"/>
@@ -175,28 +136,30 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yx4-oo-fKo">
-                                    <rect key="frame" x="15" y="56" width="345" height="35"/>
+                                    <rect key="frame" x="15" y="61" width="345" height="30"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="hNu-uL-08U"/>
+                                    </constraints>
                                 </view>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NrW-mb-4m3">
-                                    <rect key="frame" x="335" y="16" width="32" height="32"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NrW-mb-4m3">
+                                    <rect key="frame" x="335" y="8" width="32" height="43"/>
                                 </imageView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Ltw-JU-yFl" firstAttribute="leading" secondItem="SYO-6r-xB6" secondAttribute="leading" id="6vO-zC-cxA"/>
                                 <constraint firstAttribute="trailing" secondItem="yx4-oo-fKo" secondAttribute="trailing" constant="15" id="9Wf-Xn-Q8h"/>
-                                <constraint firstItem="yx4-oo-fKo" firstAttribute="top" secondItem="NrW-mb-4m3" secondAttribute="bottom" constant="8" id="B2A-R6-H18"/>
-                                <constraint firstItem="NrW-mb-4m3" firstAttribute="top" secondItem="SYO-6r-xB6" secondAttribute="topMargin" constant="8" id="Dxa-fz-Jx6"/>
                                 <constraint firstAttribute="trailing" secondItem="NrW-mb-4m3" secondAttribute="trailing" constant="8" id="Oqm-yf-75g"/>
-                                <constraint firstItem="yx4-oo-fKo" firstAttribute="top" secondItem="Ltw-JU-yFl" secondAttribute="bottom" id="Qgm-pq-ZFr"/>
+                                <constraint firstItem="NrW-mb-4m3" firstAttribute="top" secondItem="SYO-6r-xB6" secondAttribute="topMargin" id="Uyb-5j-zj2"/>
                                 <constraint firstItem="Ltw-JU-yFl" firstAttribute="top" secondItem="SYO-6r-xB6" secondAttribute="top" id="XRU-gV-KEn"/>
                                 <constraint firstItem="NrW-mb-4m3" firstAttribute="leading" secondItem="Ltw-JU-yFl" secondAttribute="trailing" constant="5" id="iRP-Pp-yLf"/>
                                 <constraint firstAttribute="trailing" secondItem="Ltw-JU-yFl" secondAttribute="trailing" constant="45" id="l1J-49-Aic"/>
+                                <constraint firstItem="yx4-oo-fKo" firstAttribute="top" secondItem="NrW-mb-4m3" secondAttribute="bottom" constant="10" id="mjf-KJ-BhY"/>
                                 <constraint firstAttribute="bottom" secondItem="yx4-oo-fKo" secondAttribute="bottom" id="tfn-qZ-HsX"/>
                                 <constraint firstItem="yx4-oo-fKo" firstAttribute="leading" secondItem="SYO-6r-xB6" secondAttribute="leading" constant="15" id="zTx-8l-V9S"/>
                             </constraints>
                             <connections>
-                                <outlet property="cartIcon" destination="NrW-mb-4m3" id="sas-iA-H8p"/>
+                                <outlet property="cartIcon" destination="NrW-mb-4m3" id="2a3-KU-hcU"/>
                                 <outlet property="searchBar" destination="Ltw-JU-yFl" id="8p6-uv-Q5Q"/>
                                 <outlet property="view" destination="yx4-oo-fKo" id="Awg-Rd-ed7"/>
                             </connections>
@@ -646,31 +609,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthcare Necessity: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alI-bO-OqN">
-                                <rect key="frame" x="36" y="290" width="172.5" height="20"/>
+                                <rect key="frame" x="36" y="290" width="170.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demand:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-4c-zuL">
-                                <rect key="frame" x="36" y="318" width="70" height="20"/>
+                                <rect key="frame" x="36" y="318" width="69" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID Proximity: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbp-Mq-lmx">
-                                <rect key="frame" x="36" y="346" width="133.5" height="20"/>
+                                <rect key="frame" x="36" y="346" width="137" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Footprint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivS-5E-joN">
-                                <rect key="frame" x="36" y="448" width="122" height="20"/>
+                                <rect key="frame" x="36" y="448" width="118.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJM-o2-5Sq">
-                                <rect key="frame" x="36" y="476" width="126" height="20"/>
+                                <rect key="frame" x="36" y="476" width="121" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -682,19 +645,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="None" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBK-SW-VsP">
-                                <rect key="frame" x="273.5" y="290" width="61.5" height="20"/>
+                                <rect key="frame" x="271.5" y="290" width="63.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="High" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-Gc-6aL">
-                                <rect key="frame" x="274" y="317.5" width="61" height="20"/>
+                                <rect key="frame" x="273" y="317.5" width="62" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Mild" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wft-4i-OPh">
-                                <rect key="frame" x="271" y="346" width="64" height="20"/>
+                                <rect key="frame" x="274.5" y="346" width="60.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -725,13 +688,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$4.56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKa-8i-uMB">
-                                <rect key="frame" x="287" y="559" width="55" height="24"/>
+                                <rect key="frame" x="278" y="559" width="64" height="24"/>
                                 <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3.99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpG-sI-LVM">
-                                <rect key="frame" x="36" y="559" width="55" height="24"/>
+                                <rect key="frame" x="36" y="559" width="50.5" height="24"/>
                                 <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -761,7 +724,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3.99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-ME-FYY">
-                                <rect key="frame" x="161" y="559" width="55" height="24"/>
+                                <rect key="frame" x="156.5" y="559" width="50.5" height="24"/>
                                 <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -841,6 +804,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart_icon" width="225" height="225"/>
         <image name="down_icon" width="20" height="6"/>
         <image name="tfl_logo" width="265.5" height="42.5"/>
     </resources>

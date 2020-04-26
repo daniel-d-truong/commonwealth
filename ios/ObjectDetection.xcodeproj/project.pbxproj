@@ -10,7 +10,7 @@
 		28B1D044AD9366811C4395A2 /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E86F2454114E00EF2C25 /* emergency-supplies.csv */; };
 		5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E8742454D01B00EF2C25 /* Calculate.swift */; };
-		5120E87F2455246E00EF2C25 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E87E2455246E00EF2C25 /* config.swift */; };
+		5120E87F2455246E00EF2C25 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		5120E8812455333300EF2C25 /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5120E8802455333200EF2C25 /* pricetag.png */; };
 		AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ModelDataHandler.swift */; };
 		AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59921807A7000D9E153 /* InfoCell.swift */; };
@@ -45,6 +45,7 @@
 		CB9D123B245560690092D8CF /* TTGTagCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123D245560790092D8CF /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123C245560790092D8CF /* Toast_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D124924558A1E0092D8CF /* CheckboxButton.swift */; };
+		CB9D124C245596010092D8CF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D124B245596010092D8CF /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +88,6 @@
 		CB9D121A245518270092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 		CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionReusableView.swift; sourceTree = "<group>"; };
-		CB9D123624555F250092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 		CB9D1238245560550092D8CF /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123C245560790092D8CF /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +96,7 @@
 		CB9D1246245583870092D8CF /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../Karla/Karla-Italic.ttf"; sourceTree = "<group>"; };
 		CB9D1247245583870092D8CF /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../Karla/Karla-Regular.ttf"; sourceTree = "<group>"; };
 		CB9D124924558A1E0092D8CF /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		CB9D124B245596010092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,9 +215,9 @@
 		AA9AC59D212D39FC000B4E9D /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
+				CB9D124B245596010092D8CF /* config.swift */,
 				CB9D124824558A050092D8CF /* Components */,
 				CB9D123F245582870092D8CF /* Fo */,
-				CB9D123624555F250092D8CF /* config.swift */,
 				5120E8732454D00100EF2C25 /* Calculate */,
 				CB02D1B824542C3900CF9350 /* CartView */,
 				CB02D1B524542A3B00CF9350 /* DataModel */,
@@ -305,7 +306,6 @@
 		CB9D123224555E2B0092D8CF /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				CB9D121A245518270092D8CF /* config.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				CB02D1A3245407E100CF9350 /* SearchViewController.swift in Sources */,
 				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
 				CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */,
-				5120E87F2455246E00EF2C25 /* config.swift in Sources */,
+				5120E87F2455246E00EF2C25 /* (null) in Sources */,
 				AA756E6A2150CE89004BB0BC /* OverlayView.swift in Sources */,
 				CB02D1B724542A4F00CF9350 /* Item.swift in Sources */,
 				AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */,
@@ -487,6 +487,7 @@
 				AAEF3D8D21A2BE2B0073AE1C /* UIColorExtension.swift in Sources */,
 				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
 				5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */,
+				CB9D124C245596010092D8CF /* config.swift in Sources */,
 				CB02D1A524540DDB00CF9350 /* TableViewController.swift in Sources */,
 				CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */,
 				AA9AC5D7212D43E0000B4E9D /* PreviewView.swift in Sources */,

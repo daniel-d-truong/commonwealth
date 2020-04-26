@@ -15,8 +15,8 @@ class StoreCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var searchBar: ModernSearchBar!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var cartIcon: UIImageView!
     @IBOutlet weak var view: UIView!
+    @IBOutlet weak var cartIcon: UIImageView!
     
     var placesMap: [String: Store] = [:]
     var tagView: TTGTextTagCollectionView!
@@ -55,4 +55,5 @@ class StoreCollectionReusableView: UICollectionReusableView {
         tagView.addTags(tags, with: textConfig)
     
     }
+        
 }

@@ -62,7 +62,9 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "storeItemCell", for: indexPath) as! StoreItemCollectionViewCell
         let itemStr = self.itemList[indexPath.row]
         cell.storeItemName.text = itemStr
-        cell.imageView.image = UIImage(named: "chicken")
+        
+        let image = UIImage(named: itemStr.lowercased())
+        cell.imageView.image = image ?? UIImage(named: "chicken")
         
         cell.navigateToItemController = self.navigateToItemController
         cell.addGestureRecognizer(UITapGestureRecognizer(target: cell, action: #selector(cell.handleTap(gestureRecognizer:))))
@@ -147,15 +149,7 @@ class SearchViewController: UICollectionViewController, ModernSearchBarDelegate 
         task.resume()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
