@@ -10,6 +10,7 @@
 		28B1D044AD9366811C4395A2 /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E86F2454114E00EF2C25 /* emergency-supplies.csv */; };
 		5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E8742454D01B00EF2C25 /* Calculate.swift */; };
+		5120E87F2455246E00EF2C25 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E87E2455246E00EF2C25 /* config.swift */; };
 		5120E8812455333300EF2C25 /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5120E8802455333200EF2C25 /* pricetag.png */; };
 		AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ModelDataHandler.swift */; };
 		AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59921807A7000D9E153 /* InfoCell.swift */; };
@@ -40,7 +41,6 @@
 		CB9D1219245507660092D8CF /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
 		CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122A245536030092D8CF /* StoreItemCollectionViewCell.swift */; };
 		CB9D122D2455416B0092D8CF /* StoreCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D122C2455416B0092D8CF /* StoreCollectionReusableView.swift */; };
-		CB9D123724555F250092D8CF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D123624555F250092D8CF /* config.swift */; };
 		CB9D1239245560550092D8CF /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D1238245560550092D8CF /* SwiftCSV.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123B245560690092D8CF /* TTGTagCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123D245560790092D8CF /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123C245560790092D8CF /* Toast_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -145,6 +145,14 @@
 			path = Calculate;
 			sourceTree = "<group>";
 		};
+		5120E8822455615800EF2C25 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				CB9D121A245518270092D8CF /* config.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		AA09263B212D730700D5890F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +199,7 @@
 				4C7BED66E38AFA425323282D /* Pods */,
 				23E3482DD44C542B80FE14AF /* Frameworks */,
 				CB9D123224555E2B0092D8CF /* Recovered References */,
+				5120E8822455615800EF2C25 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -464,6 +473,7 @@
 				CB02D1A3245407E100CF9350 /* SearchViewController.swift in Sources */,
 				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
 				CB9D122B245536030092D8CF /* StoreItemCollectionViewCell.swift in Sources */,
+				5120E87F2455246E00EF2C25 /* config.swift in Sources */,
 				AA756E6A2150CE89004BB0BC /* OverlayView.swift in Sources */,
 				CB02D1B724542A4F00CF9350 /* Item.swift in Sources */,
 				AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */,
@@ -471,7 +481,6 @@
 				CB02D1BA24542C6C00CF9350 /* CartTableViewCell.swift in Sources */,
 				AAC58495214797E800FB532F /* StringExtension.swift in Sources */,
 				CB02D1B22454299900CF9350 /* Cart.swift in Sources */,
-				CB9D123724555F250092D8CF /* config.swift in Sources */,
 				CB02D19C2454003F00CF9350 /* NavigationController.swift in Sources */,
 				AA756E652150C996004BB0BC /* CameraFeedManager.swift in Sources */,
 				AAAB09702189838A0015A1F2 /* CVPixelBufferExtension.swift in Sources */,
