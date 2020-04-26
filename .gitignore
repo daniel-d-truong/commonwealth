@@ -7,3 +7,7 @@ ios/Pods/Pods.xcodeproj/xcuserdata/danieltruong.xcuserdatad/xcschemes/TensorFlow
 ios/Pods/Pods.xcodeproj/xcuserdata/danieltruong.xcuserdatad/xcschemes/TensorFlowLiteSwift.xcscheme
 ios/Pods/Pods.xcodeproj/xcuserdata/danieltruong.xcuserdatad/xcschemes/Toast-Swift.xcscheme
 ios/Pods/Pods.xcodeproj/xcuserdata/danieltruong.xcuserdatad/xcschemes/xcschememanagement.plist
+
+config.swift
+ios/ObjectDetection.xcworkspace/xcuserdata/danieltruong.xcuserdatad/UserInterfaceState.xcuserstate
+ios/ObjectDetection.xcworkspace/xcuserdata/danieltruong.xcuserdatad/UserInterfaceState.xcuserstate

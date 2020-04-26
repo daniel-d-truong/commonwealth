@@ -16,6 +16,7 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var county: String? = nil
+    var currLocation: CLLocation? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,9 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func homeTap(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        if (self.currLocation != nil) {
+            vc.currentLocation = self.currLocation
+        }
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -39,9 +43,10 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.last {
- 
+
             print("Current location: \(currentLocation)")
             getZipCode(location: currentLocation, completionHandler: self.setCounty)
+            self.currLocation = currentLocation
         }
     }
     
