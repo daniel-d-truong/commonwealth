@@ -23,6 +23,13 @@ protocol InferenceViewControllerDelegate {
   func didChangeThreadCount(to count: Int)
 }
 
+struct TableData {
+    var name = String()
+    var price = String()
+    var cost = String()
+    var total = String()
+}
+
 class InferenceViewController: UIViewController {
 
   // MARK: Sections and Information to display
@@ -75,6 +82,8 @@ class InferenceViewController: UIViewController {
   var resolution: CGSize = CGSize.zero
   var threadCountLimit: Int = 0
   var currentThreadCount: Int = 0
+    
+    var data:[TableData] = []
 
   // MARK: Delegate
   var delegate: InferenceViewControllerDelegate?
@@ -118,35 +127,35 @@ extension InferenceViewController: UITableViewDelegate, UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-    guard let inferenceSection = InferenceSections(rawValue: section) else {
-      return 0
-    }
-
-    var rowCount = 0
-    switch inferenceSection {
-    case .InferenceInfo:
-      rowCount = InferenceInfo.allCases.count
-    }
+    var rowCount = data.count
+//    guard let inferenceSection = InferenceSections(rawValue: section) else {
+//      return 0
+//    }
+//
+//    switch inferenceSection {
+//    case .InferenceInfo:
+//      rowCount = InferenceInfo.allCases.count
+//    }
     return rowCount
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
-    var height: CGFloat = 0.0
+    var height: CGFloat = 30.0
 
-    guard let inferenceSection = InferenceSections(rawValue: indexPath.section) else {
-      return height
-    }
+//    guard let inferenceSection = InferenceSections(rawValue: indexPath.section) else {
+//      return height
+//    }
 
-    switch inferenceSection {
-    case .InferenceInfo:
-      if indexPath.row == InferenceInfo.allCases.count - 1 {
-        height = separatorCellHeight + bottomSpacing
-      }
-      else {
-        height = normalCellHeight
-      }
-    }
+//    switch inferenceSection {
+//    case .InferenceInfo:
+//      if indexPath.row == InferenceInfo.allCases.count - 1 {
+//        height = separatorCellHeight + bottomSpacing
+//      }
+//      else {
+//        height = normalCellHeight
+//      }
+//    }
     return height
   }
 
@@ -154,26 +163,67 @@ extension InferenceViewController: UITableViewDelegate, UITableViewDataSource {
 
     let cell = tableView.dequeueReusableCell(withIdentifier: "INFO_CELL") as! InfoCell
 
-    guard let inferenceSection = InferenceSections(rawValue: indexPath.section) else {
-      return cell
-    }
+//    guard let inferenceSection = InferenceSections(rawValue: indexPath.section) else {
+//      return cell
+//    }
+//
+//    var fieldName = ""
+//    var info = ""
+//
+//    switch inferenceSection {
+//    case .InferenceInfo:
+//      let tuple = displayStringsForInferenceInfo(atRow: indexPath.row)
+//      fieldName = tuple.0
+//      info = tuple.1
+//
+//    }
+    let currData = data[indexPath.row]
+    let info = "\(currData.price) + \(currData.cost) = \(currData.total)"
+    
+    let range = (info as NSString).range(of: "\(currData.cost)")
+    
+    let attrTxt = NSMutableAttributedString.init(string: info)
+    attrTxt.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range)
 
-    var fieldName = ""
-    var info = ""
-
-    switch inferenceSection {
-    case .InferenceInfo:
-      let tuple = displayStringsForInferenceInfo(atRow: indexPath.row)
-      fieldName = tuple.0
-      info = tuple.1
-
-    }
+    
     cell.fieldNameLabel.font = infoFont
     cell.fieldNameLabel.textColor = infoTextColor
-    cell.fieldNameLabel.text = fieldName
-    cell.infoLabel.text = info
+    cell.fieldNameLabel.text = currData.name.uppercased()
+    cell.infoLabel.attributedText = attrTxt
+    cell.accessoryType = .disclosureIndicator
     return cell
   }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
+    func tableContains(msg: TableData) -> Bool {
+        var i = 0
+        for d in data {
+            
+            if (i == 5) {
+                return false
+            }
+            
+            i+=1
+            
+            if (d.name == msg.name) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func addCell(msg: TableData) {
+        if (tableContains(msg: msg)) {
+            return
+        }
+        self.data.insert(msg, at: 0)
+        self.tableView.beginUpdates()
+        self.tableView.insertRows(at: [IndexPath.init(row: 0, section: 0)], with: .automatic)
+        self.tableView.endUpdates()
+    }
 
   // MARK: Format Display of information in the bottom sheet
   /**

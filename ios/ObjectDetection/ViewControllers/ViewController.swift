@@ -314,6 +314,13 @@ extension ViewController: CameraFeedManagerDelegate {
         
       let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
+        let iVC = inferenceViewController
+        let tprice = calculator?.getPrice(item: inference.className)
+        let tcost = calculator?.getSocCostValue(item: inference.className, quantity: 1)
+        let ttotal = String(format: "%.2f", price)
+                
+        let tdata = TableData(name: inference.className, price: tprice!, cost: tcost!, total: ttotal)
+        iVC?.addCell(msg: tdata)
         
       objectOverlays.append(objectOverlay)
     }
