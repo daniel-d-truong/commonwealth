@@ -107,7 +107,7 @@ public class Calculate {
         let medNeed = currData?.medNeed
         
         let rd = 1.0 + (1.0/Float(need!))
-        let md = 1.0 + ((1.0/Float(medNeed!)) * 2)
+        let md = 1.0 + (1.0/Float(medNeed!))
         let locationFactor = 1.0 + (1.0/Float(casesCoeff))
         print (rd, md, locationFactor, currentCounty, currentCoeff)
         
