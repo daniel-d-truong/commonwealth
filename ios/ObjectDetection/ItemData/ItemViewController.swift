@@ -34,6 +34,15 @@ class ItemViewController: UIViewController {
         
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(self.tapPlus)), animated: true)
         itemName.text = item
+        let sevData = calculator.getSeverity(item: item)
+        healthcareLabel.text = sevData?.heathNeed
+        demandLevelLabel.text = sevData?.demand
+        covidProximityLabel.text = sevData?.locationSeverity
+        waterFootprintLabel.text = "\(sevData!.waterUsage)"
+        let susString = String(format: "%.2f", (calculator.calcEnvCostRate() - 1) * 100) + "%"
+        let socString = String(format: "%.2f", (calculator.calcSocialCostRate(item: item) - 1) * 100) + "%"
+        sustainableFactorLabel.text = susString
+        socialFactorLabel.text = socString
     }
     
     @objc func tapPlus() {

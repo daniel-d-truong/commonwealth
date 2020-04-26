@@ -107,7 +107,7 @@ public class Calculate {
         let medNeed = currData?.medNeed
         
         let rd = 1.0 + (1.0/Float(need!))
-        let md = 1.0 + (1.0/Float(medNeed!))
+        let md = 1.0 + ((1.0/Float(medNeed!)) * 2)
         let locationFactor = 1.0 + (1.0/Float(casesCoeff))
         print (rd, md, locationFactor, currentCounty, currentCoeff)
         
@@ -127,13 +127,13 @@ public class Calculate {
         //return rate * needFactor
     }
     
-    func calcEnvCostRate(item: String) -> Float {
-        return (droughtData?[item] ?? 1.0)
+    func calcEnvCostRate() -> Float {
+        return (droughtData?[currentCounty!] ?? 1.0)
     }
     
     func calcActualTotalCost(item: String, quantity: Int) -> Float {
         let socRate = self.calcSocialCostRate(item: item)
-        let envRate = self.calcEnvCostRate(item: item)
+        let envRate = self.calcEnvCostRate()
         let wf = self.calcWaterCost(item: item)
         let price = csvData?[item]?.price ?? 0.0
         
@@ -146,9 +146,9 @@ public class Calculate {
         if (data == nil) {
             return nil
         }
-        let locSev = SEVERITY_LEVELS[Int(currentCoeff.rounded())]
-        let medDem = SEVERITY_LEVELS[data!.medNeed]
-        let dem = SEVERITY_LEVELS[data!.medNeed]
+        let locSev = SEVERITY_LEVELS[Int(currentCoeff.rounded()) - 1]
+        let medDem = SEVERITY_LEVELS[data!.medNeed - 1]
+        let dem = SEVERITY_LEVELS[data!.medNeed - 1]
         let water = data!.water
         return SeverityData(waterUsage: water, locationSeverity: locSev, heathNeed: medDem, demand: dem)
     }
