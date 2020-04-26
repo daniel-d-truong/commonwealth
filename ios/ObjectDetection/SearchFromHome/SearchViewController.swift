@@ -18,12 +18,14 @@ struct Store {
 }
 
 
-class SearchViewController: UIViewController, ModernSearchBarDelegate {
+class SearchViewController: UICollectionViewController, ModernSearchBarDelegate {
     
     
     @IBOutlet weak var searchBar: ModernSearchBar!
     var currentLocation: CLLocation!
     var storeList: [Store] = []
+    var itemList: [String] = []
+    var ogItemList: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,27 +33,84 @@ class SearchViewController: UIViewController, ModernSearchBarDelegate {
         print("loaded")
         
         // Do any additional setup after loading the view.
-        self.searchBar.delegateModernSearchBar = self
         
         // 1 - With an Array<String>
-        let itemList = calculator.getItemNames()
+        itemList = calculator.getItemNames()
+        ogItemList = calculator.getItemNames()
 
-        self.searchBar.setDatas(datas: itemList)
+        self.collectionView.reloadData()
+
+//        self.searchBar.setDatas(datas: itemList)
         
         self.loadPlacesNearBy()
     }
     
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemList.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "storeItemCell", for: indexPath) as! StoreItemCollectionViewCell
+        let itemStr = self.itemList[indexPath.row]
+        cell.storeItemName.text = itemStr
+        cell.navigateToItemController = self.navigateToItemController
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: cell, action: #selector(cell.handleTap(gestureRecognizer:))))
+
+        return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard
+                let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableCell", for: indexPath) as? StoreCollectionReusableView else {
+                    fatalError("Invalid view type")
+            }
+            headerView.configure(places: self.storeList)
+            headerView.searchBar.delegateModernSearchBar = self
+            headerView.searchBar.setDatas(datas: self.itemList)
+            return headerView
+        default:
+            assert(false, "Invalid element type")
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            self.itemList = self.ogItemList
+            self.collectionView.reloadData()
+        }
+    }
+    
     func onClickItemSuggestionsView(item: String) {
         print("User touched " + item)
+        self.itemList = self.ogItemList.filter{ $0.contains(item) }
+        self.collectionView.reloadData()
+    }
+    
+    func navigateToItemController(item: String) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "itemViewController") as! ItemViewController
         vc.item = item
         self.navigationController?.pushViewController(vc, animated: true)
     }
+//
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        print(itemList)
+//        self.itemList = self.ogItemList.filter{
+//            $0.hasPrefix(searchText)
+//        }
+//        print(itemList)
+//    }
 
     func loadPlacesNearBy() {
         if self.currentLocation == nil {
             return
         }
+        self.storeList = []
                 let url = URL(string: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=\(googleKey)&location=\(self.currentLocation.coordinate.latitude),\(self.currentLocation.coordinate.longitude)&radius=1500&type=grocery_or_supermarket")
                 let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
                     guard let data = data else { return }
@@ -75,7 +134,7 @@ class SearchViewController: UIViewController, ModernSearchBarDelegate {
                             
                         }
                     }
-                    print(self.storeList)
+//                    print(self.storeList)
                 }
         
         task.resume()
@@ -92,3 +151,10 @@ class SearchViewController: UIViewController, ModernSearchBarDelegate {
     */
 
 }
+//
+//extension SearchViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let scale = UIScreen.main.bounds.width/3
+//        return CGSize(width: scale, height: scale )
+//    }
+//}
