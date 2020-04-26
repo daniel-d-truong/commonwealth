@@ -31,7 +31,10 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var originalPrice: UILabel!
     @IBOutlet weak var impactPrice: UILabel!
     @IBOutlet weak var totalPrice: UILabel!
-
+    @IBOutlet weak var socialPriceTItle: UILabel!
+    @IBOutlet weak var sustainableFactorTitle: UILabel!
+    
+    
   let POPUP_TITLES = ["WATER FOOTPRINT", "HEALTHCARE USAGE", "DEMAND", "LOCATION"]
     let POPUP_VALUES = ["liters", "high, medium, low, none", "high, medium, low, none", "high, medium, low, none"]
     let POPUP_DESCRIPTIONS = ["how much water goes into producing this item", "how essential this item is for healthcare professionals", "how in demand this product is", "the risk associated with confirmed cases in the region"]
@@ -74,6 +77,12 @@ class ItemViewController: UIViewController {
         let covtap = UITapGestureRecognizer(target: self, action: #selector(self.covtapFunction))
         covidProximityLabel.isUserInteractionEnabled = true
         covidProximityLabel.addGestureRecognizer(covtap)
+        
+        socialPriceTItle.layer.cornerRadius = 20
+        socialPriceTItle.layer.masksToBounds = true
+        
+        sustainableFactorTitle.layer.cornerRadius = 20
+        sustainableFactorTitle.layer.masksToBounds = true
     }
     
     @objc func wftapFunction(sender:UITapGestureRecognizer) {
