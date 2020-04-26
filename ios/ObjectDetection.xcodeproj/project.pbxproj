@@ -10,7 +10,6 @@
 		28B1D044AD9366811C4395A2 /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */; };
 		5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5120E86F2454114E00EF2C25 /* emergency-supplies.csv */; };
 		5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5120E8742454D01B00EF2C25 /* Calculate.swift */; };
-		5120E87C2454E04100EF2C25 /* labelmapog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5120E87A2454E04100EF2C25 /* labelmapog.txt */; };
 		5120E87D2454E04100EF2C25 /* detectog.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5120E87B2454E04100EF2C25 /* detectog.tflite */; };
 		AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ModelDataHandler.swift */; };
 		AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16E59921807A7000D9E153 /* InfoCell.swift */; };
@@ -36,6 +35,9 @@
 		CB02D1B22454299900CF9350 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B12454299900CF9350 /* Cart.swift */; };
 		CB02D1B724542A4F00CF9350 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B624542A4F00CF9350 /* Item.swift */; };
 		CB02D1BA24542C6C00CF9350 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */; };
+		CB9D12112454FB750092D8CF /* labelmapog.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmapog.txt */; };
+		CB9D12132454FBCE0092D8CF /* detectog.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12122454FBCE0092D8CF /* detectog.tflite */; };
+		CB9D1219245507660092D8CF /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,6 @@
 		2ECD0590E59B7B53D135BD42 /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
 		5120E86F2454114E00EF2C25 /* emergency-supplies.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = "emergency-supplies.csv"; path = "ObjectDetection/Calculate/emergency-supplies.csv"; sourceTree = SOURCE_ROOT; };
 		5120E8742454D01B00EF2C25 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
-		5120E87A2454E04100EF2C25 /* labelmapog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labelmapog.txt; sourceTree = "<group>"; };
 		5120E87B2454E04100EF2C25 /* detectog.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detectog.tflite; sourceTree = "<group>"; };
 		7F235B083006E4388E0AA497 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA119EA1217F337300DE46CF /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
@@ -72,6 +73,9 @@
 		CB02D1B12454299900CF9350 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CB02D1B624542A4F00CF9350 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB02D1B924542C6C00CF9350 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		CB9D12102454FB750092D8CF /* labelmapog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labelmapog.txt; sourceTree = "<group>"; };
+		CB9D12122454FBCE0092D8CF /* detectog.tflite */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectog.tflite; sourceTree = "<group>"; };
+		CB9D1218245507660092D8CF /* covid_county.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = covid_county.csv; path = ../../../covid_county.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		5120E8732454D00100EF2C25 /* Calculate */ = {
 			isa = PBXGroup;
 			children = (
+				CB9D1218245507660092D8CF /* covid_county.csv */,
 				5120E86F2454114E00EF2C25 /* emergency-supplies.csv */,
 				5120E8742454D01B00EF2C25 /* Calculate.swift */,
 			);
@@ -118,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				5120E87B2454E04100EF2C25 /* detectog.tflite */,
-				5120E87A2454E04100EF2C25 /* labelmapog.txt */,
+				CB9D12102454FB750092D8CF /* labelmapog.txt */,
+				CB9D12122454FBCE0092D8CF /* detectog.tflite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,12 +322,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9D12132454FBCE0092D8CF /* detectog.tflite in Resources */,
 				5120E87D2454E04100EF2C25 /* detectog.tflite in Resources */,
 				5120E8722454CF9600EF2C25 /* emergency-supplies.csv in Resources */,
 				AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */,
 				AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */,
-				5120E87C2454E04100EF2C25 /* labelmapog.txt in Resources */,
+				CB9D12112454FB750092D8CF /* labelmapog.txt in Resources */,
 				AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */,
+				CB9D1219245507660092D8CF /* covid_county.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

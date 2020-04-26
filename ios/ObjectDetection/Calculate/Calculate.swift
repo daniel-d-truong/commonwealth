@@ -14,6 +14,11 @@ public class Calculate {
     var csv:CSV? = nil
     var csvData:[String:[String:Int]]? = [:]
     
+    var covidCsv:CSV? = nil
+    var covidData:[String: Int]? = [:]
+    
+    var currentCounty: String? = nil
+    
     init() {
         do {
             let urlPath = Bundle.main.url(forResource: "emergency-supplies", withExtension: "csv")
@@ -22,12 +27,23 @@ public class Calculate {
             let namedRows = csv!.namedRows
             for i in 0...namedRows.count - 1 {
                 let currRow = namedRows[i]
-                print(currRow)
+//                print(currRow)
                 let need = Int(currRow["Need"]!)!
                 let medNeed = Int(currRow["MedNeed"]!)!
                 let demand = Int(currRow["Demand"]!)!
                 csvData![currRow["Item"]!] = ["Need": need, "MedNeed": medNeed, "Demand": demand] as [String:Int]
             }
+            
+            // loads covid data
+            let covidUrlPath = Bundle.main.url(forResource: "covid_county", withExtension: "csv")
+            covidCsv = try CSV(url: covidUrlPath!)
+            let countyRows = covidCsv!.namedRows
+            for i in 0...countyRows.count - 1 {
+                let currRow = countyRows[i]
+                let cases = Int(currRow["4/24/20"]!)
+                covidData![currRow["County Name"]!] = cases
+            }
+            
         } catch {
             print(error)
         }
@@ -47,6 +63,8 @@ public class Calculate {
         let demandMult:Float = (currData!["Demand"]!) >= 40 ? demPerc : 1.0
         let med:Float = (Float(medNeed)*1.5 - Float(need))/400.0
         let medDemand = med >= 0.0 ? med : 0.0
+        
+        // TODO: Include location as part of calculation somehow
         return Float(quantity*2)/Float(demand) * pow(demPerc, Float(quantity - 1) * (medDemand + 1) * demandMult) + medDemand// + demand
     }
     
@@ -65,6 +83,14 @@ public class Calculate {
           value.append(i)
         }
         return value
+    }
+    
+    func getCountyCovid() -> Int {
+        return covidData![self.currentCounty!] ?? -1
+    }
+    
+    func setCounty(_ county: String) {
+        self.currentCounty = county
     }
 }
 
