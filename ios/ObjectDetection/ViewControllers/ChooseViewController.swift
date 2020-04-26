@@ -15,6 +15,7 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var atStoreButton: UIButton!
     
     let locationManager = CLLocationManager()
+    var county: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,9 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.last {
+ 
             print("Current location: \(currentLocation)")
+            getZipCode(location: currentLocation, completionHandler: self.setCounty)
         }
     }
     
@@ -46,6 +49,33 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
         print(error)
     }
     
+    func getZipCode(location: CLLocation, completionHandler: @escaping (String) -> Void){
+        
+        let url = URL(string: "https://geo.fcc.gov/api/census/area?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&format=json")
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            guard let data = data else { return }
+            
+            let resultJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+            
+            if let dictionary = resultJson as? [String: Any] {
+                if let nestedList = dictionary["results"] as? [[String: Any]] {
+                    // access nested dictionary values by key
+                    if let obj = nestedList[0] as? [String: Any] {
+                        let county = "\(obj["county_name"]!) County"
+//                        print("\(obj["county_name"]!) County")
+                        completionHandler(county)
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
+    
+    func setCounty(_ county: String) {
+        self.county = county
+        print(self.county!)
+        print(calculator.getCountyCovid(self.county!))
+    }
         
     /*
     // MARK: - Navigation
