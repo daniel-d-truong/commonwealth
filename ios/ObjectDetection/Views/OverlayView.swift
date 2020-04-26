@@ -23,6 +23,7 @@ struct ObjectOverlay {
   let nameStringSize: CGSize
   let color: UIColor
   let font: UIFont
+  let price: Float
 }
 
 /**
@@ -35,18 +36,27 @@ class OverlayView: UIView {
   private let stringBgAlpha: CGFloat
     = 0.7
   private let lineWidth: CGFloat = 3
-  private let stringFontColor = UIColor.white
+  private let stringFontColor = UIColor.black
   private let stringHorizontalSpacing: CGFloat = 13.0
   private let stringVerticalSpacing: CGFloat = 7.0
+    
+  var drawnOverlays: [UIImageView] = []
 
   override func draw(_ rect: CGRect) {
+    
+    while (drawnOverlays.count > 0) {
+        let last = drawnOverlays.removeLast()
+        last.image = nil
+        last.removeFromSuperview()
+    }
 
     // Drawing code
     for objectOverlay in objectOverlays {
 
-      drawBorders(of: objectOverlay)
-      drawBackground(of: objectOverlay)
-      drawName(of: objectOverlay)
+//      drawBorders(of: objectOverlay)
+//      drawBackground(of: objectOverlay)
+//      drawName(of: objectOverlay)
+      drawPriceTag(of: objectOverlay)
     }
   }
 
@@ -87,4 +97,22 @@ class OverlayView: UIView {
     attributedString.draw(in: stringRect)
   }
 
+    func drawPriceTag(of objectOverlay:ObjectOverlay) {
+        let imageRect = CGRect(x: objectOverlay.borderRect.origin.x + (objectOverlay.borderRect.width / 10), y: objectOverlay.borderRect.origin.y + objectOverlay.borderRect.height, width: 80, height: 80)
+        
+        let tag = UIImage(named: "pricetag.png")
+        tag?.draw(in: imageRect)
+        
+        let stringRect = CGRect(x: imageRect.origin.x + 18, y: imageRect.origin.y + 36, width: 40, height: 40)
+        let dollarAmount = String(format: "%.2f", objectOverlay.price)
+        let attributedString = NSAttributedString(string: "$\(dollarAmount)", attributes: [NSAttributedString.Key.foregroundColor : stringFontColor, NSAttributedString.Key.font : objectOverlay.font])
+        attributedString.draw(in: stringRect)
+        
+        
+        let imageView = UIImageView(frame: imageRect)
+        imageView.addSubview(UIView(frame: stringRect))
+        
+        self.addSubview(imageView)
+        drawnOverlays.append(imageView)
+    }
 }

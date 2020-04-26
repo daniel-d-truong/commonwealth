@@ -38,6 +38,8 @@ class ViewController: UIViewController {
 
   // MARK: Instance Variables
   private var initialBottomSpace: CGFloat = 0.0
+    
+    private var calculator: Calculate? = nil
 
   // Holds the results at any time
   private var result: Result?
@@ -52,6 +54,15 @@ class ViewController: UIViewController {
   // MARK: View Handling Methods
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    calculator = Calculate()
+    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 1))
+    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 2))
+    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 3))
+    
+    print(calculator?.calcSocTaxRate(item: "milk", quantity: 1))
+    print(calculator?.calcSocTaxRate(item: "milk", quantity: 2))
+    print(calculator?.calcSocTaxRate(item: "milk", quantity: 3))
 
     guard modelDataHandler != nil else {
       fatalError("Failed to load model")
@@ -295,7 +306,13 @@ extension ViewController: CameraFeedManagerDelegate {
 
       let size = string.size(usingFont: self.displayFont)
 
-      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont)
+      let price = calculator!.calcSocCost(item: inference.className, quantity: 1)
+        
+        if (price == 0.0) {
+            continue
+        }
+        
+      let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
         
       objectOverlays.append(objectOverlay)
