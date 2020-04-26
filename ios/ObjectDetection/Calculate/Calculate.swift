@@ -84,6 +84,23 @@ public class Calculate {
     func calcEnvCost(item: String, quantity: Int, price: Float) -> Float {
         return 10.0
     }
+    
+    func getSocCostValue(item: String, quantity: Int) -> String {
+        let rate = self.calcSocTaxRate(item: item, quantity: quantity)
+        let price = priceData?[item]
+        if (price == nil) {
+            return "0.00"
+        }
+        return String(format: "%.2f", (Float(quantity) * price!) * rate)
+    }
+    
+    func getPrice(item: String) -> String {
+        let price = priceData?[item]
+        if (price == nil) {
+            return "0.00"
+        }
+        return String(format: "%.2f", price!)
+    }
       
     func getItemNames() -> Array<String> {
         var value = Array<String>()
