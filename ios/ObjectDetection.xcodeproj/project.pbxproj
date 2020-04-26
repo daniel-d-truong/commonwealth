@@ -38,6 +38,7 @@
 		CB9D12112454FB750092D8CF /* labelmapog.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12102454FB750092D8CF /* labelmapog.txt */; };
 		CB9D12132454FBCE0092D8CF /* detectog.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CB9D12122454FBCE0092D8CF /* detectog.tflite */; };
 		CB9D1219245507660092D8CF /* covid_county.csv in Resources */ = {isa = PBXBuildFile; fileRef = CB9D1218245507660092D8CF /* covid_county.csv */; };
+		CB9D121B245518270092D8CF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D121A245518270092D8CF /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		CB9D12102454FB750092D8CF /* labelmapog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = labelmapog.txt; sourceTree = "<group>"; };
 		CB9D12122454FBCE0092D8CF /* detectog.tflite */ = {isa = PBXFileReference; lastKnownFileType = text; path = detectog.tflite; sourceTree = "<group>"; };
 		CB9D1218245507660092D8CF /* covid_county.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = covid_county.csv; path = ../../../covid_county.csv; sourceTree = "<group>"; };
+		CB9D121A245518270092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		AA9AC59D212D39FC000B4E9D /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
+				CB9D121A245518270092D8CF /* config.swift */,
 				5120E8732454D00100EF2C25 /* Calculate */,
 				CB02D1B824542C3900CF9350 /* CartView */,
 				CB02D1B524542A3B00CF9350 /* DataModel */,
@@ -402,6 +405,7 @@
 				CB02D1AF245424AA00CF9350 /* ChooseViewController.swift in Sources */,
 				CB02D1A3245407E100CF9350 /* SearchViewController.swift in Sources */,
 				AA9AC5E2212D4520000B4E9D /* ViewController.swift in Sources */,
+				CB9D121B245518270092D8CF /* config.swift in Sources */,
 				AA756E6A2150CE89004BB0BC /* OverlayView.swift in Sources */,
 				CB02D1B724542A4F00CF9350 /* Item.swift in Sources */,
 				AA119EA2217F337300DE46CF /* ModelDataHandler.swift in Sources */,
