@@ -38,6 +38,8 @@ class ViewController: UIViewController {
 
   // MARK: Instance Variables
   private var initialBottomSpace: CGFloat = 0.0
+    
+    private var calculator: Calculate? = nil
 
   // Holds the results at any time
   private var result: Result?
@@ -52,6 +54,8 @@ class ViewController: UIViewController {
   // MARK: View Handling Methods
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    calculator = Calculate()
 
     guard modelDataHandler != nil else {
       fatalError("Failed to load model")

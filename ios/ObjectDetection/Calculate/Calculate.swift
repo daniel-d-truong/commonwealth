@@ -35,6 +35,11 @@ public class Calculate {
     
     func calcSocTaxRate(item: String, quantity: Int) -> Float {
         let currData = csvData![item]
+        
+        if (currData == nil) {
+            return 0
+        }
+        
         let need = currData!["Need"]!
         let medNeed = currData!["MedNeed"]!
         let demand = currData!["Demand"]!

@@ -1,6 +1,6 @@
 Item,Need,MedNeed,Demand
-face mask,30,100,100
-gloves,10,100,70
+face mask,30,100,100,39.99
+gloves,10,100,70,
 medicine,100,50,70
 soap,100,30,70
 rubbing alcohol,50,70,100
