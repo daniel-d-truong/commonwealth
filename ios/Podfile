@@ -10,4 +10,6 @@ target 'ObjectDetection' do
   pod 'ModernSearchBar'
   pod "SwiftCSV"
   pod 'Toast-Swift', '~> 5.0.0'
+  pod 'TTGTagCollectionView'
+
 end

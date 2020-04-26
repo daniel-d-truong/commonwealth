@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ModernSearchBar" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftCSV" "${PODS_CONFIGURATION_BUILD_DIR}/TensorFlowLiteSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift" "${PODS_ROOT}/TensorFlowLiteC/Frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ModernSearchBar" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftCSV" "${PODS_CONFIGURATION_BUILD_DIR}/TTGTagCollectionView" "${PODS_CONFIGURATION_BUILD_DIR}/TensorFlowLiteSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift" "${PODS_ROOT}/TensorFlowLiteC/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ModernSearchBar/ModernSearchBar.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftCSV/SwiftCSV.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TensorFlowLiteSwift/TensorFlowLite.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift/Toast_Swift.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ModernSearchBar/ModernSearchBar.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftCSV/SwiftCSV.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TTGTagCollectionView/TTGTagCollectionView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TensorFlowLiteSwift/TensorFlowLite.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift/Toast_Swift.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "ModernSearchBar" -framework "QuartzCore" -framework "SwiftCSV" -framework "TensorFlowLite" -framework "TensorFlowLiteC" -framework "Toast_Swift"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "ModernSearchBar" -framework "QuartzCore" -framework "SwiftCSV" -framework "TTGTagCollectionView" -framework "TensorFlowLite" -framework "TensorFlowLiteC" -framework "Toast_Swift"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

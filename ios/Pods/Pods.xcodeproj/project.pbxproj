@@ -19,70 +19,63 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0741320F4029C077E6C87F24FBBE1921 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE60E30312816A6DA468DD8E2CF1F7 /* CSV.swift */; };
-		0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B874AD98C61C2C6CE0AF06EFEF4C1 /* MetalDelegate.swift */; };
+		057ED5018156EBB0ACD8A652CD480334 /* Pods-ObjectDetection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0741320F4029C077E6C87F24FBBE1921 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */; };
+		0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */; };
 		107C1D623E456912A26224130CBFD784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		154DA87F9CFE7544E755F5D133AD4E2E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2719B1AB2816BCA5A53BDC0603481F /* Parser.swift */; };
-		18E8699E19BF79678DE08904FCB53F2B /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62537FFC3D20F46BF31CA76921F7340C /* String+Lines.swift */; };
-		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2AD4667C7580299121463FD680E291 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CD32472BBA153B76E9867F63FD4BFB2 /* ModernSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13346F129D25E347762B4C5DC0FAE23 /* ModernSearchBar.swift */; };
-		30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C864E73490D188E854365F0F9E3DA /* QuantizationParameters.swift */; };
-		30854BE7F86FE88FBFBB846FA66EC4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F56698200A931F74D5C7FC9F0E2312 /* Assets.xcassets */; };
-		405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1368608C131EBDB1D41CD4C4C1013 /* TensorFlowLite.swift */; };
-		43F2FC0700977BE6E773D7BC8DC24244 /* ModernSearchBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E47215959B29DA52CB8290B57B9A7FC /* ModernSearchBar-dummy.m */; };
-		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D15FADC6490B9E9E42DE4522DEEE9 /* Toast.swift */; };
-		486152AFAF9E4E034EE27D19C07C605D /* ModernSearchBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B6BF21AB421036CC5596292E68F7B /* ModernSearchBarIcon.swift */; };
-		53D59BDBB7295311CDCAFC45389354E8 /* ModernSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49FBC36E0DE6255CE0B7717D06C9EB2 /* ModernSearchBarDelegate.swift */; };
-		5D7F9243C47FDAE33C85C4E38E3420F2 /* EnumeratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC786B6D12138EFF1F1A948DFEEB833 /* EnumeratedView.swift */; };
-		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B881EBAD0D27D9EB1C9B8F821E6B90 /* Toast-Swift-dummy.m */; };
-		70987FD743E4946F2F22D575A2020DF4 /* Pods-ObjectDetection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */; };
+		10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		154DA87F9CFE7544E755F5D133AD4E2E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */; };
+		18E8699E19BF79678DE08904FCB53F2B /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CD32472BBA153B76E9867F63FD4BFB2 /* ModernSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */; };
+		30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */; };
+		30854BE7F86FE88FBFBB846FA66EC4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */; };
+		3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */; };
+		43F2FC0700977BE6E773D7BC8DC24244 /* ModernSearchBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */; };
+		447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */; };
+		486152AFAF9E4E034EE27D19C07C605D /* ModernSearchBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */; };
+		53D59BDBB7295311CDCAFC45389354E8 /* ModernSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */; };
+		5D7F9243C47FDAE33C85C4E38E3420F2 /* EnumeratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */; };
+		717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */; };
+		7997B0939DE51309940EEC8D57EB37BF /* Pods-ObjectDetection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */; };
 		823D0BE312ECCBA056992019AC073D84 /* ModernSearchBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */; };
-		837565F200CD03AD302FB1FEADDBD6DB /* ParsingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715D61EE5596C27B6802110E4862A9FD /* ParsingState.swift */; };
-		86AA9FC981C6AD5D03CA1D4BFD51FD1D /* SwiftCSV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1640FCECBE9E8B1236CE717D3A071A0 /* SwiftCSV-dummy.m */; };
-		89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364836C5FB71F36332569751FD0FC389 /* Interpreter.swift */; };
-		8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2394641F18A97BCCEFB065E96F4DAE /* TensorFlowLiteSwift-dummy.m */; };
+		837565F200CD03AD302FB1FEADDBD6DB /* ParsingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */; };
+		86AA9FC981C6AD5D03CA1D4BFD51FD1D /* SwiftCSV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */; };
+		89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941406E5341E37F73961F5025AC76089 /* Interpreter.swift */; };
+		8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */; };
+		8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */; };
 		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		A255856B7E040DF47C465CB63A4D8771 /* Pods-ObjectDetection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A86CFB0F97C95200549E59C87E18DD82 /* SwiftCSV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B79BA79D38E68AC605BB456240215C0 /* SwiftCSV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8D671D5275BAD72C4947432F7466CEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		AC3A9BBBC696D7F15419180CBE24DE2A /* NamedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45168963E4D3B868DBEDDF7E36BCD429 /* NamedView.swift */; };
-		B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB3C0F4EDDF5506855420F34E3885D /* Delegate.swift */; };
+		A86CFB0F97C95200549E59C87E18DD82 /* SwiftCSV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC3A9BBBC696D7F15419180CBE24DE2A /* NamedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */; };
+		B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */; };
 		B31A8515386081B70C5A5ACC5150F203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA290B82022EABB33EEFF205CD4975FA /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0964491F98EA6796E87DC50E004EE3 /* Model.swift */; };
+		B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */; };
 		BB252E9CA67FCAAD352F777576F14A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
-		D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12767AD646B31A4DD3932165543BC714 /* ModernSearchBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA0DFEFC31411D77F5351E512392550F /* ModernSearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54597324CD2C102F6FCDC9E2B25452F8 /* ModernSearchBarCell.swift */; };
-		DF330D63807C544A2A6F4F95E8E5682F /* ModernSearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1ABBE0A07B2EB19C2759D7C9DA6D07 /* ModernSearchBarModel.swift */; };
-		E4326632509DC119D9F20A4ADF1A5EDB /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D079CE84F6A603FAE5A63D8690192 /* Description.swift */; };
-		E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F67F1D7AD636AAF186C4614262063 /* Tensor.swift */; };
-		EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F78E7555666381118298EC34C27FD2 /* InterpreterError.swift */; };
+		D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0DFEFC31411D77F5351E512392550F /* ModernSearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */; };
+		DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		DF330D63807C544A2A6F4F95E8E5682F /* ModernSearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */; };
+		E4326632509DC119D9F20A4ADF1A5EDB /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */; };
+		E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */; };
+		EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */; };
+		F1F852A36ACAC0D8C5A5E3208F5195A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D02163EED885E1151C5A23040A9A163 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 555D73F4B464D6B72099C524F25F3694;
-			remoteInfo = ModernSearchBar;
-		};
-		19771E796D63F70BAEA58CCC5A9FB286 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
-			remoteInfo = TensorFlowLiteSwift;
-		};
-		30AD3A6CC52DD19C5F43F542A4E028C5 /* PBXContainerItemProxy */ = {
+		1236E6E604C13302AD83355B39AEFC28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B7465E4C13FFC9CE6D359E31F65D6825;
 			remoteInfo = SwiftCSV;
 		};
-		484EAD1593F5E37DDDF993DA1988B825 /* PBXContainerItemProxy */ = {
+		127C72A28B97E76D4D0CF4761BC83AD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -103,86 +96,126 @@
 			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
 			remoteInfo = TensorFlowLiteC;
 		};
-		FD8C0A45210E21C5C6F85B2E6D376AF6 /* PBXContainerItemProxy */ = {
+		C2EB7F9C85E3C0A3F1DFEA431652615A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
 			remoteInfo = TensorFlowLiteC;
 		};
+		D85EE4D711424C204E79BEAC3A6E52AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		DC0D0D4C15A12145B362CA454902F147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4949B35B65C78C4D7DCBEEA66EC61D4;
+			remoteInfo = TTGTagCollectionView;
+		};
+		EF4DF690BA3D1C536479FDBB24294454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555D73F4B464D6B72099C524F25F3694;
+			remoteInfo = ModernSearchBar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F56698200A931F74D5C7FC9F0E2312 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pod/Assets.xcassets; sourceTree = "<group>"; };
-		044B6BF21AB421036CC5596292E68F7B /* ModernSearchBarIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarIcon.swift; path = Pod/Classes/ModernSearchBarIcon.swift; sourceTree = "<group>"; };
-		09DC48A9A1AAB54DB49546DB2571B677 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
-		0B0964491F98EA6796E87DC50E004EE3 /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
-		0CC786B6D12138EFF1F1A948DFEEB833 /* EnumeratedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumeratedView.swift; path = SwiftCSV/EnumeratedView.swift; sourceTree = "<group>"; };
-		12767AD646B31A4DD3932165543BC714 /* ModernSearchBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-umbrella.h"; sourceTree = "<group>"; };
-		1B2394641F18A97BCCEFB065E96F4DAE /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
-		2749F470F80996E7F20BD117CB2C0BE3 /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
-		2F1ABBE0A07B2EB19C2759D7C9DA6D07 /* ModernSearchBarModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarModel.swift; path = Pod/Classes/ModernSearchBarModel.swift; sourceTree = "<group>"; };
-		364836C5FB71F36332569751FD0FC389 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
-		42E2A981EA379B6153B9D2BD10820CD8 /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
-		45168963E4D3B868DBEDDF7E36BCD429 /* NamedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedView.swift; path = SwiftCSV/NamedView.swift; sourceTree = "<group>"; };
+		025A102DD3DB5A08D816D563CFEACB9A /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
+		059A20B6288C5BB997EC4C9B69175016 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		0DF9E887F76BB5FC08E7A8F47FA48D82 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
+		11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTextTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.h; sourceTree = "<group>"; };
+		18F594CA9A830D018C8B5C4C53CF8133 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModernSearchBar-dummy.m"; sourceTree = "<group>"; };
+		3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
+		3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGTagCollectionView.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGTagCollectionView-dummy.m"; sourceTree = "<group>"; };
+		3A0388D61955CF096D292C2D3BEA436F /* SwiftCSV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftCSV-Info.plist"; sourceTree = "<group>"; };
+		3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarDelegate.swift; path = Pod/Classes/ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
+		460EFCBB0EB06214600567AA16E6EF0E /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/experimental/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
 		4B46FEB5BCA58A381385520CA9AD54C5 /* Pods-ObjectDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectDetection.debug.xcconfig"; sourceTree = "<group>"; };
-		4E47215959B29DA52CB8290B57B9A7FC /* ModernSearchBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModernSearchBar-dummy.m"; sourceTree = "<group>"; };
 		4E7420B2CAAA45226A610471F457DD5A /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
-		516310E924E19FA7385D28D1AD6DB6EC /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
 		5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjectDetection-dummy.m"; sourceTree = "<group>"; };
-		532AD2B213CFCF8E4649C394FCF5B7EF /* SwiftCSV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCSV.modulemap; sourceTree = "<group>"; };
-		542D6FE30D1D7514AD46D9001724161F /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
-		54597324CD2C102F6FCDC9E2B25452F8 /* ModernSearchBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarCell.swift; path = Pod/Classes/ModernSearchBarCell.swift; sourceTree = "<group>"; };
-		54C4A30BE75463C3849FD35FEAAD81DB /* ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
-		569D15FADC6490B9E9E42DE4522DEEE9 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
-		578F67F1D7AD636AAF186C4614262063 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
-		5A064ECED333E0CBB7C35BA122E0E9AE /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
+		5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTagCollectionView.h; sourceTree = "<group>"; };
+		5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = SwiftCSV/Parser.swift; sourceTree = "<group>"; };
 		5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCSV.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62537FFC3D20F46BF31CA76921F7340C /* String+Lines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Lines.swift"; path = "SwiftCSV/String+Lines.swift"; sourceTree = "<group>"; };
+		5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Lines.swift"; path = "SwiftCSV/String+Lines.swift"; sourceTree = "<group>"; };
+		643907043648FCEB2ABE3A4F356B4A2F /* ModernSearchBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ModernSearchBar.modulemap; sourceTree = "<group>"; };
+		652418B9BED87F9E2D04F8CE59A7222A /* TTGTagCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGTagCollectionView.modulemap; sourceTree = "<group>"; };
 		671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjectDetection-umbrella.h"; sourceTree = "<group>"; };
-		6958FC48210A0C162D675F4092337A1C /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
-		6F1CA5D1AF1ACEC371183438329C682E /* SwiftCSV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-prefix.pch"; sourceTree = "<group>"; };
-		7148D1CFAA0E30E325617A2A3DF004BE /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
-		715D61EE5596C27B6802110E4862A9FD /* ParsingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsingState.swift; path = SwiftCSV/ParsingState.swift; sourceTree = "<group>"; };
+		69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
+		6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGTagCollectionView.xcconfig; sourceTree = "<group>"; };
+		702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarCell.swift; path = Pod/Classes/ModernSearchBarCell.swift; sourceTree = "<group>"; };
 		7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ModernSearchBar.framework; path = ModernSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		792C864E73490D188E854365F0F9E3DA /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
-		7B79BA79D38E68AC605BB456240215C0 /* SwiftCSV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-umbrella.h"; sourceTree = "<group>"; };
-		89B881EBAD0D27D9EB1C9B8F821E6B90 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
-		94F78E7555666381118298EC34C27FD2 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
+		7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-umbrella.h"; sourceTree = "<group>"; };
+		7B8794FF65FED35DDB02EAA7EB896EDB /* SwiftCSV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-prefix.pch"; sourceTree = "<group>"; };
+		7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcconfig; sourceTree = "<group>"; };
+		89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsingState.swift; path = SwiftCSV/ParsingState.swift; sourceTree = "<group>"; };
+		89F9E577F7E323BE1165EC159769F05C /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		91ACDA5B5CBDEDEEAD38DE7E84A1491C /* ModernSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-prefix.pch"; sourceTree = "<group>"; };
+		93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTagCollectionView.m; sourceTree = "<group>"; };
+		93F1A77200BB377E113D1AE39F13E9DD /* SwiftCSV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCSV.modulemap; sourceTree = "<group>"; };
+		941406E5341E37F73961F5025AC76089 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
+		964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModernSearchBar.xcconfig; sourceTree = "<group>"; };
 		98596539C9222BEC0074D27FB1B9A683 /* Pods-ObjectDetection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectDetection-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B6D079CE84F6A603FAE5A63D8690192 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = SwiftCSV/Description.swift; sourceTree = "<group>"; };
-		9C2AD4667C7580299121463FD680E291 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E6361AD0B07B1E042ED8CA496472052 /* SwiftCSV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcconfig; sourceTree = "<group>"; };
-		A49FBC36E0DE6255CE0B7717D06C9EB2 /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarDelegate.swift; path = Pod/Classes/ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
-		A5D29F8FC73422627753D5CBC466A19F /* ModernSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-prefix.pch"; sourceTree = "<group>"; };
+		9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarModel.swift; path = Pod/Classes/ModernSearchBarModel.swift; sourceTree = "<group>"; };
+		A0FE0717425344A2AEE4263204D59DAB /* TTGTagCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = SwiftCSV/Description.swift; sourceTree = "<group>"; };
+		A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pod/Assets.xcassets; sourceTree = "<group>"; };
 		A5ECBE368B835D403A534F04F0727482 /* Pods-ObjectDetection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectDetection-Info.plist"; sourceTree = "<group>"; };
 		A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjectDetection.framework; path = "Pods-ObjectDetection.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A899991C20EAB41352D00530FBA5A955 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
-		AA2719B1AB2816BCA5A53BDC0603481F /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = SwiftCSV/Parser.swift; sourceTree = "<group>"; };
-		AF14B82769722B6E77EB22A63B732A85 /* SwiftCSV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftCSV-Info.plist"; sourceTree = "<group>"; };
-		B1640FCECBE9E8B1236CE717D3A071A0 /* SwiftCSV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCSV-dummy.m"; sourceTree = "<group>"; };
-		B3E1368608C131EBDB1D41CD4C4C1013 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
-		B3FB3C0F4EDDF5506855420F34E3885D /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/experimental/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
-		B6FE60E30312816A6DA468DD8E2CF1F7 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = SwiftCSV/CSV.swift; sourceTree = "<group>"; };
+		A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumeratedView.swift; path = SwiftCSV/EnumeratedView.swift; sourceTree = "<group>"; };
+		AA631DC4D424469B82313A71A1FD8F2A /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
+		AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTextTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.m; sourceTree = "<group>"; };
+		AF329DAC02FA77EB71425680500EB30D /* ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
+		B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarIcon.swift; path = Pod/Classes/ModernSearchBarIcon.swift; sourceTree = "<group>"; };
+		B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBar.swift; path = Pod/Classes/ModernSearchBar.swift; sourceTree = "<group>"; };
+		B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		BB8B4923B6C61C0AB673116522D0985D /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
+		BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCSV-dummy.m"; sourceTree = "<group>"; };
+		BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalDelegate.swift; path = tensorflow/lite/experimental/swift/Sources/MetalDelegate.swift; sourceTree = "<group>"; };
 		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		CBE41526A88B5A324B90128AB1D12817 /* Pods-ObjectDetection-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjectDetection-frameworks.sh"; sourceTree = "<group>"; };
-		CE2CF9AE347AF08D47B9311FFF792217 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
 		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModernSearchBar.xcconfig; sourceTree = "<group>"; };
-		DA290B82022EABB33EEFF205CD4975FA /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
 		DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ModernSearchBar.bundle; path = "ModernSearchBar-ModernSearchBar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD9B874AD98C61C2C6CE0AF06EFEF4C1 /* MetalDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalDelegate.swift; path = tensorflow/lite/experimental/swift/Sources/MetalDelegate.swift; sourceTree = "<group>"; };
+		DF08EAEA45F13FB02822D3A47BCCFDCE /* TTGTagCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTGTagCollectionView-Info.plist"; sourceTree = "<group>"; };
 		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLite.framework; path = TensorFlowLiteSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E13346F129D25E347762B4C5DC0FAE23 /* ModernSearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBar.swift; path = Pod/Classes/ModernSearchBar.swift; sourceTree = "<group>"; };
 		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F2047B8725ADB98E918ED2CBEF6DC9BC /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-umbrella.h"; sourceTree = "<group>"; };
+		EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
 		F31D5BBDAC64E802B77B2B897562019A /* Pods-ObjectDetection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjectDetection.modulemap"; sourceTree = "<group>"; };
-		FC6AD65C2335CC2FB19EE72E0C2F6461 /* ModernSearchBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ModernSearchBar.modulemap; sourceTree = "<group>"; };
+		F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedView.swift; path = SwiftCSV/NamedView.swift; sourceTree = "<group>"; };
+		F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = SwiftCSV/CSV.swift; sourceTree = "<group>"; };
+		FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
 		FF06C9763012E15497ACC5796A9DF4B0 /* Pods-ObjectDetection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectDetection-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		57AD97FD4C9405D6487BCEBF4E82BFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,24 +256,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED778209BBF5599445B5DC41C5E04B1F /* Frameworks */ = {
+		F49D980412E3480476987296F6FBBF82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D671D5275BAD72C4947432F7466CEC /* Foundation.framework in Frameworks */,
+				F1F852A36ACAC0D8C5A5E3208F5195A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D1916D373FFD1DA5BBEA41D7E70EF9 /* Support Files */ = {
+		0DC7119BD96660C43678C0F6DD70D88B /* SwiftCSV */ = {
 			isa = PBXGroup;
 			children = (
-				A899991C20EAB41352D00530FBA5A955 /* TensorFlowLiteC.xcconfig */,
+				F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */,
+				A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */,
+				A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */,
+				F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */,
+				5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */,
+				89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */,
+				5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */,
+				C25F1A2481ED555CB1D35082A2D9215D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteC";
+			name = SwiftCSV;
+			path = SwiftCSV;
+			sourceTree = "<group>";
+		};
+		127CEF5EAF87C3908A0F0636F1F65A96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F9E577F7E323BE1165EC159769F05C /* TensorFlowLiteC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		142F4C5DF9B138D03116CAC4692DC7B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E44CE2C0E907B3C5FF22D47D209263AD /* ModernSearchBar */,
+				0DC7119BD96660C43678C0F6DD70D88B /* SwiftCSV */,
+				7F0AA81536C58BA5D7964AD85DB85A28 /* TensorFlowLiteC */,
+				CA66D50BBB67F19C3464E37DA8283DCB /* TensorFlowLiteSwift */,
+				C6FE2CAC05DCABAC5D61A2D1C87A3E65 /* Toast-Swift */,
+				E65CB1F53773872A257C839A8DBC4C11 /* TTGTagCollectionView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -249,21 +310,6 @@
 				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1EA107B8F5A210577F138B8AE3BF8772 /* ModernSearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				E13346F129D25E347762B4C5DC0FAE23 /* ModernSearchBar.swift */,
-				54597324CD2C102F6FCDC9E2B25452F8 /* ModernSearchBarCell.swift */,
-				A49FBC36E0DE6255CE0B7717D06C9EB2 /* ModernSearchBarDelegate.swift */,
-				044B6BF21AB421036CC5596292E68F7B /* ModernSearchBarIcon.swift */,
-				2F1ABBE0A07B2EB19C2759D7C9DA6D07 /* ModernSearchBarModel.swift */,
-				2F87A70F61A69C9861D7867DCEE47588 /* Resources */,
-				A98049A7946BA3F91813A1B62120D34C /* Support Files */,
-			);
-			name = ModernSearchBar;
-			path = ModernSearchBar;
 			sourceTree = "<group>";
 		};
 		2F2049A45E0044368568C6F9BB2E9613 /* Pods-ObjectDetection */ = {
@@ -283,20 +329,42 @@
 			path = "Target Support Files/Pods-ObjectDetection";
 			sourceTree = "<group>";
 		};
-		2F87A70F61A69C9861D7867DCEE47588 /* Resources */ = {
+		3F4A2CF519F2F0871C26A9D050DF75D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				02F56698200A931F74D5C7FC9F0E2312 /* Assets.xcassets */,
+				643907043648FCEB2ABE3A4F356B4A2F /* ModernSearchBar.modulemap */,
+				964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */,
+				29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */,
+				AF329DAC02FA77EB71425680500EB30D /* ModernSearchBar-Info.plist */,
+				91ACDA5B5CBDEDEEAD38DE7E84A1491C /* ModernSearchBar-prefix.pch */,
+				EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */,
+				AA631DC4D424469B82313A71A1FD8F2A /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/ModernSearchBar";
 			sourceTree = "<group>";
 		};
-		3FE2C9ADBAFA33F5D6192BD575D5EA46 /* Frameworks */ = {
+		4ED0BA8ECE40AB3D0C557BB542BD61F7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6958FC48210A0C162D675F4092337A1C /* TensorFlowLiteC.framework */,
+				32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteC";
+			sourceTree = "<group>";
+		};
+		5075C1DA4370E84FD348BDD8B1DFB67B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */,
+				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */,
+				A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */,
+				5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */,
+				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
+				36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
@@ -316,103 +384,77 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8927C7116701AE566B64F964BF83FD6C /* Support Files */ = {
+		7F0AA81536C58BA5D7964AD85DB85A28 /* TensorFlowLiteC */ = {
 			isa = PBXGroup;
 			children = (
-				542D6FE30D1D7514AD46D9001724161F /* TensorFlowLiteSwift.modulemap */,
-				5A064ECED333E0CBB7C35BA122E0E9AE /* TensorFlowLiteSwift.xcconfig */,
-				1B2394641F18A97BCCEFB065E96F4DAE /* TensorFlowLiteSwift-dummy.m */,
-				516310E924E19FA7385D28D1AD6DB6EC /* TensorFlowLiteSwift-Info.plist */,
-				2749F470F80996E7F20BD117CB2C0BE3 /* TensorFlowLiteSwift-prefix.pch */,
-				DA290B82022EABB33EEFF205CD4975FA /* TensorFlowLiteSwift-umbrella.h */,
+				127CEF5EAF87C3908A0F0636F1F65A96 /* Frameworks */,
+				4ED0BA8ECE40AB3D0C557BB542BD61F7 /* Support Files */,
+			);
+			name = TensorFlowLiteC;
+			path = TensorFlowLiteC;
+			sourceTree = "<group>";
+		};
+		837E8571FBF2918CF8AD84437FCA0401 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				652418B9BED87F9E2D04F8CE59A7222A /* TTGTagCollectionView.modulemap */,
+				6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */,
+				36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */,
+				DF08EAEA45F13FB02822D3A47BCCFDCE /* TTGTagCollectionView-Info.plist */,
+				A0FE0717425344A2AEE4263204D59DAB /* TTGTagCollectionView-prefix.pch */,
+				A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteSwift";
+			path = "../Target Support Files/TTGTagCollectionView";
 			sourceTree = "<group>";
 		};
-		A1572CF5C4B64AE0B7D52F375268F118 /* Products */ = {
+		A5FE24C83A3D1D3C8083408A9500FA16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */,
-				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */,
-				A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */,
-				5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */,
-				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
-				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
+				A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		A4AE042587A2B8767A086E9FB65BA1E6 /* TensorFlowLiteSwift */ = {
+		C25F1A2481ED555CB1D35082A2D9215D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3FB3C0F4EDDF5506855420F34E3885D /* Delegate.swift */,
-				364836C5FB71F36332569751FD0FC389 /* Interpreter.swift */,
-				94F78E7555666381118298EC34C27FD2 /* InterpreterError.swift */,
-				DD9B874AD98C61C2C6CE0AF06EFEF4C1 /* MetalDelegate.swift */,
-				0B0964491F98EA6796E87DC50E004EE3 /* Model.swift */,
-				792C864E73490D188E854365F0F9E3DA /* QuantizationParameters.swift */,
-				578F67F1D7AD636AAF186C4614262063 /* Tensor.swift */,
-				B3E1368608C131EBDB1D41CD4C4C1013 /* TensorFlowLite.swift */,
-				8927C7116701AE566B64F964BF83FD6C /* Support Files */,
-			);
-			name = TensorFlowLiteSwift;
-			path = TensorFlowLiteSwift;
-			sourceTree = "<group>";
-		};
-		A98049A7946BA3F91813A1B62120D34C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FC6AD65C2335CC2FB19EE72E0C2F6461 /* ModernSearchBar.modulemap */,
-				D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */,
-				4E47215959B29DA52CB8290B57B9A7FC /* ModernSearchBar-dummy.m */,
-				54C4A30BE75463C3849FD35FEAAD81DB /* ModernSearchBar-Info.plist */,
-				A5D29F8FC73422627753D5CBC466A19F /* ModernSearchBar-prefix.pch */,
-				12767AD646B31A4DD3932165543BC714 /* ModernSearchBar-umbrella.h */,
-				42E2A981EA379B6153B9D2BD10820CD8 /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */,
+				93F1A77200BB377E113D1AE39F13E9DD /* SwiftCSV.modulemap */,
+				7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */,
+				BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */,
+				3A0388D61955CF096D292C2D3BEA436F /* SwiftCSV-Info.plist */,
+				7B8794FF65FED35DDB02EAA7EB896EDB /* SwiftCSV-prefix.pch */,
+				7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ModernSearchBar";
+			path = "../Target Support Files/SwiftCSV";
 			sourceTree = "<group>";
 		};
-		B74D688EBF27DD7FBFBD25862154AEC7 /* SwiftCSV */ = {
+		C6FE2CAC05DCABAC5D61A2D1C87A3E65 /* Toast-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				B6FE60E30312816A6DA468DD8E2CF1F7 /* CSV.swift */,
-				9B6D079CE84F6A603FAE5A63D8690192 /* Description.swift */,
-				0CC786B6D12138EFF1F1A948DFEEB833 /* EnumeratedView.swift */,
-				45168963E4D3B868DBEDDF7E36BCD429 /* NamedView.swift */,
-				AA2719B1AB2816BCA5A53BDC0603481F /* Parser.swift */,
-				715D61EE5596C27B6802110E4862A9FD /* ParsingState.swift */,
-				62537FFC3D20F46BF31CA76921F7340C /* String+Lines.swift */,
-				F1E2CC19EB3AC819F5C774CD8FE4493E /* Support Files */,
-			);
-			name = SwiftCSV;
-			path = SwiftCSV;
-			sourceTree = "<group>";
-		};
-		CAEC5E84F5334D3C86BAED409DCD1E01 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F2047B8725ADB98E918ED2CBEF6DC9BC /* Toast-Swift.modulemap */,
-				CE2CF9AE347AF08D47B9311FFF792217 /* Toast-Swift.xcconfig */,
-				89B881EBAD0D27D9EB1C9B8F821E6B90 /* Toast-Swift-dummy.m */,
-				7148D1CFAA0E30E325617A2A3DF004BE /* Toast-Swift-Info.plist */,
-				09DC48A9A1AAB54DB49546DB2571B677 /* Toast-Swift-prefix.pch */,
-				9C2AD4667C7580299121463FD680E291 /* Toast-Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Toast-Swift";
-			sourceTree = "<group>";
-		};
-		CE5BCB69FCE4B90F726E5ACD6FE18394 /* Toast-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				569D15FADC6490B9E9E42DE4522DEEE9 /* Toast.swift */,
-				CAEC5E84F5334D3C86BAED409DCD1E01 /* Support Files */,
+				F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */,
+				EEEC43070FA4F909C2265BCD56DE999F /* Support Files */,
 			);
 			name = "Toast-Swift";
 			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		CA66D50BBB67F19C3464E37DA8283DCB /* TensorFlowLiteSwift */ = {
+			isa = PBXGroup;
+			children = (
+				48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */,
+				941406E5341E37F73961F5025AC76089 /* Interpreter.swift */,
+				B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */,
+				BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */,
+				FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */,
+				3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */,
+				69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */,
+				7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */,
+				F1CAF0EBCB9591B488A6E512CF99D53C /* Support Files */,
+			);
+			name = TensorFlowLiteSwift;
+			path = TensorFlowLiteSwift;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -420,64 +462,86 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				EF52A196606C9F4BFB53B0B110F0DD03 /* Pods */,
-				A1572CF5C4B64AE0B7D52F375268F118 /* Products */,
+				142F4C5DF9B138D03116CAC4692DC7B6 /* Pods */,
+				5075C1DA4370E84FD348BDD8B1DFB67B /* Products */,
 				74376FF5A9D73A3DABD4053F88F93EEC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DA9F4599D448370FEF6CD95A39420DB7 /* TensorFlowLiteC */ = {
+		E44CE2C0E907B3C5FF22D47D209263AD /* ModernSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				3FE2C9ADBAFA33F5D6192BD575D5EA46 /* Frameworks */,
-				07D1916D373FFD1DA5BBEA41D7E70EF9 /* Support Files */,
+				B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */,
+				702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */,
+				3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */,
+				B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */,
+				9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */,
+				A5FE24C83A3D1D3C8083408A9500FA16 /* Resources */,
+				3F4A2CF519F2F0871C26A9D050DF75D5 /* Support Files */,
 			);
-			name = TensorFlowLiteC;
-			path = TensorFlowLiteC;
+			name = ModernSearchBar;
+			path = ModernSearchBar;
 			sourceTree = "<group>";
 		};
-		EF52A196606C9F4BFB53B0B110F0DD03 /* Pods */ = {
+		E65CB1F53773872A257C839A8DBC4C11 /* TTGTagCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				1EA107B8F5A210577F138B8AE3BF8772 /* ModernSearchBar */,
-				B74D688EBF27DD7FBFBD25862154AEC7 /* SwiftCSV */,
-				DA9F4599D448370FEF6CD95A39420DB7 /* TensorFlowLiteC */,
-				A4AE042587A2B8767A086E9FB65BA1E6 /* TensorFlowLiteSwift */,
-				CE5BCB69FCE4B90F726E5ACD6FE18394 /* Toast-Swift */,
+				5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */,
+				93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */,
+				11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */,
+				AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */,
+				837E8571FBF2918CF8AD84437FCA0401 /* Support Files */,
 			);
-			name = Pods;
+			name = TTGTagCollectionView;
+			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
-		F1E2CC19EB3AC819F5C774CD8FE4493E /* Support Files */ = {
+		EEEC43070FA4F909C2265BCD56DE999F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				532AD2B213CFCF8E4649C394FCF5B7EF /* SwiftCSV.modulemap */,
-				9E6361AD0B07B1E042ED8CA496472052 /* SwiftCSV.xcconfig */,
-				B1640FCECBE9E8B1236CE717D3A071A0 /* SwiftCSV-dummy.m */,
-				AF14B82769722B6E77EB22A63B732A85 /* SwiftCSV-Info.plist */,
-				6F1CA5D1AF1ACEC371183438329C682E /* SwiftCSV-prefix.pch */,
-				7B79BA79D38E68AC605BB456240215C0 /* SwiftCSV-umbrella.h */,
+				059A20B6288C5BB997EC4C9B69175016 /* Toast-Swift.modulemap */,
+				D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */,
+				EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */,
+				460EFCBB0EB06214600567AA16E6EF0E /* Toast-Swift-Info.plist */,
+				18F594CA9A830D018C8B5C4C53CF8133 /* Toast-Swift-prefix.pch */,
+				3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftCSV";
+			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		F1CAF0EBCB9591B488A6E512CF99D53C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DF9E887F76BB5FC08E7A8F47FA48D82 /* TensorFlowLiteSwift.modulemap */,
+				DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */,
+				A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */,
+				025A102DD3DB5A08D816D563CFEACB9A /* TensorFlowLiteSwift-Info.plist */,
+				BB8B4923B6C61C0AB673116522D0985D /* TensorFlowLiteSwift-prefix.pch */,
+				0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		37C67B23CA11B3FCDAC59D15CFF49D1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */,
+				3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */,
+				8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		541A0721D8D26374CF7CF04B1473A45A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54E0E6BD1B0F3480717613CA6B390ED5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A255856B7E040DF47C465CB63A4D8771 /* Pods-ObjectDetection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +566,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E3C9E377A865E8E989C185970FD36B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057ED5018156EBB0ACD8A652CD480334 /* Pods-ObjectDetection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,25 +673,44 @@
 		};
 		F1314F4B4B67460E64EAA7F5BC410226 /* Pods-ObjectDetection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 564934B76705D4AD2E1D0979013A9FD2 /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */;
+			buildConfigurationList = 2E05E459FAA63D6CBA116C47FFA211BF /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */;
 			buildPhases = (
-				54E0E6BD1B0F3480717613CA6B390ED5 /* Headers */,
-				A1187C4DCD44504FE4180A0AD21D5A27 /* Sources */,
-				ED778209BBF5599445B5DC41C5E04B1F /* Frameworks */,
-				207562BB8854F978F0CFA5FCE53A3684 /* Resources */,
+				D3E3C9E377A865E8E989C185970FD36B /* Headers */,
+				95B90302B2FC640392062E6CFB7F2122 /* Sources */,
+				F49D980412E3480476987296F6FBBF82 /* Frameworks */,
+				C2E59223D4126350C932E8592774661D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				60E61882F6EB947C0770FA94A00C9669 /* PBXTargetDependency */,
-				317B9AD26EEB06AE11F356C3D5DAF4E1 /* PBXTargetDependency */,
-				8BC00C3F8318D672A9A46D79D1DA7384 /* PBXTargetDependency */,
-				2A6F6CBA418CA6B88D32084E2A268C74 /* PBXTargetDependency */,
-				51CB129B7B7377C20C2B8493F5686966 /* PBXTargetDependency */,
+				862D6462A2F08FFC592A3C91D94102E1 /* PBXTargetDependency */,
+				6E27D6D9AD0F26465A6C9EF95A674AD9 /* PBXTargetDependency */,
+				3E3A0618A7049610EE524EA178B3F30E /* PBXTargetDependency */,
+				A7980C472B438DFD16D76FAA985893DA /* PBXTargetDependency */,
+				9FDB467E5963C7B72E08301775F35E1F /* PBXTargetDependency */,
+				521E8B29DB1AFE5E5B5A52D3122AA3F3 /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjectDetection";
 			productName = "Pods-ObjectDetection";
 			productReference = A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68FEA514D73F339FF9AC5F33897597EE /* Build configuration list for PBXNativeTarget "TTGTagCollectionView" */;
+			buildPhases = (
+				37C67B23CA11B3FCDAC59D15CFF49D1F /* Headers */,
+				7A938DB253801134E7977E423ECDCB1A /* Sources */,
+				57AD97FD4C9405D6487BCEBF4E82BFB9 /* Frameworks */,
+				1133979CFCC7678D9BC28ED22730C5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTGTagCollectionView;
+			productName = TTGTagCollectionView;
+			productReference = 36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -640,7 +731,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A1572CF5C4B64AE0B7D52F375268F118 /* Products */;
+			productRefGroup = 5075C1DA4370E84FD348BDD8B1DFB67B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -651,12 +742,13 @@
 				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
 				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
 				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
+				F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		207562BB8854F978F0CFA5FCE53A3684 /* Resources */ = {
+		1133979CFCC7678D9BC28ED22730C5DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -678,6 +770,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A8645B289EFCD27C4334F0DF62673388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E59223D4126350C932E8592774661D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -727,6 +826,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A938DB253801134E7977E423ECDCB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */,
+				8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */,
+				447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F975A28455C32F4B97BDEF16945550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -740,18 +849,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95B90302B2FC640392062E6CFB7F2122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7997B0939DE51309940EEC8D57EB37BF /* Pods-ObjectDetection-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F15E5492B69DEDF1F90BC3034218E55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1187C4DCD44504FE4180A0AD21D5A27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70987FD743E4946F2F22D575A2020DF4 /* Pods-ObjectDetection-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,41 +883,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2A6F6CBA418CA6B88D32084E2A268C74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteSwift;
-			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = 19771E796D63F70BAEA58CCC5A9FB286 /* PBXContainerItemProxy */;
-		};
 		2C0A3536C2B36E80E5448910B6319EDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ModernSearchBar-ModernSearchBar";
 			target = 95E19C014BAA3A685428F6B791F62918 /* ModernSearchBar-ModernSearchBar */;
 			targetProxy = 7751268AFBAA7C2A4D54B638C3966E1D /* PBXContainerItemProxy */;
 		};
-		317B9AD26EEB06AE11F356C3D5DAF4E1 /* PBXTargetDependency */ = {
+		3E3A0618A7049610EE524EA178B3F30E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftCSV;
-			target = B7465E4C13FFC9CE6D359E31F65D6825 /* SwiftCSV */;
-			targetProxy = 30AD3A6CC52DD19C5F43F542A4E028C5 /* PBXContainerItemProxy */;
+			name = TTGTagCollectionView;
+			target = F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */;
+			targetProxy = DC0D0D4C15A12145B362CA454902F147 /* PBXContainerItemProxy */;
 		};
-		51CB129B7B7377C20C2B8493F5686966 /* PBXTargetDependency */ = {
+		521E8B29DB1AFE5E5B5A52D3122AA3F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Toast-Swift";
 			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
-			targetProxy = 484EAD1593F5E37DDDF993DA1988B825 /* PBXContainerItemProxy */;
+			targetProxy = 127C72A28B97E76D4D0CF4761BC83AD8 /* PBXContainerItemProxy */;
 		};
-		60E61882F6EB947C0770FA94A00C9669 /* PBXTargetDependency */ = {
+		6E27D6D9AD0F26465A6C9EF95A674AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCSV;
+			target = B7465E4C13FFC9CE6D359E31F65D6825 /* SwiftCSV */;
+			targetProxy = 1236E6E604C13302AD83355B39AEFC28 /* PBXContainerItemProxy */;
+		};
+		862D6462A2F08FFC592A3C91D94102E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ModernSearchBar;
 			target = 555D73F4B464D6B72099C524F25F3694 /* ModernSearchBar */;
-			targetProxy = 0D02163EED885E1151C5A23040A9A163 /* PBXContainerItemProxy */;
-		};
-		8BC00C3F8318D672A9A46D79D1DA7384 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = FD8C0A45210E21C5C6F85B2E6D376AF6 /* PBXContainerItemProxy */;
+			targetProxy = EF4DF690BA3D1C536479FDBB24294454 /* PBXContainerItemProxy */;
 		};
 		9C7C0C7FC1E8F36E403A9DA58D08A654 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -816,12 +919,24 @@
 			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
 			targetProxy = 9CD29C43799CE27402701E8FDBF5CACF /* PBXContainerItemProxy */;
 		};
+		9FDB467E5963C7B72E08301775F35E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = D85EE4D711424C204E79BEAC3A6E52AF /* PBXContainerItemProxy */;
+		};
+		A7980C472B438DFD16D76FAA985893DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = C2EB7F9C85E3C0A3F1DFEA431652615A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		107AD140FC2479E4F67BF06141EB0AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
@@ -902,7 +1017,7 @@
 		};
 		1FE38130FC1F064A594FAD1DEC876A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -937,7 +1052,7 @@
 		};
 		2705E169450EA01DED452BFCC78ACD4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A899991C20EAB41352D00530FBA5A955 /* TensorFlowLiteC.xcconfig */;
+			baseConfigurationReference = 32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -952,7 +1067,78 @@
 			};
 			name = Release;
 		};
-		35E1D572B517F36D340938ED15EC66A0 /* Release */ = {
+		3140D9AEE89D8C95CC793B5BAF5995F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = TTGTagCollectionView;
+				PRODUCT_NAME = TTGTagCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41C5E95332902399A6E7F9C4B2F6A27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCSV/SwiftCSV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCSV/SwiftCSV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftCSV/SwiftCSV.modulemap";
+				PRODUCT_MODULE_NAME = SwiftCSV;
+				PRODUCT_NAME = SwiftCSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52A9718D5153BC30732D62D6E67F7562 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E7420B2CAAA45226A610471F457DD5A /* Pods-ObjectDetection.release.xcconfig */;
 			buildSettings = {
@@ -991,43 +1177,7 @@
 			};
 			name = Release;
 		};
-		41C5E95332902399A6E7F9C4B2F6A27A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E6361AD0B07B1E042ED8CA496472052 /* SwiftCSV.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftCSV/SwiftCSV-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftCSV/SwiftCSV-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftCSV/SwiftCSV.modulemap";
-				PRODUCT_MODULE_NAME = SwiftCSV;
-				PRODUCT_NAME = SwiftCSV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4F2024DDDCC16B2F79CE15D52941F02E /* Debug */ = {
+		53BF030A703CBF4D142E70D3D9005CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B46FEB5BCA58A381385520CA9AD54C5 /* Pods-ObjectDetection.debug.xcconfig */;
 			buildSettings = {
@@ -1067,7 +1217,7 @@
 		};
 		616588543AE18358EB04CB382B0552B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A899991C20EAB41352D00530FBA5A955 /* TensorFlowLiteC.xcconfig */;
+			baseConfigurationReference = 32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1083,7 +1233,7 @@
 		};
 		72AC56CFBF2B2490EEE4729B4B567641 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A064ECED333E0CBB7C35BA122E0E9AE /* TensorFlowLiteSwift.xcconfig */;
+			baseConfigurationReference = DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1119,7 +1269,7 @@
 		};
 		98898C6F52A6A7DBE554A243A24C2F51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE2CF9AE347AF08D47B9311FFF792217 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1154,7 +1304,7 @@
 		};
 		A00DE1334BAD58AECD32A1869C3E26A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A064ECED333E0CBB7C35BA122E0E9AE /* TensorFlowLiteSwift.xcconfig */;
+			baseConfigurationReference = DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1191,7 +1341,7 @@
 		};
 		A3A00D29EA3C1F3937FAD1E9C355E77F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1225,9 +1375,45 @@
 			};
 			name = Release;
 		};
+		CBEC5FFE11BFCCEA9C9ADC506D803859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = TTGTagCollectionView;
+				PRODUCT_NAME = TTGTagCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D92696B03B4D9474BE35B26F2F1CCDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E6361AD0B07B1E042ED8CA496472052 /* SwiftCSV.xcconfig */;
+			baseConfigurationReference = 7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1322,7 +1508,7 @@
 		};
 		F3D7AA7B6797C4885E6D6232E7580830 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE2CF9AE347AF08D47B9311FFF792217 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1358,7 +1544,7 @@
 		};
 		F4D1A13CF2C6E0DC749C8D7220F91270 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D814D6003DCFA17322BF495D4C76A7F3 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
@@ -1394,6 +1580,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2E05E459FAA63D6CBA116C47FFA211BF /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53BF030A703CBF4D142E70D3D9005CD1 /* Debug */,
+				52A9718D5153BC30732D62D6E67F7562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1403,11 +1598,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		564934B76705D4AD2E1D0979013A9FD2 /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */ = {
+		68FEA514D73F339FF9AC5F33897597EE /* Build configuration list for PBXNativeTarget "TTGTagCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2024DDDCC16B2F79CE15D52941F02E /* Debug */,
-				35E1D572B517F36D340938ED15EC66A0 /* Release */,
+				3140D9AEE89D8C95CC793B5BAF5995F4 /* Debug */,
+				CBEC5FFE11BFCCEA9C9ADC506D803859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
