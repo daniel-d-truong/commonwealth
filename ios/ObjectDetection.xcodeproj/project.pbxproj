@@ -46,6 +46,8 @@
 		CB9D1239245560550092D8CF /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D1238245560550092D8CF /* SwiftCSV.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123B245560690092D8CF /* TTGTagCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CB9D123D245560790092D8CF /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9D123C245560790092D8CF /* Toast_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D124924558A1E0092D8CF /* CheckboxButton.swift */; };
+		CB9D124C245596010092D8CF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D124B245596010092D8CF /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,12 @@
 		CB9D1238245560550092D8CF /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123A245560690092D8CF /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D123C245560790092D8CF /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9D1244245583870092D8CF /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Bold.ttf"; path = "../../../Karla/Karla-Bold.ttf"; sourceTree = "<group>"; };
+		CB9D1245245583870092D8CF /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-BoldItalic.ttf"; path = "../../../Karla/Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CB9D1246245583870092D8CF /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../Karla/Karla-Italic.ttf"; sourceTree = "<group>"; };
+		CB9D1247245583870092D8CF /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../Karla/Karla-Regular.ttf"; sourceTree = "<group>"; };
+		CB9D124924558A1E0092D8CF /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		CB9D124B245596010092D8CF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = config.swift; path = ../../config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +220,9 @@
 		AA9AC59D212D39FC000B4E9D /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
-				CB9D123624555F250092D8CF /* config.swift */,
+				CB9D124B245596010092D8CF /* config.swift */,
+				CB9D124824558A050092D8CF /* Components */,
+				CB9D123F245582870092D8CF /* Fo */,
 				5120E8732454D00100EF2C25 /* Calculate */,
 				CB02D1B824542C3900CF9350 /* CartView */,
 				CB02D1B524542A3B00CF9350 /* DataModel */,
@@ -303,6 +313,25 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CB9D123F245582870092D8CF /* Fo */ = {
+			isa = PBXGroup;
+			children = (
+				CB9D1244245583870092D8CF /* Karla-Bold.ttf */,
+				CB9D1245245583870092D8CF /* Karla-BoldItalic.ttf */,
+				CB9D1246245583870092D8CF /* Karla-Italic.ttf */,
+				CB9D1247245583870092D8CF /* Karla-Regular.ttf */,
+			);
+			path = Fo;
+			sourceTree = "<group>";
+		};
+		CB9D124824558A050092D8CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB9D124924558A1E0092D8CF /* CheckboxButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,7 +494,9 @@
 				AAEF3D8D21A2BE2B0073AE1C /* UIColorExtension.swift in Sources */,
 				AA9AC59F212D39FC000B4E9D /* AppDelegate.swift in Sources */,
 				5120E8752454D01B00EF2C25 /* Calculate.swift in Sources */,
+				CB9D124C245596010092D8CF /* config.swift in Sources */,
 				CB02D1A524540DDB00CF9350 /* TableViewController.swift in Sources */,
+				CB9D124A24558A1E0092D8CF /* CheckboxButton.swift in Sources */,
 				AA9AC5D7212D43E0000B4E9D /* PreviewView.swift in Sources */,
 				AA16E59B21807BAC00D9E153 /* InfoCell.swift in Sources */,
 				AA16E59D218081AA00D9E153 /* InferenceViewController.swift in Sources */,
