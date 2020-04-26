@@ -313,9 +313,9 @@ extension ViewController: CameraFeedManagerDelegate {
 
         let price = calculator!.calcActualTotalCost(item: inference.className, quantity: 1)
         
-//        if (price == 0.0) {
-//            continue
-//        }
+        if (price == 0.0) {
+            continue
+        }
         
       let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
