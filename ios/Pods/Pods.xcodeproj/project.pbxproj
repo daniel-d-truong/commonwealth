@@ -19,68 +19,108 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		057ED5018156EBB0ACD8A652CD480334 /* Pods-ObjectDetection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0741320F4029C077E6C87F24FBBE1921 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */; };
-		0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */; };
-		107C1D623E456912A26224130CBFD784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		154DA87F9CFE7544E755F5D133AD4E2E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */; };
-		18E8699E19BF79678DE08904FCB53F2B /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */; };
-		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CD32472BBA153B76E9867F63FD4BFB2 /* ModernSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */; };
-		30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */; };
-		30854BE7F86FE88FBFBB846FA66EC4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */; };
-		3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */; };
-		43F2FC0700977BE6E773D7BC8DC24244 /* ModernSearchBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */; };
-		447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */; };
-		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */; };
-		486152AFAF9E4E034EE27D19C07C605D /* ModernSearchBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */; };
-		53D59BDBB7295311CDCAFC45389354E8 /* ModernSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */; };
-		5D7F9243C47FDAE33C85C4E38E3420F2 /* EnumeratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */; };
-		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */; };
-		717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */; };
-		7997B0939DE51309940EEC8D57EB37BF /* Pods-ObjectDetection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */; };
+		00620E71264E0E954D667CEAD6BD0E99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0425C9E43E8585385D6107D23FF9EBCD /* UIKit.framework */; };
+		019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAA28EF067800CCA90D4A4F0C55946 /* CaptureQuality.swift */; };
+		030FCBCF4FD8CD3905C39EDA654D29BD /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B003F8677F867CF52C47F60CB3AA74 /* PopupDialogDefaultViewController.swift */; };
+		0741320F4029C077E6C87F24FBBE1921 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFB94514FD04B9E0DDAB45E8BD473 /* CSV.swift */; };
+		0E993296CF79F75FB6EA210A5AC531FD /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B958FDF3FD0BC8AC974DF198600146 /* MetalDelegate.swift */; };
+		0F82656B116745EE31DB985B8096CD60 /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05EE601D4B63928B8472E7BCE32339 /* UIImageView+Calculations.swift */; };
+		107C1D623E456912A26224130CBFD784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650D99F0D6B1615F83372CC8FCDBF76F /* TTGTagCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		154DA87F9CFE7544E755F5D133AD4E2E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5AAD2C8353484A61B51979BB47E256 /* Parser.swift */; };
+		169D250E01A497F88370028FD950A37C /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F7DE25B8E6510F244D430C450AD5A /* TransitionAnimator.swift */; };
+		18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95ECF51565EC8F70303D79C2C379FE2C /* DynamicBlurView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18E8699E19BF79678DE08904FCB53F2B /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9A0484034E4979561034DA69CF523 /* String+Lines.swift */; };
+		19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A3BD5FE16F574E5C9545F290F8CC9D /* DynamicBlurView.swift */; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 575FBACBD7082DA53779AA20D42F48EA /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225555187BFD67F7F6DADEA6C73C567F /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568DE2BA6B9A654CB40ACB3AD1C568D /* PopupDialogContainerView.swift */; };
+		2CD32472BBA153B76E9867F63FD4BFB2 /* ModernSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E497AB087A9B17D8ECED70B2B6B75A /* ModernSearchBar.swift */; };
+		303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF03CE360492EBD01DCFEEF2FB9BD /* CGContext+CGImage.swift */; };
+		30806718C80ACFD657320ADD85869F3A /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD63FEAED8F09C81772E5D25AAD4F75 /* QuantizationParameters.swift */; };
+		30854BE7F86FE88FBFBB846FA66EC4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C79AA0DA8F5790E7FFC115BF20C292 /* Assets.xcassets */; };
+		37AFD441D3948E62ABBFFBDC662F6DB6 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4130888CDC0B833D3DE54836279C0B /* UIView+Animations.swift */; };
+		37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC69C5E139746EF43536BD3110259BE0 /* DynamicBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3990BEFFDBE00F753D82B904323FF1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58DE970DF7C94E8C1B6B27ABB64FFFF2 /* TTGTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		405DB926AB8462D8F5F96C5576BD24F1 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED244C926004EE29C725D2FCA7F5C08 /* TensorFlowLite.swift */; };
+		43F2FC0700977BE6E773D7BC8DC24244 /* ModernSearchBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1B3D2EE8C2A4339CC8A29B75A3B45C /* ModernSearchBar-dummy.m */; };
+		447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F4FFFB406BF04C45ADC7A08BF5076 /* TTGTextTagCollectionView.m */; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494650EA2475A5579DC076FDBEBBBEB4 /* Toast.swift */; };
+		486152AFAF9E4E034EE27D19C07C605D /* ModernSearchBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2CE1282DED789CEB90BE9C4020A8F /* ModernSearchBarIcon.swift */; };
+		4C6E460A6B911AFFD987F78AC59B7466 /* DynamicBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494DB3E1089FA2524CE1137EF0F525AD /* DynamicBlurView.framework */; };
+		535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDF94C80B0B76AB410CC4CD22F6920 /* TrackingMode.swift */; };
+		53D59BDBB7295311CDCAFC45389354E8 /* ModernSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEB90CBF54D018F6E4EC103ECDAF2E /* ModernSearchBarDelegate.swift */; };
+		5546955AFBE8D354D17380A294A25CE6 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B453DD6E7A1E5E578EA161D5351C4C /* PopupDialog.swift */; };
+		5D7F9243C47FDAE33C85C4E38E3420F2 /* EnumeratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7388F903EF113EA891C068071543D53 /* EnumeratedView.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F51E8E95E3F4F467AFE98F72CEDB3 /* Toast-Swift-dummy.m */; };
+		6C8A334B2DBD5A4AD773C91BCA1A44B3 /* Pods-ObjectDetection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972B6D8DC3D01A6D321C80C23AAC5A3 /* TTGTagCollectionView-dummy.m */; };
+		73D0683E05F3565AE7175088B7CE6DC0 /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E98CB7A24B1E01B0EC8DC8C24009018 /* PopupDialog-dummy.m */; };
+		7A009CFEBD7D09FB5DA532F54EB9FBEF /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA41CB3AA09472BE4955B36D9381C77 /* TransitionAnimations.swift */; };
+		7E7595AC3B8D7A36866789C8A07A1F91 /* Pods-ObjectDetection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */; };
+		7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8004865C5F53A83BB60ED81562085C8 /* DynamicBlurView-dummy.m */; };
+		7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89406E14B91FD707982BA0C98949EB /* UIImage+Blur.swift */; };
 		823D0BE312ECCBA056992019AC073D84 /* ModernSearchBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */; };
-		837565F200CD03AD302FB1FEADDBD6DB /* ParsingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */; };
-		86AA9FC981C6AD5D03CA1D4BFD51FD1D /* SwiftCSV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */; };
-		89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941406E5341E37F73961F5025AC76089 /* Interpreter.swift */; };
-		8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */; };
-		8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */; };
-		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		A86CFB0F97C95200549E59C87E18DD82 /* SwiftCSV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC3A9BBBC696D7F15419180CBE24DE2A /* NamedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */; };
-		B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */; };
-		B31A8515386081B70C5A5ACC5150F203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */; };
-		BB252E9CA67FCAAD352F777576F14A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
-		D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA0DFEFC31411D77F5351E512392550F /* ModernSearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */; };
-		DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		DF330D63807C544A2A6F4F95E8E5682F /* ModernSearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */; };
-		E4326632509DC119D9F20A4ADF1A5EDB /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */; };
-		E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */; };
-		EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */; };
-		F1F852A36ACAC0D8C5A5E3208F5195A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		837565F200CD03AD302FB1FEADDBD6DB /* ParsingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442762357F4048BF587AEE09A1A8514 /* ParsingState.swift */; };
+		83B9E5412A63412A151E0092BF6AF7CA /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6523087DBCEEC9C7B5C9DBD08245000B /* PresentationManager.swift */; };
+		86AA9FC981C6AD5D03CA1D4BFD51FD1D /* SwiftCSV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3357FF160FEDB16688A287AB950E503D /* SwiftCSV-dummy.m */; };
+		89AA3C20F56E771C5934B2DCAA379CC4 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDCA998EDE050223AE6470A37EBB1A8 /* Interpreter.swift */; };
+		8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F3637E960E2489F705AEAA17FFE4FD1 /* TTGTextTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DA7D5FE089801A38D7226BB422A3AE9 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEC2888C331967F62FEFA2D2F2AA0 /* TensorFlowLiteSwift-dummy.m */; };
+		8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB744A91A984E0433935167768B79178 /* TTGTagCollectionView.m */; };
+		928FFA6E7256231E743768EBC78E36A7 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9B6AB83DBB75AD8C7813460D6ADAB5 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		9B45F788C4CE05D2DC0686432FB0EE22 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BBB0F9651CBA2316D29A7A19BD214D /* Accelerate.framework */; };
+		9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0321AAE2FB868978D22AFDAF33C1E0 /* CGImage+Accelerate.swift */; };
+		A254857FE369E684CBE3B4F6F292239D /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD37A799FA8E5EA219D9AE460EAE807 /* PopupDialogDefaultButtons.swift */; };
+		A86CFB0F97C95200549E59C87E18DD82 /* SwiftCSV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 497FB5DCDA2EF91245813E6927C40B7D /* SwiftCSV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A94100505467526DB734FAB115BF715C /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67487033CA2EBC07EFB678D33B543D1 /* PopupDialogOverlayView.swift */; };
+		AC3A9BBBC696D7F15419180CBE24DE2A /* NamedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E229056EA9DEC0CB7977E0DAB7A433E /* NamedView.swift */; };
+		B18FE5EE478D75593AE4D0C6B1E6506F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		B2F489FB022F836FB35B3FEABF68903C /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EBEAFF58B6C95873255102D56E9879 /* PopupDialog+Keyboard.swift */; };
+		B30DFF9007000B08CA3613C616943724 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024028726482B3E7FFF4CE9375254DE /* Delegate.swift */; };
+		B31A8515386081B70C5A5ACC5150F203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		B4CDABD81CAD2F2287406F58F12242B0 /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D243FDB58BAD4FC47353384DB140B8D /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BD81110588FF8EF267BD6647951BD4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5704215FAB6032B7F0B9A8F70D3714D /* Model.swift */; };
+		BB252E9CA67FCAAD352F777576F14A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1D53104929DCDE4985AA2914BBB71C /* QuartzCore.framework */; };
+		C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8203513C568908ABC69FEC1584CD6F /* BlurLayer.swift */; };
+		C9D87D93855954B4B23CDB647DEB7D0E /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798DAC76656AA7A8B7FB29A7A1DF0462 /* PopupDialogDefaultView.swift */; };
+		D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C06B45BB6394E1B19426FE901F0169 /* ModernSearchBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82DC5AAA5AA0E1A33EFE457C493D755 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB9AEB450DFD47EC32A1CCDF7FCE44 /* UIViewController+Visibility.swift */; };
+		D9F9E9336475EE7188F8F29DDE0A2EB1 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B413E00FC068DBBC4742EAD458738A5D /* PresentationController.swift */; };
+		DA0DFEFC31411D77F5351E512392550F /* ModernSearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB367CE82883F678B1C3001439C356F2 /* ModernSearchBarCell.swift */; };
+		DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		DCEE2E72739ADFB7890C33BC35099C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B37E244CFA020178554D002E842A39A /* Foundation.framework */; };
+		DF330D63807C544A2A6F4F95E8E5682F /* ModernSearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D2AA2DCDA8FF625D6E81A238F89F2 /* ModernSearchBarModel.swift */; };
+		E4326632509DC119D9F20A4ADF1A5EDB /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985058BB6016EDF42BAC159EFE1B65B1 /* Description.swift */; };
+		E677E11481A8D892C303DCE89B807BA6 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94C5764AF320A91A38802F49D3486D /* Tensor.swift */; };
+		EC78D8A8141D8268D6382866CDF8F16A /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E324067D85129B86EAEDB5623656724 /* InteractiveTransition.swift */; };
+		EE7899063120392B7E2BECDA0C8D3086 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA72739FD19D38A3265ED5C8EB92D516 /* InterpreterError.swift */; };
+		F82E29CC1BF7165FF77D9C4A387357A7 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB1FDBA16A1C2C1DCB2F7C5120F0711 /* PopupDialogButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1236E6E604C13302AD83355B39AEFC28 /* PBXContainerItemProxy */ = {
+		2763FCA98104FEE93EB4E54D32DDF454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
+			remoteInfo = DynamicBlurView;
+		};
+		2926CD575EC08FC278C35B8D12F56F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4949B35B65C78C4D7DCBEEA66EC61D4;
+			remoteInfo = TTGTagCollectionView;
+		};
+		2FFD87A81B7EC9C5204392E9FC8ACDE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B7465E4C13FFC9CE6D359E31F65D6825;
 			remoteInfo = SwiftCSV;
-		};
-		127C72A28B97E76D4D0CF4761BC83AD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
-			remoteInfo = "Toast-Swift";
 		};
 		7751268AFBAA7C2A4D54B638C3966E1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -89,6 +129,13 @@
 			remoteGlobalIDString = 95E19C014BAA3A685428F6B791F62918;
 			remoteInfo = "ModernSearchBar-ModernSearchBar";
 		};
+		78C97DDA09D48ABC8B17562E51E68D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E71929B582F8CD57B3DC1FD6560F047;
+			remoteInfo = PopupDialog;
+		};
 		9CD29C43799CE27402701E8FDBF5CACF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -96,115 +143,163 @@
 			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
 			remoteInfo = TensorFlowLiteC;
 		};
-		C2EB7F9C85E3C0A3F1DFEA431652615A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		D85EE4D711424C204E79BEAC3A6E52AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
-			remoteInfo = TensorFlowLiteSwift;
-		};
-		DC0D0D4C15A12145B362CA454902F147 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4949B35B65C78C4D7DCBEEA66EC61D4;
-			remoteInfo = TTGTagCollectionView;
-		};
-		EF4DF690BA3D1C536479FDBB24294454 /* PBXContainerItemProxy */ = {
+		9E41929D967A5D6289E7E61CBC98B675 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 555D73F4B464D6B72099C524F25F3694;
 			remoteInfo = ModernSearchBar;
 		};
+		B49FA4CC809EEEDC37C8955583E96020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		B8440A93F1DB048B76F99CA8B0C5BE9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		DE435FE07DB4A0F8F8AE4635114FBB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		E7188F5B282B9130CA3E6265BB871908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
+			remoteInfo = DynamicBlurView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025A102DD3DB5A08D816D563CFEACB9A /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
-		059A20B6288C5BB997EC4C9B69175016 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
-		0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
-		0DF9E887F76BB5FC08E7A8F47FA48D82 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
-		11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTextTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.h; sourceTree = "<group>"; };
-		18F594CA9A830D018C8B5C4C53CF8133 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
-		29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModernSearchBar-dummy.m"; sourceTree = "<group>"; };
-		3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
-		32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
-		3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		03BBB0F9651CBA2316D29A7A19BD214D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0425C9E43E8585385D6107D23FF9EBCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		04C9A0484034E4979561034DA69CF523 /* String+Lines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Lines.swift"; path = "SwiftCSV/String+Lines.swift"; sourceTree = "<group>"; };
+		0972B6D8DC3D01A6D321C80C23AAC5A3 /* TTGTagCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGTagCollectionView-dummy.m"; sourceTree = "<group>"; };
+		0BA41CB3AA09472BE4955B36D9381C77 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		0BB48908A2624E3B8AAF4B16840F0607 /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
+		0DCC7512045D5A439D47F1176BEFFBE1 /* DynamicBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-prefix.pch"; sourceTree = "<group>"; };
+		1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModernSearchBar.xcconfig; sourceTree = "<group>"; };
+		1BBB9AEB450DFD47EC32A1CCDF7FCE44 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		1E05EE601D4B63928B8472E7BCE32339 /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
+		2024028726482B3E7FFF4CE9375254DE /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/experimental/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
+		24A3BD5FE16F574E5C9545F290F8CC9D /* DynamicBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicBlurView.swift; path = Sources/DynamicBlurView/DynamicBlurView.swift; sourceTree = "<group>"; };
+		266FCED5B9D6FB529092DBE19F011811 /* TTGTagCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTGTagCollectionView-Info.plist"; sourceTree = "<group>"; };
+		2E5F51E8E95E3F4F467AFE98F72CEDB3 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		2F8203513C568908ABC69FEC1584CD6F /* BlurLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurLayer.swift; path = Sources/DynamicBlurView/BlurLayer.swift; sourceTree = "<group>"; };
+		3018BD7C92BB14B9D1E92A231EDE9CD9 /* TTGTagCollectionView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGTagCollectionView.xcconfig; sourceTree = "<group>"; };
+		321B35044032C337E90F9D0749401BDA /* ModernSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-prefix.pch"; sourceTree = "<group>"; };
+		3357FF160FEDB16688A287AB950E503D /* SwiftCSV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCSV-dummy.m"; sourceTree = "<group>"; };
+		335CE27CA0BCAB1E839996140F688B55 /* ModernSearchBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ModernSearchBar.modulemap; sourceTree = "<group>"; };
+		34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGTagCollectionView.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGTagCollectionView-dummy.m"; sourceTree = "<group>"; };
-		3A0388D61955CF096D292C2D3BEA436F /* SwiftCSV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftCSV-Info.plist"; sourceTree = "<group>"; };
-		3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarDelegate.swift; path = Pod/Classes/ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
-		460EFCBB0EB06214600567AA16E6EF0E /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
-		48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/experimental/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
+		37B453DD6E7A1E5E578EA161D5351C4C /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
+		39E497AB087A9B17D8ECED70B2B6B75A /* ModernSearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBar.swift; path = Pod/Classes/ModernSearchBar.swift; sourceTree = "<group>"; };
+		3D5AAD2C8353484A61B51979BB47E256 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = SwiftCSV/Parser.swift; sourceTree = "<group>"; };
+		3E324067D85129B86EAEDB5623656724 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
+		43889F5B3A0AEDFBDD30E67A2EDC00AA /* DynamicBlurView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicBlurView.modulemap; sourceTree = "<group>"; };
+		48084598A4D69C89693E2D196048F764 /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
+		494650EA2475A5579DC076FDBEBBBEB4 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		494DB3E1089FA2524CE1137EF0F525AD /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497FB5DCDA2EF91245813E6927C40B7D /* SwiftCSV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-umbrella.h"; sourceTree = "<group>"; };
 		4B46FEB5BCA58A381385520CA9AD54C5 /* Pods-ObjectDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD63FEAED8F09C81772E5D25AAD4F75 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/experimental/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		4E229056EA9DEC0CB7977E0DAB7A433E /* NamedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedView.swift; path = SwiftCSV/NamedView.swift; sourceTree = "<group>"; };
+		4E5D2AA2DCDA8FF625D6E81A238F89F2 /* ModernSearchBarModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarModel.swift; path = Pod/Classes/ModernSearchBarModel.swift; sourceTree = "<group>"; };
 		4E7420B2CAAA45226A610471F457DD5A /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
+		4E98CB7A24B1E01B0EC8DC8C24009018 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
 		5231F1BDB458414A3B4D7223003A43DB /* Pods-ObjectDetection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjectDetection-dummy.m"; sourceTree = "<group>"; };
-		5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTagCollectionView.h; sourceTree = "<group>"; };
-		5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = SwiftCSV/Parser.swift; sourceTree = "<group>"; };
+		540C15C22D8C78C9A6001383EBAE5CA8 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		575FBACBD7082DA53779AA20D42F48EA /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		58DE970DF7C94E8C1B6B27ABB64FFFF2 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTagCollectionView.h; sourceTree = "<group>"; };
 		5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCSV.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Lines.swift"; path = "SwiftCSV/String+Lines.swift"; sourceTree = "<group>"; };
-		643907043648FCEB2ABE3A4F356B4A2F /* ModernSearchBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ModernSearchBar.modulemap; sourceTree = "<group>"; };
-		652418B9BED87F9E2D04F8CE59A7222A /* TTGTagCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGTagCollectionView.modulemap; sourceTree = "<group>"; };
+		5CD1D3AAEB83FA8879B87E4472A9C15C /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
+		5D8B6B225E4110B81B758820FC024776 /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
+		5D9B6AB83DBB75AD8C7813460D6ADAB5 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
+		5F03F04B4FF6D6FC670E113A0CE8C5AC /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		5F1D53104929DCDE4985AA2914BBB71C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		625D79096634F03800D1C84A581115EC /* DynamicBlurView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicBlurView-Info.plist"; sourceTree = "<group>"; };
+		650D99F0D6B1615F83372CC8FCDBF76F /* TTGTagCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		6523087DBCEEC9C7B5C9DBD08245000B /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
 		671D401916B9AE26C61A85B39D7D5A03 /* Pods-ObjectDetection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjectDetection-umbrella.h"; sourceTree = "<group>"; };
-		69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
-		6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGTagCollectionView.xcconfig; sourceTree = "<group>"; };
-		702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarCell.swift; path = Pod/Classes/ModernSearchBarCell.swift; sourceTree = "<group>"; };
 		7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ModernSearchBar.framework; path = ModernSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
-		7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-umbrella.h"; sourceTree = "<group>"; };
-		7B8794FF65FED35DDB02EAA7EB896EDB /* SwiftCSV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-prefix.pch"; sourceTree = "<group>"; };
-		7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcconfig; sourceTree = "<group>"; };
-		89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsingState.swift; path = SwiftCSV/ParsingState.swift; sourceTree = "<group>"; };
-		89F9E577F7E323BE1165EC159769F05C /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
-		91ACDA5B5CBDEDEEAD38DE7E84A1491C /* ModernSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-prefix.pch"; sourceTree = "<group>"; };
-		93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTagCollectionView.m; sourceTree = "<group>"; };
-		93F1A77200BB377E113D1AE39F13E9DD /* SwiftCSV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCSV.modulemap; sourceTree = "<group>"; };
-		941406E5341E37F73961F5025AC76089 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
-		964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModernSearchBar.xcconfig; sourceTree = "<group>"; };
+		798DAC76656AA7A8B7FB29A7A1DF0462 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
+		7C697648A9A3220EC9E56F885B8BF1A4 /* SwiftCSV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCSV.modulemap; sourceTree = "<group>"; };
+		7E2AF03CE360492EBD01DCFEEF2FB9BD /* CGContext+CGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGContext+CGImage.swift"; path = "Sources/DynamicBlurView/CGContext+CGImage.swift"; sourceTree = "<group>"; };
+		7EDED747D640A05574C5392862921CA3 /* TensorFlowLiteC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.xcconfig; sourceTree = "<group>"; };
+		7F3637E960E2489F705AEAA17FFE4FD1 /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTextTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.h; sourceTree = "<group>"; };
+		8012AAD30A6001B659E41EFC8577E9CC /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		830CFB94514FD04B9E0DDAB45E8BD473 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = SwiftCSV/CSV.swift; sourceTree = "<group>"; };
+		84BAA28EF067800CCA90D4A4F0C55946 /* CaptureQuality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureQuality.swift; path = Sources/DynamicBlurView/CaptureQuality.swift; sourceTree = "<group>"; };
+		86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicBlurView.framework; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D243FDB58BAD4FC47353384DB140B8D /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		8F2A24360B2B4ED712573A32ED081565 /* DynamicBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.xcconfig; sourceTree = "<group>"; };
+		94B003F8677F867CF52C47F60CB3AA74 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		95ECF51565EC8F70303D79C2C379FE2C /* DynamicBlurView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-umbrella.h"; sourceTree = "<group>"; };
+		985058BB6016EDF42BAC159EFE1B65B1 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = SwiftCSV/Description.swift; sourceTree = "<group>"; };
 		98596539C9222BEC0074D27FB1B9A683 /* Pods-ObjectDetection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectDetection-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A4130888CDC0B833D3DE54836279C0B /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		9B37E244CFA020178554D002E842A39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C89406E14B91FD707982BA0C98949EB /* UIImage+Blur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Blur.swift"; path = "Sources/DynamicBlurView/UIImage+Blur.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarModel.swift; path = Pod/Classes/ModernSearchBarModel.swift; sourceTree = "<group>"; };
-		A0FE0717425344A2AEE4263204D59DAB /* TTGTagCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-prefix.pch"; sourceTree = "<group>"; };
-		A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = SwiftCSV/Description.swift; sourceTree = "<group>"; };
-		A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
-		A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pod/Assets.xcassets; sourceTree = "<group>"; };
+		A06B01443AF88640C405714FCB420657 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
 		A5ECBE368B835D403A534F04F0727482 /* Pods-ObjectDetection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjectDetection-Info.plist"; sourceTree = "<group>"; };
 		A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjectDetection.framework; path = "Pods-ObjectDetection.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-umbrella.h"; sourceTree = "<group>"; };
-		A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumeratedView.swift; path = SwiftCSV/EnumeratedView.swift; sourceTree = "<group>"; };
-		AA631DC4D424469B82313A71A1FD8F2A /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
-		AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTextTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.m; sourceTree = "<group>"; };
-		AF329DAC02FA77EB71425680500EB30D /* ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
-		B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarIcon.swift; path = Pod/Classes/ModernSearchBarIcon.swift; sourceTree = "<group>"; };
-		B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBar.swift; path = Pod/Classes/ModernSearchBar.swift; sourceTree = "<group>"; };
-		B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
-		BB8B4923B6C61C0AB673116522D0985D /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
-		BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCSV-dummy.m"; sourceTree = "<group>"; };
-		BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalDelegate.swift; path = tensorflow/lite/experimental/swift/Sources/MetalDelegate.swift; sourceTree = "<group>"; };
-		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A9C7B381323194D5BA99C9DDD191C72B /* PopupDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PopupDialog-Info.plist"; sourceTree = "<group>"; };
+		A9EBEAFF58B6C95873255102D56E9879 /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		ACB1FDBA16A1C2C1DCB2F7C5120F0711 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		ADFDF94C80B0B76AB410CC4CD22F6920 /* TrackingMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackingMode.swift; path = Sources/DynamicBlurView/TrackingMode.swift; sourceTree = "<group>"; };
+		AFD37A799FA8E5EA219D9AE460EAE807 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		B3B1803AE54F0E51DB37C2AB03146A34 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		B413E00FC068DBBC4742EAD458738A5D /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		B4BCFFC542C75B95CF599DF83BC38937 /* TTGTagCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGTagCollectionView.modulemap; sourceTree = "<group>"; };
+		B55A757656D382E949A8F87576046978 /* TensorFlowLiteC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TensorFlowLiteC.framework; path = Frameworks/TensorFlowLiteC.framework; sourceTree = "<group>"; };
+		B69F7DE25B8E6510F244D430C450AD5A /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		B8A2CE1282DED789CEB90BE9C4020A8F /* ModernSearchBarIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarIcon.swift; path = Pod/Classes/ModernSearchBarIcon.swift; sourceTree = "<group>"; };
+		BA72739FD19D38A3265ED5C8EB92D516 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/experimental/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		BC69C5E139746EF43536BD3110259BE0 /* DynamicBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DynamicBlurView.h; path = Sources/DynamicBlurView/DynamicBlurView.h; sourceTree = "<group>"; };
+		C442762357F4048BF587AEE09A1A8514 /* ParsingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsingState.swift; path = SwiftCSV/ParsingState.swift; sourceTree = "<group>"; };
+		C674835650E4CFC641530F7356C41F2A /* SwiftCSV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCSV-prefix.pch"; sourceTree = "<group>"; };
+		C7388F903EF113EA891C068071543D53 /* EnumeratedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumeratedView.swift; path = SwiftCSV/EnumeratedView.swift; sourceTree = "<group>"; };
+		C7C79AA0DA8F5790E7FFC115BF20C292 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pod/Assets.xcassets; sourceTree = "<group>"; };
+		CB367CE82883F678B1C3001439C356F2 /* ModernSearchBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarCell.swift; path = Pod/Classes/ModernSearchBarCell.swift; sourceTree = "<group>"; };
 		CBE41526A88B5A324B90128AB1D12817 /* Pods-ObjectDetection-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjectDetection-frameworks.sh"; sourceTree = "<group>"; };
-		D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
 		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.xcconfig; sourceTree = "<group>"; };
+		D6C06B45BB6394E1B19426FE901F0169 /* ModernSearchBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-umbrella.h"; sourceTree = "<group>"; };
+		D74C6EC75B21B4804A09E5B00661B387 /* ModernSearchBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ModernSearchBar-Info.plist"; sourceTree = "<group>"; };
+		D7DEB90CBF54D018F6E4EC103ECDAF2E /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarDelegate.swift; path = Pod/Classes/ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
+		D9B958FDF3FD0BC8AC974DF198600146 /* MetalDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalDelegate.swift; path = tensorflow/lite/experimental/swift/Sources/MetalDelegate.swift; sourceTree = "<group>"; };
+		DB744A91A984E0433935167768B79178 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTagCollectionView.m; sourceTree = "<group>"; };
 		DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ModernSearchBar.bundle; path = "ModernSearchBar-ModernSearchBar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF08EAEA45F13FB02822D3A47BCCFDCE /* TTGTagCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTGTagCollectionView-Info.plist"; sourceTree = "<group>"; };
+		DEC5BE6A9B1EDF34DA4DAF2F078C5A97 /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
+		DED244C926004EE29C725D2FCA7F5C08 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/experimental/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
+		DEDCA998EDE050223AE6470A37EBB1A8 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/experimental/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
+		DF5F4FFFB406BF04C45ADC7A08BF5076 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTextTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.m; sourceTree = "<group>"; };
 		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLite.framework; path = TensorFlowLiteSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-umbrella.h"; sourceTree = "<group>"; };
-		EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
-		F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		E2DF990B5815C49E7809A645289DB717 /* SwiftCSV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftCSV-Info.plist"; sourceTree = "<group>"; };
+		E5704215FAB6032B7F0B9A8F70D3714D /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
+		E5E91C53C476824E7B0A9D3288509462 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		E67487033CA2EBC07EFB678D33B543D1 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		E8004865C5F53A83BB60ED81562085C8 /* DynamicBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicBlurView-dummy.m"; sourceTree = "<group>"; };
+		EB2CEC2888C331967F62FEFA2D2F2AA0 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		EFA08577E21032F12444F40CF42418A3 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
 		F31D5BBDAC64E802B77B2B897562019A /* Pods-ObjectDetection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjectDetection.modulemap"; sourceTree = "<group>"; };
-		F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedView.swift; path = SwiftCSV/NamedView.swift; sourceTree = "<group>"; };
-		F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = SwiftCSV/CSV.swift; sourceTree = "<group>"; };
-		FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/experimental/swift/Sources/Model.swift; sourceTree = "<group>"; };
+		F408C02591AF5D0403ADF840AC1419F9 /* TTGTagCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		F568DE2BA6B9A654CB40ACB3AD1C568D /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		FBAD918DBFC1BC3557303E0C7444B456 /* SwiftCSV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcconfig; sourceTree = "<group>"; };
+		FE94C5764AF320A91A38802F49D3486D /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/experimental/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
+		FF0321AAE2FB868978D22AFDAF33C1E0 /* CGImage+Accelerate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Accelerate.swift"; path = "Sources/DynamicBlurView/CGImage+Accelerate.swift"; sourceTree = "<group>"; };
 		FF06C9763012E15497ACC5796A9DF4B0 /* Pods-ObjectDetection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectDetection-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF1B3D2EE8C2A4339CC8A29B75A3B45C /* ModernSearchBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModernSearchBar-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +317,23 @@
 			files = (
 				95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */,
 				C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6974D012AEB9C249BD3446C1E56D5A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3990BEFFDBE00F753D82B904323FF1BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F47434089ED97AF48B711E9FADBF5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6E460A6B911AFFD987F78AC59B7466 /* DynamicBlurView.framework in Frameworks */,
+				B18FE5EE478D75593AE4D0C6B1E6506F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,60 +368,140 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F49D980412E3480476987296F6FBBF82 /* Frameworks */ = {
+		E65CA3D384260DCB7B4E58EA234ABEA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F852A36ACAC0D8C5A5E3208F5195A6 /* Foundation.framework in Frameworks */,
+				9B45F788C4CE05D2DC0686432FB0EE22 /* Accelerate.framework in Frameworks */,
+				DCEE2E72739ADFB7890C33BC35099C01 /* Foundation.framework in Frameworks */,
+				00620E71264E0E954D667CEAD6BD0E99 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DC7119BD96660C43678C0F6DD70D88B /* SwiftCSV */ = {
+		03E76375248070079A33BEF4A4852102 /* TTGTagCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				F9AD02F453797C95487FCCA355FD20D2 /* CSV.swift */,
-				A35A59E58346D3763E7F9BACB4F266E1 /* Description.swift */,
-				A9FDE837CBE79BCF0AC6154414A8D73B /* EnumeratedView.swift */,
-				F353C7D10DD14E7DD9B1D72BFD78362D /* NamedView.swift */,
-				5657DE3512FBFBB3E6A619C6E24143D2 /* Parser.swift */,
-				89C23C9CC109AD9889F93DE5E482C6C3 /* ParsingState.swift */,
-				5FD4D9415EE3380DF9D1029781357BAD /* String+Lines.swift */,
-				C25F1A2481ED555CB1D35082A2D9215D /* Support Files */,
+				58DE970DF7C94E8C1B6B27ABB64FFFF2 /* TTGTagCollectionView.h */,
+				DB744A91A984E0433935167768B79178 /* TTGTagCollectionView.m */,
+				7F3637E960E2489F705AEAA17FFE4FD1 /* TTGTextTagCollectionView.h */,
+				DF5F4FFFB406BF04C45ADC7A08BF5076 /* TTGTextTagCollectionView.m */,
+				09D56F7C055B55420D150BBCB315AEDB /* Support Files */,
 			);
-			name = SwiftCSV;
-			path = SwiftCSV;
+			name = TTGTagCollectionView;
+			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
-		127CEF5EAF87C3908A0F0636F1F65A96 /* Frameworks */ = {
+		07217B05C429BF08B9F6070F857455BE /* TensorFlowLiteSwift */ = {
 			isa = PBXGroup;
 			children = (
-				89F9E577F7E323BE1165EC159769F05C /* TensorFlowLiteC.framework */,
+				2024028726482B3E7FFF4CE9375254DE /* Delegate.swift */,
+				DEDCA998EDE050223AE6470A37EBB1A8 /* Interpreter.swift */,
+				BA72739FD19D38A3265ED5C8EB92D516 /* InterpreterError.swift */,
+				D9B958FDF3FD0BC8AC974DF198600146 /* MetalDelegate.swift */,
+				E5704215FAB6032B7F0B9A8F70D3714D /* Model.swift */,
+				4BD63FEAED8F09C81772E5D25AAD4F75 /* QuantizationParameters.swift */,
+				FE94C5764AF320A91A38802F49D3486D /* Tensor.swift */,
+				DED244C926004EE29C725D2FCA7F5C08 /* TensorFlowLite.swift */,
+				6B904A0675E8E5A6208E2B53446DC2B9 /* Support Files */,
+			);
+			name = TensorFlowLiteSwift;
+			path = TensorFlowLiteSwift;
+			sourceTree = "<group>";
+		};
+		09D56F7C055B55420D150BBCB315AEDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4BCFFC542C75B95CF599DF83BC38937 /* TTGTagCollectionView.modulemap */,
+				3018BD7C92BB14B9D1E92A231EDE9CD9 /* TTGTagCollectionView.xcconfig */,
+				0972B6D8DC3D01A6D321C80C23AAC5A3 /* TTGTagCollectionView-dummy.m */,
+				266FCED5B9D6FB529092DBE19F011811 /* TTGTagCollectionView-Info.plist */,
+				F408C02591AF5D0403ADF840AC1419F9 /* TTGTagCollectionView-prefix.pch */,
+				650D99F0D6B1615F83372CC8FCDBF76F /* TTGTagCollectionView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTGTagCollectionView";
+			sourceTree = "<group>";
+		};
+		09FD76CD4BB6891FFF7496386D998312 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				494650EA2475A5579DC076FDBEBBBEB4 /* Toast.swift */,
+				2CDBCE4F8BC0F391AB78889D66885FDA /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		1887499F7C2B9EE90DAC55BE67DE7130 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C697648A9A3220EC9E56F885B8BF1A4 /* SwiftCSV.modulemap */,
+				FBAD918DBFC1BC3557303E0C7444B456 /* SwiftCSV.xcconfig */,
+				3357FF160FEDB16688A287AB950E503D /* SwiftCSV-dummy.m */,
+				E2DF990B5815C49E7809A645289DB717 /* SwiftCSV-Info.plist */,
+				C674835650E4CFC641530F7356C41F2A /* SwiftCSV-prefix.pch */,
+				497FB5DCDA2EF91245813E6927C40B7D /* SwiftCSV-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftCSV";
+			sourceTree = "<group>";
+		};
+		1DBF79B7400207A9DE7DFAF1ECBCFCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */,
+				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */,
+				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */,
+				A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */,
+				34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */,
+				5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */,
+				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
+				36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23B00C2FB74741DAD4A4F9AA8E8B4303 /* DynamicBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				2F8203513C568908ABC69FEC1584CD6F /* BlurLayer.swift */,
+				84BAA28EF067800CCA90D4A4F0C55946 /* CaptureQuality.swift */,
+				7E2AF03CE360492EBD01DCFEEF2FB9BD /* CGContext+CGImage.swift */,
+				FF0321AAE2FB868978D22AFDAF33C1E0 /* CGImage+Accelerate.swift */,
+				BC69C5E139746EF43536BD3110259BE0 /* DynamicBlurView.h */,
+				24A3BD5FE16F574E5C9545F290F8CC9D /* DynamicBlurView.swift */,
+				ADFDF94C80B0B76AB410CC4CD22F6920 /* TrackingMode.swift */,
+				9C89406E14B91FD707982BA0C98949EB /* UIImage+Blur.swift */,
+				415E11A14552F38D2494A4591308222F /* Support Files */,
+			);
+			name = DynamicBlurView;
+			path = DynamicBlurView;
+			sourceTree = "<group>";
+		};
+		27928152023D26FD676EADBB40D780B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55A757656D382E949A8F87576046978 /* TensorFlowLiteC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		142F4C5DF9B138D03116CAC4692DC7B6 /* Pods */ = {
+		2CDBCE4F8BC0F391AB78889D66885FDA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E44CE2C0E907B3C5FF22D47D209263AD /* ModernSearchBar */,
-				0DC7119BD96660C43678C0F6DD70D88B /* SwiftCSV */,
-				7F0AA81536C58BA5D7964AD85DB85A28 /* TensorFlowLiteC */,
-				CA66D50BBB67F19C3464E37DA8283DCB /* TensorFlowLiteSwift */,
-				C6FE2CAC05DCABAC5D61A2D1C87A3E65 /* Toast-Swift */,
-				E65CB1F53773872A257C839A8DBC4C11 /* TTGTagCollectionView */,
+				B3B1803AE54F0E51DB37C2AB03146A34 /* Toast-Swift.modulemap */,
+				A06B01443AF88640C405714FCB420657 /* Toast-Swift.xcconfig */,
+				2E5F51E8E95E3F4F467AFE98F72CEDB3 /* Toast-Swift-dummy.m */,
+				5F03F04B4FF6D6FC670E113A0CE8C5AC /* Toast-Swift-Info.plist */,
+				E5E91C53C476824E7B0A9D3288509462 /* Toast-Swift-prefix.pch */,
+				575FBACBD7082DA53779AA20D42F48EA /* Toast-Swift-umbrella.h */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
 			sourceTree = "<group>";
 		};
 		2F2049A45E0044368568C6F9BB2E9613 /* Pods-ObjectDetection */ = {
@@ -329,51 +521,72 @@
 			path = "Target Support Files/Pods-ObjectDetection";
 			sourceTree = "<group>";
 		};
-		3F4A2CF519F2F0871C26A9D050DF75D5 /* Support Files */ = {
+		415E11A14552F38D2494A4591308222F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				643907043648FCEB2ABE3A4F356B4A2F /* ModernSearchBar.modulemap */,
-				964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */,
-				29C36DD086E2F94A3571B48109AAE9C3 /* ModernSearchBar-dummy.m */,
-				AF329DAC02FA77EB71425680500EB30D /* ModernSearchBar-Info.plist */,
-				91ACDA5B5CBDEDEEAD38DE7E84A1491C /* ModernSearchBar-prefix.pch */,
-				EB39B29A43315E8B290681631EAB59E7 /* ModernSearchBar-umbrella.h */,
-				AA631DC4D424469B82313A71A1FD8F2A /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */,
+				43889F5B3A0AEDFBDD30E67A2EDC00AA /* DynamicBlurView.modulemap */,
+				8F2A24360B2B4ED712573A32ED081565 /* DynamicBlurView.xcconfig */,
+				E8004865C5F53A83BB60ED81562085C8 /* DynamicBlurView-dummy.m */,
+				625D79096634F03800D1C84A581115EC /* DynamicBlurView-Info.plist */,
+				0DCC7512045D5A439D47F1176BEFFBE1 /* DynamicBlurView-prefix.pch */,
+				95ECF51565EC8F70303D79C2C379FE2C /* DynamicBlurView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ModernSearchBar";
+			path = "../Target Support Files/DynamicBlurView";
 			sourceTree = "<group>";
 		};
-		4ED0BA8ECE40AB3D0C557BB542BD61F7 /* Support Files */ = {
+		63FA41C0F93FEC17C0F6D9BCD716821D /* ModernSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */,
+				39E497AB087A9B17D8ECED70B2B6B75A /* ModernSearchBar.swift */,
+				CB367CE82883F678B1C3001439C356F2 /* ModernSearchBarCell.swift */,
+				D7DEB90CBF54D018F6E4EC103ECDAF2E /* ModernSearchBarDelegate.swift */,
+				B8A2CE1282DED789CEB90BE9C4020A8F /* ModernSearchBarIcon.swift */,
+				4E5D2AA2DCDA8FF625D6E81A238F89F2 /* ModernSearchBarModel.swift */,
+				E40842F613D3832E52C3598D04A36261 /* Resources */,
+				B3FFC6A19F20B0DA04BDE901391862B8 /* Support Files */,
+			);
+			name = ModernSearchBar;
+			path = ModernSearchBar;
+			sourceTree = "<group>";
+		};
+		6B904A0675E8E5A6208E2B53446DC2B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFA08577E21032F12444F40CF42418A3 /* TensorFlowLiteSwift.modulemap */,
+				48084598A4D69C89693E2D196048F764 /* TensorFlowLiteSwift.xcconfig */,
+				EB2CEC2888C331967F62FEFA2D2F2AA0 /* TensorFlowLiteSwift-dummy.m */,
+				5CD1D3AAEB83FA8879B87E4472A9C15C /* TensorFlowLiteSwift-Info.plist */,
+				5D8B6B225E4110B81B758820FC024776 /* TensorFlowLiteSwift-prefix.pch */,
+				8D243FDB58BAD4FC47353384DB140B8D /* TensorFlowLiteSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteSwift";
+			sourceTree = "<group>";
+		};
+		6D695AAFE8B80C0057E944A7CA692CAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EDED747D640A05574C5392862921CA3 /* TensorFlowLiteC.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TensorFlowLiteC";
 			sourceTree = "<group>";
 		};
-		5075C1DA4370E84FD348BDD8B1DFB67B /* Products */ = {
+		7313EB966DC8646D6743295744F9B62D /* SwiftCSV */ = {
 			isa = PBXGroup;
 			children = (
-				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */,
-				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */,
-				A61D0D7F5B6DAF1465BDDD88ECA673B0 /* Pods_ObjectDetection.framework */,
-				5A6CBEAC7212DCE694AC28667C36D2D1 /* SwiftCSV.framework */,
-				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLite.framework */,
-				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
-				36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */,
+				830CFB94514FD04B9E0DDAB45E8BD473 /* CSV.swift */,
+				985058BB6016EDF42BAC159EFE1B65B1 /* Description.swift */,
+				C7388F903EF113EA891C068071543D53 /* EnumeratedView.swift */,
+				4E229056EA9DEC0CB7977E0DAB7A433E /* NamedView.swift */,
+				3D5AAD2C8353484A61B51979BB47E256 /* Parser.swift */,
+				C442762357F4048BF587AEE09A1A8514 /* ParsingState.swift */,
+				04C9A0484034E4979561034DA69CF523 /* String+Lines.swift */,
+				1887499F7C2B9EE90DAC55BE67DE7130 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
-				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
-			);
-			name = iOS;
+			name = SwiftCSV;
+			path = SwiftCSV;
 			sourceTree = "<group>";
 		};
 		74376FF5A9D73A3DABD4053F88F93EEC /* Targets Support Files */ = {
@@ -384,144 +597,122 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7F0AA81536C58BA5D7964AD85DB85A28 /* TensorFlowLiteC */ = {
+		941ACE92A004632234F2133059CBA519 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				127CEF5EAF87C3908A0F0636F1F65A96 /* Frameworks */,
-				4ED0BA8ECE40AB3D0C557BB542BD61F7 /* Support Files */,
+				540C15C22D8C78C9A6001383EBAE5CA8 /* PopupDialog.modulemap */,
+				8012AAD30A6001B659E41EFC8577E9CC /* PopupDialog.xcconfig */,
+				4E98CB7A24B1E01B0EC8DC8C24009018 /* PopupDialog-dummy.m */,
+				A9C7B381323194D5BA99C9DDD191C72B /* PopupDialog-Info.plist */,
+				DEC5BE6A9B1EDF34DA4DAF2F078C5A97 /* PopupDialog-prefix.pch */,
+				5D9B6AB83DBB75AD8C7813460D6ADAB5 /* PopupDialog-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopupDialog";
+			sourceTree = "<group>";
+		};
+		A0AADD2FC66DCEDDA8C6DEE28BAD8BED /* TensorFlowLiteC */ = {
+			isa = PBXGroup;
+			children = (
+				27928152023D26FD676EADBB40D780B7 /* Frameworks */,
+				6D695AAFE8B80C0057E944A7CA692CAA /* Support Files */,
 			);
 			name = TensorFlowLiteC;
 			path = TensorFlowLiteC;
 			sourceTree = "<group>";
 		};
-		837E8571FBF2918CF8AD84437FCA0401 /* Support Files */ = {
+		B3FFC6A19F20B0DA04BDE901391862B8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				652418B9BED87F9E2D04F8CE59A7222A /* TTGTagCollectionView.modulemap */,
-				6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */,
-				36ECBC0356670168E7FD7E3F12BDA414 /* TTGTagCollectionView-dummy.m */,
-				DF08EAEA45F13FB02822D3A47BCCFDCE /* TTGTagCollectionView-Info.plist */,
-				A0FE0717425344A2AEE4263204D59DAB /* TTGTagCollectionView-prefix.pch */,
-				A755053E89EDE307E64AFA36DDD8905C /* TTGTagCollectionView-umbrella.h */,
+				335CE27CA0BCAB1E839996140F688B55 /* ModernSearchBar.modulemap */,
+				1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */,
+				FF1B3D2EE8C2A4339CC8A29B75A3B45C /* ModernSearchBar-dummy.m */,
+				D74C6EC75B21B4804A09E5B00661B387 /* ModernSearchBar-Info.plist */,
+				321B35044032C337E90F9D0749401BDA /* ModernSearchBar-prefix.pch */,
+				D6C06B45BB6394E1B19426FE901F0169 /* ModernSearchBar-umbrella.h */,
+				0BB48908A2624E3B8AAF4B16840F0607 /* ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TTGTagCollectionView";
+			path = "../Target Support Files/ModernSearchBar";
 			sourceTree = "<group>";
 		};
-		A5FE24C83A3D1D3C8083408A9500FA16 /* Resources */ = {
+		B6803CA45EF3C77326A5326241833CCB /* PopupDialog */ = {
 			isa = PBXGroup;
 			children = (
-				A4F0A80789C61EB0D9065964F7A4F84D /* Assets.xcassets */,
+				3E324067D85129B86EAEDB5623656724 /* InteractiveTransition.swift */,
+				37B453DD6E7A1E5E578EA161D5351C4C /* PopupDialog.swift */,
+				A9EBEAFF58B6C95873255102D56E9879 /* PopupDialog+Keyboard.swift */,
+				ACB1FDBA16A1C2C1DCB2F7C5120F0711 /* PopupDialogButton.swift */,
+				F568DE2BA6B9A654CB40ACB3AD1C568D /* PopupDialogContainerView.swift */,
+				AFD37A799FA8E5EA219D9AE460EAE807 /* PopupDialogDefaultButtons.swift */,
+				798DAC76656AA7A8B7FB29A7A1DF0462 /* PopupDialogDefaultView.swift */,
+				94B003F8677F867CF52C47F60CB3AA74 /* PopupDialogDefaultViewController.swift */,
+				E67487033CA2EBC07EFB678D33B543D1 /* PopupDialogOverlayView.swift */,
+				B413E00FC068DBBC4742EAD458738A5D /* PresentationController.swift */,
+				6523087DBCEEC9C7B5C9DBD08245000B /* PresentationManager.swift */,
+				0BA41CB3AA09472BE4955B36D9381C77 /* TransitionAnimations.swift */,
+				B69F7DE25B8E6510F244D430C450AD5A /* TransitionAnimator.swift */,
+				1E05EE601D4B63928B8472E7BCE32339 /* UIImageView+Calculations.swift */,
+				9A4130888CDC0B833D3DE54836279C0B /* UIView+Animations.swift */,
+				1BBB9AEB450DFD47EC32A1CCDF7FCE44 /* UIViewController+Visibility.swift */,
+				941ACE92A004632234F2133059CBA519 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C25F1A2481ED555CB1D35082A2D9215D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				93F1A77200BB377E113D1AE39F13E9DD /* SwiftCSV.modulemap */,
-				7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */,
-				BE31C4B2EF76DDCC06AA9142FAC8DD38 /* SwiftCSV-dummy.m */,
-				3A0388D61955CF096D292C2D3BEA436F /* SwiftCSV-Info.plist */,
-				7B8794FF65FED35DDB02EAA7EB896EDB /* SwiftCSV-prefix.pch */,
-				7999AE181E68F022CEB2286AD6B9D10C /* SwiftCSV-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftCSV";
-			sourceTree = "<group>";
-		};
-		C6FE2CAC05DCABAC5D61A2D1C87A3E65 /* Toast-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				F111256385A0A76C92C6A7BF8FA5A9A9 /* Toast.swift */,
-				EEEC43070FA4F909C2265BCD56DE999F /* Support Files */,
-			);
-			name = "Toast-Swift";
-			path = "Toast-Swift";
-			sourceTree = "<group>";
-		};
-		CA66D50BBB67F19C3464E37DA8283DCB /* TensorFlowLiteSwift */ = {
-			isa = PBXGroup;
-			children = (
-				48EB8279B6963E753CE725B6C9C21346 /* Delegate.swift */,
-				941406E5341E37F73961F5025AC76089 /* Interpreter.swift */,
-				B50A6A8D577D8338A84A3134D8283FF4 /* InterpreterError.swift */,
-				BF6EECFAF0ACBA8E515DEE5DA6FCC229 /* MetalDelegate.swift */,
-				FD621D2F0973A0E2CCF9B555A694F3DE /* Model.swift */,
-				3396525DF7E9B6030E89EADE66F56E85 /* QuantizationParameters.swift */,
-				69B8F4B44342DF69FE7CE380B13A34F0 /* Tensor.swift */,
-				7661B00F2B242200B78D2765C7D671A8 /* TensorFlowLite.swift */,
-				F1CAF0EBCB9591B488A6E512CF99D53C /* Support Files */,
-			);
-			name = TensorFlowLiteSwift;
-			path = TensorFlowLiteSwift;
+			name = PopupDialog;
+			path = PopupDialog;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				142F4C5DF9B138D03116CAC4692DC7B6 /* Pods */,
-				5075C1DA4370E84FD348BDD8B1DFB67B /* Products */,
+				E5C7D2BAE4B189F381BD6041A1C474B2 /* Frameworks */,
+				F3F9E126BA136E714C4D4B2A2BF4D593 /* Pods */,
+				1DBF79B7400207A9DE7DFAF1ECBCFCFD /* Products */,
 				74376FF5A9D73A3DABD4053F88F93EEC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E44CE2C0E907B3C5FF22D47D209263AD /* ModernSearchBar */ = {
+		DFAA3796B46C458B214296DCA7F1A4C1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B47FD49C72C389CEA85F7174823E36B8 /* ModernSearchBar.swift */,
-				702A1D2D34515DE8E87A3AFB0BBAFBD5 /* ModernSearchBarCell.swift */,
-				3E0C0288B8A5DE0B1763AC5FA16C6C94 /* ModernSearchBarDelegate.swift */,
-				B2366F38F8401A9F9A3CD36E763EC4DE /* ModernSearchBarIcon.swift */,
-				9EDFA0D9DB7BDE5546D5609D50347343 /* ModernSearchBarModel.swift */,
-				A5FE24C83A3D1D3C8083408A9500FA16 /* Resources */,
-				3F4A2CF519F2F0871C26A9D050DF75D5 /* Support Files */,
+				03BBB0F9651CBA2316D29A7A19BD214D /* Accelerate.framework */,
+				9B37E244CFA020178554D002E842A39A /* Foundation.framework */,
+				5F1D53104929DCDE4985AA2914BBB71C /* QuartzCore.framework */,
+				0425C9E43E8585385D6107D23FF9EBCD /* UIKit.framework */,
 			);
-			name = ModernSearchBar;
-			path = ModernSearchBar;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		E65CB1F53773872A257C839A8DBC4C11 /* TTGTagCollectionView */ = {
+		E40842F613D3832E52C3598D04A36261 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5268D13BE86C7B6EF6B8885FCF8E2446 /* TTGTagCollectionView.h */,
-				93E4E0B50395EC6DFDB20455EF001716 /* TTGTagCollectionView.m */,
-				11832EC2CE3F12A17685A9566A270675 /* TTGTextTagCollectionView.h */,
-				AAFBEA4F5C23C1E03F6E2E876998B041 /* TTGTextTagCollectionView.m */,
-				837E8571FBF2918CF8AD84437FCA0401 /* Support Files */,
+				C7C79AA0DA8F5790E7FFC115BF20C292 /* Assets.xcassets */,
 			);
-			name = TTGTagCollectionView;
-			path = TTGTagCollectionView;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		EEEC43070FA4F909C2265BCD56DE999F /* Support Files */ = {
+		E5C7D2BAE4B189F381BD6041A1C474B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				059A20B6288C5BB997EC4C9B69175016 /* Toast-Swift.modulemap */,
-				D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */,
-				EEDF6473C390CE1FE3C79FE7AC38A192 /* Toast-Swift-dummy.m */,
-				460EFCBB0EB06214600567AA16E6EF0E /* Toast-Swift-Info.plist */,
-				18F594CA9A830D018C8B5C4C53CF8133 /* Toast-Swift-prefix.pch */,
-				3250AC0E8087254452CED590149AC3A2 /* Toast-Swift-umbrella.h */,
+				494DB3E1089FA2524CE1137EF0F525AD /* DynamicBlurView.framework */,
+				DFAA3796B46C458B214296DCA7F1A4C1 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Toast-Swift";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1CAF0EBCB9591B488A6E512CF99D53C /* Support Files */ = {
+		F3F9E126BA136E714C4D4B2A2BF4D593 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0DF9E887F76BB5FC08E7A8F47FA48D82 /* TensorFlowLiteSwift.modulemap */,
-				DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */,
-				A4347D852075EAE023B22C37AAAD3F74 /* TensorFlowLiteSwift-dummy.m */,
-				025A102DD3DB5A08D816D563CFEACB9A /* TensorFlowLiteSwift-Info.plist */,
-				BB8B4923B6C61C0AB673116522D0985D /* TensorFlowLiteSwift-prefix.pch */,
-				0750A800638B69046B79677047BA729E /* TensorFlowLiteSwift-umbrella.h */,
+				23B00C2FB74741DAD4A4F9AA8E8B4303 /* DynamicBlurView */,
+				63FA41C0F93FEC17C0F6D9BCD716821D /* ModernSearchBar */,
+				B6803CA45EF3C77326A5326241833CCB /* PopupDialog */,
+				7313EB966DC8646D6743295744F9B62D /* SwiftCSV */,
+				A0AADD2FC66DCEDDA8C6DEE28BAD8BED /* TensorFlowLiteC */,
+				07217B05C429BF08B9F6070F857455BE /* TensorFlowLiteSwift */,
+				09FD76CD4BB6891FFF7496386D998312 /* Toast-Swift */,
+				03E76375248070079A33BEF4A4852102 /* TTGTagCollectionView */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteSwift";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +725,14 @@
 				10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */,
 				3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */,
 				8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4532D5EADA0E0B5C8A34E8A829BA9F83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8A334B2DBD5A4AD773C91BCA1A44B3 /* Pods-ObjectDetection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +752,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87353A53FB8FA55F6215AC51654C8C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928FFA6E7256231E743768EBC78E36A7 /* PopupDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9454A035013F19F5F9313F2C6B6FD591 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,19 +768,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD91A0408709E5CE60C515237C69EEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */,
+				37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D25298B9662DAC6E742DC6267BB321D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D59646504E86676D5EEE74D939A98F7A /* ModernSearchBar-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3E3C9E377A865E8E989C185970FD36B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				057ED5018156EBB0ACD8A652CD480334 /* Pods-ObjectDetection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +824,43 @@
 			name = ModernSearchBar;
 			productName = ModernSearchBar;
 			productReference = 7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7508D556E6C0879FE57E3E574C62AE /* Build configuration list for PBXNativeTarget "PopupDialog" */;
+			buildPhases = (
+				87353A53FB8FA55F6215AC51654C8C0E /* Headers */,
+				45888BA4605C36782FAFEAC2D00E6CD3 /* Sources */,
+				74F47434089ED97AF48B711E9FADBF5C /* Frameworks */,
+				51F44C6F0DFF3643706A346EC44D61E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0F55816EC0A47F2B5F6C7CA549559A /* PBXTargetDependency */,
+			);
+			name = PopupDialog;
+			productName = PopupDialog;
+			productReference = 34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00E17D5B863CDCF74DE6FA3A6C1300F /* Build configuration list for PBXNativeTarget "DynamicBlurView" */;
+			buildPhases = (
+				BD91A0408709E5CE60C515237C69EEE0 /* Headers */,
+				64D4719150E9FEC3CDDBB82624177D73 /* Sources */,
+				E65CA3D384260DCB7B4E58EA234ABEA5 /* Frameworks */,
+				4991E03E196B947CF16368E88975E33C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicBlurView;
+			productName = DynamicBlurView;
+			productReference = 86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		95E19C014BAA3A685428F6B791F62918 /* ModernSearchBar-ModernSearchBar */ = {
@@ -673,22 +918,24 @@
 		};
 		F1314F4B4B67460E64EAA7F5BC410226 /* Pods-ObjectDetection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E05E459FAA63D6CBA116C47FFA211BF /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */;
+			buildConfigurationList = CFB5A8350EFF1319FA2DE25FA9CC4D42 /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */;
 			buildPhases = (
-				D3E3C9E377A865E8E989C185970FD36B /* Headers */,
-				95B90302B2FC640392062E6CFB7F2122 /* Sources */,
-				F49D980412E3480476987296F6FBBF82 /* Frameworks */,
-				C2E59223D4126350C932E8592774661D /* Resources */,
+				4532D5EADA0E0B5C8A34E8A829BA9F83 /* Headers */,
+				7E2325864B4551549872B850EFEB6163 /* Sources */,
+				6974D012AEB9C249BD3446C1E56D5A57 /* Frameworks */,
+				6B370F3A782B73D78B6D8C1C7A199076 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				862D6462A2F08FFC592A3C91D94102E1 /* PBXTargetDependency */,
-				6E27D6D9AD0F26465A6C9EF95A674AD9 /* PBXTargetDependency */,
-				3E3A0618A7049610EE524EA178B3F30E /* PBXTargetDependency */,
-				A7980C472B438DFD16D76FAA985893DA /* PBXTargetDependency */,
-				9FDB467E5963C7B72E08301775F35E1F /* PBXTargetDependency */,
-				521E8B29DB1AFE5E5B5A52D3122AA3F3 /* PBXTargetDependency */,
+				F35B88CC4141780268BB2DF79FFE793F /* PBXTargetDependency */,
+				6F1FFFCD46D73AFAC4F1E6F97BF3A305 /* PBXTargetDependency */,
+				DE33884F30793BD1BC1CB7AFA6ACF411 /* PBXTargetDependency */,
+				314E208FA499D4ED8E0B8BC107CD6C1D /* PBXTargetDependency */,
+				BD0DD6781B04944B6BD55940FCA00819 /* PBXTargetDependency */,
+				8F102A74658A183B73DF48E655A50020 /* PBXTargetDependency */,
+				EAB9DB5394763EE88509450829E60331 /* PBXTargetDependency */,
+				F6D4DE03FD3B6A5A2BDD4E816D7D5C38 /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjectDetection";
 			productName = "Pods-ObjectDetection";
@@ -731,13 +978,15 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5075C1DA4370E84FD348BDD8B1DFB67B /* Products */;
+			productRefGroup = 1DBF79B7400207A9DE7DFAF1ECBCFCFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */,
 				555D73F4B464D6B72099C524F25F3694 /* ModernSearchBar */,
 				95E19C014BAA3A685428F6B791F62918 /* ModernSearchBar-ModernSearchBar */,
 				F1314F4B4B67460E64EAA7F5BC410226 /* Pods-ObjectDetection */,
+				6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */,
 				B7465E4C13FFC9CE6D359E31F65D6825 /* SwiftCSV */,
 				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
 				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
@@ -755,7 +1004,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4991E03E196B947CF16368E88975E33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51F44C6F0DFF3643706A346EC44D61E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		679E7170D73F96A9F6F4AF34B095DD4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B370F3A782B73D78B6D8C1C7A199076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -770,13 +1040,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A8645B289EFCD27C4334F0DF62673388 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2E59223D4126350C932E8592774661D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -811,6 +1074,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45888BA4605C36782FAFEAC2D00E6CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC78D8A8141D8268D6382866CDF8F16A /* InteractiveTransition.swift in Sources */,
+				B2F489FB022F836FB35B3FEABF68903C /* PopupDialog+Keyboard.swift in Sources */,
+				73D0683E05F3565AE7175088B7CE6DC0 /* PopupDialog-dummy.m in Sources */,
+				5546955AFBE8D354D17380A294A25CE6 /* PopupDialog.swift in Sources */,
+				F82E29CC1BF7165FF77D9C4A387357A7 /* PopupDialogButton.swift in Sources */,
+				225555187BFD67F7F6DADEA6C73C567F /* PopupDialogContainerView.swift in Sources */,
+				A254857FE369E684CBE3B4F6F292239D /* PopupDialogDefaultButtons.swift in Sources */,
+				C9D87D93855954B4B23CDB647DEB7D0E /* PopupDialogDefaultView.swift in Sources */,
+				030FCBCF4FD8CD3905C39EDA654D29BD /* PopupDialogDefaultViewController.swift in Sources */,
+				A94100505467526DB734FAB115BF715C /* PopupDialogOverlayView.swift in Sources */,
+				D9F9E9336475EE7188F8F29DDE0A2EB1 /* PresentationController.swift in Sources */,
+				83B9E5412A63412A151E0092BF6AF7CA /* PresentationManager.swift in Sources */,
+				7A009CFEBD7D09FB5DA532F54EB9FBEF /* TransitionAnimations.swift in Sources */,
+				169D250E01A497F88370028FD950A37C /* TransitionAnimator.swift in Sources */,
+				0F82656B116745EE31DB985B8096CD60 /* UIImageView+Calculations.swift in Sources */,
+				37AFD441D3948E62ABBFFBDC662F6DB6 /* UIView+Animations.swift in Sources */,
+				D82DC5AAA5AA0E1A33EFE457C493D755 /* UIViewController+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DB8683FD4EC2E07E03B765DEC4CAA24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -826,6 +1113,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64D4719150E9FEC3CDDBB82624177D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */,
+				019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */,
+				303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */,
+				9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */,
+				7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */,
+				19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */,
+				535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */,
+				7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A938DB253801134E7977E423ECDCB1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -833,6 +1135,14 @@
 				717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */,
 				8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */,
 				447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2325864B4551549872B850EFEB6163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7595AC3B8D7A36866789C8A07A1F91 /* Pods-ObjectDetection-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,14 +1156,6 @@
 				53D59BDBB7295311CDCAFC45389354E8 /* ModernSearchBarDelegate.swift in Sources */,
 				486152AFAF9E4E034EE27D19C07C605D /* ModernSearchBarIcon.swift in Sources */,
 				DF330D63807C544A2A6F4F95E8E5682F /* ModernSearchBarModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95B90302B2FC640392062E6CFB7F2122 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7997B0939DE51309940EEC8D57EB37BF /* Pods-ObjectDetection-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,29 +1191,29 @@
 			target = 95E19C014BAA3A685428F6B791F62918 /* ModernSearchBar-ModernSearchBar */;
 			targetProxy = 7751268AFBAA7C2A4D54B638C3966E1D /* PBXContainerItemProxy */;
 		};
-		3E3A0618A7049610EE524EA178B3F30E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TTGTagCollectionView;
-			target = F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */;
-			targetProxy = DC0D0D4C15A12145B362CA454902F147 /* PBXContainerItemProxy */;
-		};
-		521E8B29DB1AFE5E5B5A52D3122AA3F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Toast-Swift";
-			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
-			targetProxy = 127C72A28B97E76D4D0CF4761BC83AD8 /* PBXContainerItemProxy */;
-		};
-		6E27D6D9AD0F26465A6C9EF95A674AD9 /* PBXTargetDependency */ = {
+		314E208FA499D4ED8E0B8BC107CD6C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftCSV;
 			target = B7465E4C13FFC9CE6D359E31F65D6825 /* SwiftCSV */;
-			targetProxy = 1236E6E604C13302AD83355B39AEFC28 /* PBXContainerItemProxy */;
+			targetProxy = 2FFD87A81B7EC9C5204392E9FC8ACDE1 /* PBXContainerItemProxy */;
 		};
-		862D6462A2F08FFC592A3C91D94102E1 /* PBXTargetDependency */ = {
+		6F1FFFCD46D73AFAC4F1E6F97BF3A305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ModernSearchBar;
 			target = 555D73F4B464D6B72099C524F25F3694 /* ModernSearchBar */;
-			targetProxy = EF4DF690BA3D1C536479FDBB24294454 /* PBXContainerItemProxy */;
+			targetProxy = 9E41929D967A5D6289E7E61CBC98B675 /* PBXContainerItemProxy */;
+		};
+		7A0F55816EC0A47F2B5F6C7CA549559A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = 2763FCA98104FEE93EB4E54D32DDF454 /* PBXContainerItemProxy */;
+		};
+		8F102A74658A183B73DF48E655A50020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = DE435FE07DB4A0F8F8AE4635114FBB7D /* PBXContainerItemProxy */;
 		};
 		9C7C0C7FC1E8F36E403A9DA58D08A654 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -919,24 +1221,42 @@
 			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
 			targetProxy = 9CD29C43799CE27402701E8FDBF5CACF /* PBXContainerItemProxy */;
 		};
-		9FDB467E5963C7B72E08301775F35E1F /* PBXTargetDependency */ = {
+		BD0DD6781B04944B6BD55940FCA00819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGTagCollectionView;
+			target = F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */;
+			targetProxy = 2926CD575EC08FC278C35B8D12F56F17 /* PBXContainerItemProxy */;
+		};
+		DE33884F30793BD1BC1CB7AFA6ACF411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopupDialog;
+			target = 6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */;
+			targetProxy = 78C97DDA09D48ABC8B17562E51E68D8D /* PBXContainerItemProxy */;
+		};
+		EAB9DB5394763EE88509450829E60331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TensorFlowLiteSwift;
 			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = D85EE4D711424C204E79BEAC3A6E52AF /* PBXContainerItemProxy */;
+			targetProxy = B49FA4CC809EEEDC37C8955583E96020 /* PBXContainerItemProxy */;
 		};
-		A7980C472B438DFD16D76FAA985893DA /* PBXTargetDependency */ = {
+		F35B88CC4141780268BB2DF79FFE793F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = C2EB7F9C85E3C0A3F1DFEA431652615A /* PBXContainerItemProxy */;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = E7188F5B282B9130CA3E6265BB871908 /* PBXContainerItemProxy */;
+		};
+		F6D4DE03FD3B6A5A2BDD4E816D7D5C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = B8440A93F1DB048B76F99CA8B0C5BE9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		107AD140FC2479E4F67BF06141EB0AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
@@ -1017,7 +1337,7 @@
 		};
 		1FE38130FC1F064A594FAD1DEC876A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1052,7 +1372,7 @@
 		};
 		2705E169450EA01DED452BFCC78ACD4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */;
+			baseConfigurationReference = 7EDED747D640A05574C5392862921CA3 /* TensorFlowLiteC.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1069,7 +1389,7 @@
 		};
 		3140D9AEE89D8C95CC793B5BAF5995F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */;
+			baseConfigurationReference = 3018BD7C92BB14B9D1E92A231EDE9CD9 /* TTGTagCollectionView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1104,7 +1424,7 @@
 		};
 		41C5E95332902399A6E7F9C4B2F6A27A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */;
+			baseConfigurationReference = FBAD918DBFC1BC3557303E0C7444B456 /* SwiftCSV.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1138,7 +1458,95 @@
 			};
 			name = Release;
 		};
-		52A9718D5153BC30732D62D6E67F7562 /* Release */ = {
+		4EA6E6EA610C0116B87722F3BB7B093A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2A24360B2B4ED712573A32ED081565 /* DynamicBlurView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicBlurView/DynamicBlurView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
+				PRODUCT_MODULE_NAME = DynamicBlurView;
+				PRODUCT_NAME = DynamicBlurView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		616588543AE18358EB04CB382B0552B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDED747D640A05574C5392862921CA3 /* TensorFlowLiteC.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72AC56CFBF2B2490EEE4729B4B567641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48084598A4D69C89693E2D196048F764 /* TensorFlowLiteSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
+				PRODUCT_MODULE_NAME = TensorFlowLite;
+				PRODUCT_NAME = TensorFlowLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93D4059616CE73CDBA400499F01B2A19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E7420B2CAAA45226A610471F457DD5A /* Pods-ObjectDetection.release.xcconfig */;
 			buildSettings = {
@@ -1177,7 +1585,7 @@
 			};
 			name = Release;
 		};
-		53BF030A703CBF4D142E70D3D9005CD1 /* Debug */ = {
+		97AAFC243363C33334D0A29825ACC62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B46FEB5BCA58A381385520CA9AD54C5 /* Pods-ObjectDetection.debug.xcconfig */;
 			buildSettings = {
@@ -1215,61 +1623,9 @@
 			};
 			name = Debug;
 		};
-		616588543AE18358EB04CB382B0552B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F4D95E05508B68FA9FB37F8FAF5F99 /* TensorFlowLiteC.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		72AC56CFBF2B2490EEE4729B4B567641 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
-				PRODUCT_MODULE_NAME = TensorFlowLite;
-				PRODUCT_NAME = TensorFlowLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		98898C6F52A6A7DBE554A243A24C2F51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = A06B01443AF88640C405714FCB420657 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1304,7 +1660,7 @@
 		};
 		A00DE1334BAD58AECD32A1869C3E26A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA5D5A13850E6B9E0AF4CC86A0E40D3 /* TensorFlowLiteSwift.xcconfig */;
+			baseConfigurationReference = 48084598A4D69C89693E2D196048F764 /* TensorFlowLiteSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1341,7 +1697,7 @@
 		};
 		A3A00D29EA3C1F3937FAD1E9C355E77F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1375,9 +1731,44 @@
 			};
 			name = Release;
 		};
+		A6D3481563301AEE2CDF25C874FDE857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2A24360B2B4ED712573A32ED081565 /* DynamicBlurView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicBlurView/DynamicBlurView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
+				PRODUCT_MODULE_NAME = DynamicBlurView;
+				PRODUCT_NAME = DynamicBlurView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CBEC5FFE11BFCCEA9C9ADC506D803859 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FE8ADC7427B040FDB413C20171F0E07 /* TTGTagCollectionView.xcconfig */;
+			baseConfigurationReference = 3018BD7C92BB14B9D1E92A231EDE9CD9 /* TTGTagCollectionView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1411,9 +1802,82 @@
 			};
 			name = Release;
 		};
+		CE8E1A7B166BCB0C00B4FDD39680340C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8012AAD30A6001B659E41EFC8577E9CC /* PopupDialog.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/PopupDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				PRODUCT_MODULE_NAME = PopupDialog;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D824AB577D1FA22E4A7E8FC1A74C89EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8012AAD30A6001B659E41EFC8577E9CC /* PopupDialog.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/PopupDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				PRODUCT_MODULE_NAME = PopupDialog;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D92696B03B4D9474BE35B26F2F1CCDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E9C968265DD75B9A3DEE46326C9C1EE /* SwiftCSV.xcconfig */;
+			baseConfigurationReference = FBAD918DBFC1BC3557303E0C7444B456 /* SwiftCSV.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1508,7 +1972,7 @@
 		};
 		F3D7AA7B6797C4885E6D6232E7580830 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D335872A5C8404C3343C673418F68996 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = A06B01443AF88640C405714FCB420657 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1544,7 +2008,7 @@
 		};
 		F4D1A13CF2C6E0DC749C8D7220F91270 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964D7FA1803D0915900227E0AECC02F8 /* ModernSearchBar.xcconfig */;
+			baseConfigurationReference = 1AB696AC31D1F9B46DD86CD20470AD08 /* ModernSearchBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
@@ -1580,15 +2044,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E05E459FAA63D6CBA116C47FFA211BF /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53BF030A703CBF4D142E70D3D9005CD1 /* Debug */,
-				52A9718D5153BC30732D62D6E67F7562 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1616,11 +2071,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B00E17D5B863CDCF74DE6FA3A6C1300F /* Build configuration list for PBXNativeTarget "DynamicBlurView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D3481563301AEE2CDF25C874FDE857 /* Debug */,
+				4EA6E6EA610C0116B87722F3BB7B093A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98898C6F52A6A7DBE554A243A24C2F51 /* Debug */,
 				F3D7AA7B6797C4885E6D6232E7580830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7508D556E6C0879FE57E3E574C62AE /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D824AB577D1FA22E4A7E8FC1A74C89EA /* Debug */,
+				CE8E1A7B166BCB0C00B4FDD39680340C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB5A8350EFF1319FA2DE25FA9CC4D42 /* Build configuration list for PBXNativeTarget "Pods-ObjectDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AAFC243363C33334D0A29825ACC62F /* Debug */,
+				93D4059616CE73CDBA400499F01B2A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

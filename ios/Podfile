@@ -11,5 +11,6 @@ target 'ObjectDetection' do
   pod "SwiftCSV"
   pod 'Toast-Swift', '~> 5.0.0'
   pod 'TTGTagCollectionView'
+  pod 'PopupDialog', '~> 1.1'
 
 end
