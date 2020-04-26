@@ -79,8 +79,9 @@ class ChooseViewController: UIViewController, CLLocationManagerDelegate {
     func setCounty(_ county: String) {
         self.county = county
         calculator.setCounty(county)
+        UserDefaults.standard.set(county, forKey: "county")
         print(self.county!)
-        print(calculator.getCountyCovid())
+        print(calculator.getCountyCoeff())
     }
         
     /*

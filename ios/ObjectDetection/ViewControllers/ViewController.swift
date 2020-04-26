@@ -56,9 +56,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     calculator = Calculate()
-//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 1))
-//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 2))
-//    print(calculator?.calcSocTaxRate(item: "eggs", quantity: 3))
+    let countryString = UserDefaults.standard.object(forKey: "county") as! String
+    calculator?.setCounty(countryString)
+    print(calculator?.calcActualTotalCost(item: "Toilet Paper", quantity: 1))
+    
 //    
 //    print(calculator?.calcSocTaxRate(item: "milk", quantity: 1))
 //    print(calculator?.calcSocTaxRate(item: "milk", quantity: 2))
@@ -310,7 +311,7 @@ extension ViewController: CameraFeedManagerDelegate {
 
       let size = string.size(usingFont: self.displayFont)
 
-      let price = calculator!.calcSocCost(item: inference.className, quantity: 1)
+        let price = calculator!.calcActualTotalCost(item: inference.className, quantity: 1)
         
         if (price == 0.0) {
             continue
@@ -319,9 +320,11 @@ extension ViewController: CameraFeedManagerDelegate {
       let objectOverlay = ObjectOverlay(name: string, borderRect: convertedRect, nameStringSize: size, color: inference.displayColor, font: self.displayFont, price: price)
     
         let iVC = inferenceViewController
-        let tprice = calculator?.getPrice(item: inference.className)
-        let tcost = calculator?.getSocCostValue(item: inference.className, quantity: 1)
+        let tprice = calculator?.getPriceString(item: inference.className)
+        let tcost = calculator?.getSocialCostAmountString(item: inference.className, quantity: 1)
         let ttotal = String(format: "%.2f", price)
+        
+        print(tprice, tcost, ttotal)
                 
         let tdata = TableData(name: inference.className, price: tprice!, cost: tcost!, total: ttotal)
         iVC?.addCell(msg: tdata)
