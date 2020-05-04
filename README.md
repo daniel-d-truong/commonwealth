@@ -1,7 +1,7 @@
 ## Inspiration
 Forests are torn down to make our paper. Producing a single battery demands nearly 9000 liters of water. Buying medical masks can leave doctors without proper protective equipment. As the world moves forward into the perils of COVID-19 pandemic and moreso, global warming, our individual spending decisions account for the health of our whole community and the globe. The supermarket is the battleground. This concept inspired our team to engineer an app that helps users avoid the social and environmental costs that hide behind every purchase and, in turn, protect the commonwealth of humanity.
 
-![Logo](https://drive.google.com/uc?id=1PbF-hnxZmDiVrx50-ocHTUGWC8U4n9hs)
+![Logo](https://camo.githubusercontent.com/836e399c9123f314183ba1b1f8b342fe982cd120/68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f69643d315062462d686e785a6d446956727835302d6f634854554757433855346e396873)
 
 ## What it does
 We are **Commonwealth**. Commonwealth alerts the average consumer of the environmental and social footprint of their purchases to promote responsible eco-friendly spending _and_ resist against the spread of COVID-19. Commonwealth employs years of real world data to analyze and accurately calculate the costs of a single purchase on your community and the Earth. Users can easily add items to their shopping cart through our Item Selection tab to be informed of their cost. If they're in a rush, they can pull out their phone and scan items in real time using our TensorFlow object detection software and the individual items are assigned a cost.
